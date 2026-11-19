@@ -1,0 +1,175 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "a4c5251c-ac79-4492-a2bb-594b50e9b848")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0157fe00-3a6e-4c15-8fc2-ac437c98f3f0")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4025a063-3695-4188-9f48-4105f6c48573")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 76.2 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1747ff97-2fb0-482f-8e30-7e0b7f99413d")
+	)
+	(hierarchical_label "TXD"
+		(shape input)
+		(at 76.2 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ffd5b14-e28a-4657-95e4-4f830522ea92")
+	)
+	(hierarchical_label "STB_N"
+		(shape input)
+		(at 76.2 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ff6b5f8-3096-4699-88ea-8d5d4a4abcb3")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 76.2 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c9ef9981-a86d-4a70-9d8d-782655677b0c")
+	)
+	(hierarchical_label "TERM_EN"
+		(shape input)
+		(at 76.2 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "325ed9ae-92cb-44ac-a142-d8ced13ede46")
+	)
+	(hierarchical_label "WAKE"
+		(shape input)
+		(at 76.2 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ea0fae6-fceb-4ebb-b10d-5d474ec310b0")
+	)
+	(hierarchical_label "RXD"
+		(shape output)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d43c70f3-0b72-47e2-a9ed-d9cd73330562")
+	)
+	(hierarchical_label "NFAULT"
+		(shape output)
+		(at 203.2 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03e1cec1-1870-455c-877e-4b2aa61034a5")
+	)
+	(hierarchical_label "INH"
+		(shape output)
+		(at 203.2 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "81ac3601-a470-4ecf-b6a1-78c06a0efa35")
+	)
+	(hierarchical_label "CANH"
+		(shape bidirectional)
+		(at 203.2 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0e3cd81a-44ab-4a5d-8531-89965dd054ac")
+	)
+	(hierarchical_label "CANL"
+		(shape bidirectional)
+		(at 203.2 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66ea721f-96ec-4e60-92da-b3acd91f1cda")
+	)
+	(text "CAN FD TRANSCEIVER (CAN1 ve CAN2 ayni sayfa)\nTCAN1043A-Q1 / TJA1043, INH/WAKE uyandirma\n120 ohm sonlandirma TERM_EN ile acilip kapanir\nCommon-mode choke + ESD"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "6bfea843-d293-49f6-b999-33dd6e90e578")
+	)
+)

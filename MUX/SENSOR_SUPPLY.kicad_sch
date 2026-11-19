@@ -1,0 +1,115 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "577c2cde-84fb-4a27-aab3-356086aa51b3")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e045768b-757d-4165-90e1-5de43b6d71ad")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7bc8493-72d2-4ea8-b8ed-49d5b3271a72")
+	)
+	(hierarchical_label "SENS_5V_EN"
+		(shape input)
+		(at 76.2 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b1cf171-0533-4058-9c7b-29e5b5f9b37c")
+	)
+	(hierarchical_label "SENS_12V_EN"
+		(shape input)
+		(at 76.2 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14bce9cb-aef3-409d-8fed-7a27f9339172")
+	)
+	(hierarchical_label "SENS_5V"
+		(shape output)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "52c5c270-0336-47c9-b79a-85180816eb0d")
+	)
+	(hierarchical_label "SENS_12V"
+		(shape output)
+		(at 203.2 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25609006-6305-4393-985b-801f7317b348")
+	)
+	(hierarchical_label "SENS_5V_FAULT"
+		(shape output)
+		(at 203.2 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c29033b9-30ca-4088-8e61-d36d4bc535b6")
+	)
+	(hierarchical_label "SENS_12V_FAULT"
+		(shape output)
+		(at 203.2 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1199e64e-69e7-440b-b0a9-5ee777f88401")
+	)
+	(text "SENSOR BESLEMELERI\n5 V: TLE4250-2G (tracker, +5V referans)\n12 V: akim sinirli buck-boost\nAkim sinirli, ariza tespitli, MCU'dan EN"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "c746f640-b897-498e-898c-fb5f991d1ffe")
+	)
+)

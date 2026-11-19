@@ -1,0 +1,187 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b8c10487-4075-4d72-9bd1-0469a5b28a45")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "VBAT_RAW"
+		(shape output)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8813a48b-9025-47f7-a2d7-53d82b12d69f")
+	)
+	(hierarchical_label "IGN"
+		(shape output)
+		(at 203.2 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d163522-ca56-4345-850f-e16d3efc4c9d")
+	)
+	(hierarchical_label "WAKE2"
+		(shape output)
+		(at 203.2 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "54b98723-89fc-451e-a786-d82a6d588fbb")
+	)
+	(hierarchical_label "IN[0..21]"
+		(shape output)
+		(at 203.2 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92eb8704-7fdf-4ce2-a983-3b4d2cdce0a1")
+	)
+	(hierarchical_label "CAN1_CANH"
+		(shape bidirectional)
+		(at 203.2 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9454543-6083-46e7-828c-fa17ba563b0d")
+	)
+	(hierarchical_label "CAN1_CANL"
+		(shape bidirectional)
+		(at 203.2 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "891f80d7-e78d-44e3-85d5-d19f98c06783")
+	)
+	(hierarchical_label "CAN2_CANH"
+		(shape bidirectional)
+		(at 203.2 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46d1a276-1e98-445f-a2ba-3c7154626729")
+	)
+	(hierarchical_label "CAN2_CANL"
+		(shape bidirectional)
+		(at 203.2 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c8d0bc5-beff-49a2-9a14-a96c01980e3b")
+	)
+	(hierarchical_label "HS20_OUT[0..3]"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b416c160-09b9-48e3-968d-20f1169649f2")
+	)
+	(hierarchical_label "HS10_OUT[0..13]"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd22d722-2ea7-4bd9-bf77-ad4b54e6cfe1")
+	)
+	(hierarchical_label "HB_OUT[0..2]"
+		(shape input)
+		(at 76.2 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9fa7e3c7-e77b-4aaf-bc67-d1a4d6840b0f")
+	)
+	(hierarchical_label "CCPWM_OUT[0..1]"
+		(shape input)
+		(at 76.2 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5e523363-6ca0-4fd2-acae-d626e4a06637")
+	)
+	(hierarchical_label "SENS_5V"
+		(shape input)
+		(at 76.2 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ea36533-f0e6-4919-850b-489a99caf7f7")
+	)
+	(hierarchical_label "SENS_12V"
+		(shape input)
+		(at 76.2 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "832c038e-609a-4da8-b8f9-6c991dbfc1ce")
+	)
+	(text "KONNEKTORLER\nAna besleme: civatali terminal (M6/M8)\nSinyal: Deutsch DT/DTM\n22 evrensel giris, 23 cikis, 2x CAN, sensor beslemeleri"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "5d383bc1-d245-487b-9926-0a6c383f4982")
+	)
+)

@@ -3,6 +3,3373 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "cf216fc5-3b2a-4363-8099-cd0b67c27510")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols)
+	(sheet
+		(at 76.2 25.4)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a0d18706-e596-4b41-9883-262afcc41e89")
+		(property "Sheetname" "HS10_CH0"
+			(at 76.2 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 38.6846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 27.94 180)
+			(uuid "e05ea914-8eba-48a7-a54a-2277c9d6829a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 30.48 180)
+			(uuid "afac23a2-89b0-468f-a5da-4f21a554717a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 33.02 180)
+			(uuid "0615532c-0442-4310-abca-0fb118e5c574")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 35.56 180)
+			(uuid "e1768e0d-51a6-42b2-be30-e302d5926b15")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 27.94 0)
+			(uuid "d7028892-a9c8-4f5f-9335-1ef86fffd5cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 30.48 0)
+			(uuid "573da914-8848-48e5-b220-2fee111f251e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "23")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 27.94) (xy 71.12 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13623f22-250e-41a1-87e6-28d7ef9c5d80")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "74f2c3e6-e20d-4461-9fb2-fd164faa29a1")
+	)
+	(wire
+		(pts
+			(xy 76.2 30.48) (xy 71.12 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb561cdd-c467-43ad-a3e4-327f1d34d1df")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "638853d0-e0d8-457c-94d6-22651a026c8d")
+	)
+	(wire
+		(pts
+			(xy 76.2 33.02) (xy 71.12 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92bc80cf-3452-4f1c-96c8-d517e74fede0")
+	)
+	(label "HS10_IN0"
+		(at 71.12 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cf3ea6cf-d72b-4095-a036-2a5ff94f71f3")
+	)
+	(wire
+		(pts
+			(xy 76.2 35.56) (xy 71.12 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fde2d1cf-2fed-4433-a43d-2c9d3391fd96")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec6a3017-00b0-464c-ab67-472e4b23abbf")
+	)
+	(wire
+		(pts
+			(xy 109.22 27.94) (xy 114.3 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9060dd13-8c88-4b03-be81-017aab70bbf9")
+	)
+	(label "HS10_IS0"
+		(at 114.3 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2b003ec-1fd1-4bb4-88ce-730c7f5b800b")
+	)
+	(wire
+		(pts
+			(xy 109.22 30.48) (xy 114.3 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a749324e-9b94-4a72-8b93-d5a297e90d6c")
+	)
+	(label "HS10_OUT0"
+		(at 114.3 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "356de389-e4d8-48ae-8632-eaa3af81419f")
+	)
+	(sheet
+		(at 76.2 53.34)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c8575c30-ded0-4262-b640-d98aaae091e1")
+		(property "Sheetname" "HS10_CH1"
+			(at 76.2 52.6284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 66.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 55.88 180)
+			(uuid "761564dd-ed79-4cb5-8f90-ca0965ced2ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 58.42 180)
+			(uuid "f243e74a-943b-4b65-856c-f1936585ffa2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 60.96 180)
+			(uuid "78fbb8ff-c5f1-4b9e-be0e-a1058a47df08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 63.5 180)
+			(uuid "831e056a-b53a-4237-b7a7-75250ecad951")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 55.88 0)
+			(uuid "457a8767-bd07-4148-82c1-2c7c610aa3e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 58.42 0)
+			(uuid "d6139646-eb51-466e-9d3e-3c89b11de6f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "24")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 55.88) (xy 71.12 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee1d726-91cf-4c18-a3f6-1f27b4d73b78")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "104a30e5-f6de-4783-bea8-f84fc8333463")
+	)
+	(wire
+		(pts
+			(xy 76.2 58.42) (xy 71.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5addf30e-d134-4bc0-8211-c66bf3f5303f")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad4d29b7-d631-4004-af5f-fd7f54e50287")
+	)
+	(wire
+		(pts
+			(xy 76.2 60.96) (xy 71.12 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2380855f-1c15-4ffa-bedc-eea274dfbec5")
+	)
+	(label "HS10_IN1"
+		(at 71.12 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2c886ac8-8296-46e7-92af-044ef59fcaa3")
+	)
+	(wire
+		(pts
+			(xy 76.2 63.5) (xy 71.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d637126-d383-476d-9059-5e842060d131")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b462a6c-e9a4-4e7e-957a-50132c0f7722")
+	)
+	(wire
+		(pts
+			(xy 109.22 55.88) (xy 114.3 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24611440-7215-4953-a36e-aac13c3ee9ee")
+	)
+	(label "HS10_IS1"
+		(at 114.3 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b4821fa-abd6-4d2f-bc82-d6e079d00413")
+	)
+	(wire
+		(pts
+			(xy 109.22 58.42) (xy 114.3 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff5ecd9-0fc6-49e4-aaa8-60f9fe2ff40c")
+	)
+	(label "HS10_OUT1"
+		(at 114.3 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ddc0f82-767f-49f8-a95a-0799c48c206d")
+	)
+	(sheet
+		(at 76.2 81.28)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b300f9bc-e263-49cd-9f80-7b02527ee31d")
+		(property "Sheetname" "HS10_CH2"
+			(at 76.2 80.5684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 94.5646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 83.82 180)
+			(uuid "eadb542c-ba2f-4f51-8457-2aea73aec773")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 86.36 180)
+			(uuid "79cd507e-9575-46b5-94ea-0e141f8150c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 88.9 180)
+			(uuid "674b0d61-b9dd-4893-8440-924d42d75ea8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 91.44 180)
+			(uuid "94534f6a-4a37-481a-b967-b574f55518a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 83.82 0)
+			(uuid "21ef070a-0b67-48e5-b84c-220dd6aad9b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 86.36 0)
+			(uuid "ec3586f4-3baa-48a0-b95c-d52279b8a746")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "25")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 83.82) (xy 71.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa6e54ac-6c16-48a0-836e-b0653b325b26")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "80f3f4e3-f14b-47d7-9423-4f319c5f2d09")
+	)
+	(wire
+		(pts
+			(xy 76.2 86.36) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ae02f55-bae2-42b3-b9df-a3de11ee3d7b")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fef1a199-e6b7-4f57-ba0b-da9fbccb301c")
+	)
+	(wire
+		(pts
+			(xy 76.2 88.9) (xy 71.12 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a88079d-8e11-47c1-8c57-ab5dd4c8979f")
+	)
+	(label "HS10_IN2"
+		(at 71.12 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22a9105f-7975-4411-aa76-b3fcf8759b9e")
+	)
+	(wire
+		(pts
+			(xy 76.2 91.44) (xy 71.12 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d62dd6e-bba3-4ebe-923b-f20408453d30")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b95795cc-6082-4fba-ac6a-ae9a11cf91bd")
+	)
+	(wire
+		(pts
+			(xy 109.22 83.82) (xy 114.3 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65bee49f-fed6-47f2-b461-432618d19a15")
+	)
+	(label "HS10_IS2"
+		(at 114.3 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00aa6ba1-9a1a-4f7b-a2de-85c9e9c542ce")
+	)
+	(wire
+		(pts
+			(xy 109.22 86.36) (xy 114.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f444764-113e-4bd1-af63-0c0306382ec7")
+	)
+	(label "HS10_OUT2"
+		(at 114.3 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9c6c658-2e0d-4d1f-9faa-e2cfcd7d255b")
+	)
+	(sheet
+		(at 76.2 109.22)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cf1760f6-03df-496e-9d18-26867e67a439")
+		(property "Sheetname" "HS10_CH3"
+			(at 76.2 108.5084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 122.5046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 111.76 180)
+			(uuid "46f35809-0c6f-4c22-b618-108a87d32a3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 114.3 180)
+			(uuid "92c86420-5b71-4f7a-85b7-852233892101")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 116.84 180)
+			(uuid "9af73a00-98bf-4f27-8de3-4b4e127cbeac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 119.38 180)
+			(uuid "490d378c-0fa2-44c0-95d8-ef88debee0af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 111.76 0)
+			(uuid "b3673fd8-a9f3-40f4-a67d-99f3ae8cf846")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 114.3 0)
+			(uuid "9e15dee9-8da7-43bf-ad94-5be2bb62bc67")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "26")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 111.76) (xy 71.12 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "311b9faf-0e5a-4474-ba15-c0fad74b2cb8")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ed4aeab-5ffa-4d62-ab71-87e8dee4628d")
+	)
+	(wire
+		(pts
+			(xy 76.2 114.3) (xy 71.12 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0fbc0fc-7a8e-408d-a151-fa2079138a11")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70d3c50e-49b3-4b7c-8625-f101b612a02c")
+	)
+	(wire
+		(pts
+			(xy 76.2 116.84) (xy 71.12 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e5729f5-cfd2-4783-9843-69b6bd4ea44f")
+	)
+	(label "HS10_IN3"
+		(at 71.12 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "13e9e867-ec9f-4c35-99d9-c953bf1ae97e")
+	)
+	(wire
+		(pts
+			(xy 76.2 119.38) (xy 71.12 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1325929-a77e-427a-a047-11b34f76581b")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7a258c60-d746-42ba-af34-0524a1c94e56")
+	)
+	(wire
+		(pts
+			(xy 109.22 111.76) (xy 114.3 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cada3345-1f80-43de-ad0c-54a7c5387e32")
+	)
+	(label "HS10_IS3"
+		(at 114.3 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55bf9a0c-24c2-40b2-8e77-e2f6fddd0d83")
+	)
+	(wire
+		(pts
+			(xy 109.22 114.3) (xy 114.3 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f9d6c6-7c96-4043-afb6-7db9f8a19d68")
+	)
+	(label "HS10_OUT3"
+		(at 114.3 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9a25160-b6f1-48cf-a5eb-e2da17128534")
+	)
+	(sheet
+		(at 76.2 137.16)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c95117b3-a4ad-4ef4-a8aa-cac119e0b6d4")
+		(property "Sheetname" "HS10_CH4"
+			(at 76.2 136.4484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 150.4446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 139.7 180)
+			(uuid "e5c0ebef-77d4-4931-9fc8-d62d3526aa7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 142.24 180)
+			(uuid "73af35d1-50e6-4ef1-b9a7-33ac0137bab8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 144.78 180)
+			(uuid "f78c354b-6103-4562-9e32-a1be2929cdf5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 147.32 180)
+			(uuid "a1ec75d5-c8e5-497a-93ef-36bb0f6577bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 139.7 0)
+			(uuid "ee9856cf-50b6-4a47-b879-e0b2f09c620d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 142.24 0)
+			(uuid "c1efe3a5-810b-4264-8160-18556821c717")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "27")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 139.7) (xy 71.12 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5615db3e-0a23-4f5c-ae38-3b309eaac133")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf3d4791-6b74-415c-956a-b5c11e6d6750")
+	)
+	(wire
+		(pts
+			(xy 76.2 142.24) (xy 71.12 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9343a9a6-38f3-4cff-99d1-ee58588fe3eb")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "733dec41-e558-414c-b6ce-3ce95cdc47bf")
+	)
+	(wire
+		(pts
+			(xy 76.2 144.78) (xy 71.12 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a475f3f-39fb-40c0-a785-6aa81394dc5e")
+	)
+	(label "HS10_IN4"
+		(at 71.12 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "677c7ae8-83e8-480a-b98c-7776e6faa584")
+	)
+	(wire
+		(pts
+			(xy 76.2 147.32) (xy 71.12 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7829bfcb-f938-48f7-b5fb-04e72ccba099")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7be212e9-5136-45b6-9f25-dc7fb38d7ed3")
+	)
+	(wire
+		(pts
+			(xy 109.22 139.7) (xy 114.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2982f0e0-63ed-4507-9160-ffc222efd0db")
+	)
+	(label "HS10_IS4"
+		(at 114.3 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9c7139a-ac9b-4789-b145-9824578c5303")
+	)
+	(wire
+		(pts
+			(xy 109.22 142.24) (xy 114.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a0ee746-9068-475d-80bf-8bc0da133972")
+	)
+	(label "HS10_OUT4"
+		(at 114.3 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "712f24a5-29fa-43b7-a11c-ea484b6d339d")
+	)
+	(sheet
+		(at 76.2 165.1)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "17a7072a-6191-44df-91c4-5446df0165c5")
+		(property "Sheetname" "HS10_CH5"
+			(at 76.2 164.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 167.64 180)
+			(uuid "866a0da9-0823-4c9a-aebc-7b8748fa7af2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 170.18 180)
+			(uuid "12810b0a-8f46-4533-b7cd-cf6e62400759")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 172.72 180)
+			(uuid "c8a92fe3-4173-4d46-a32f-94ac36681b84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 175.26 180)
+			(uuid "b7fa2ba9-afc4-48ee-913c-15f1579b62f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 167.64 0)
+			(uuid "78da08c9-8394-496a-ab5b-6e29fcb330b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 170.18 0)
+			(uuid "f538d66f-dfc3-4bff-8aee-71788ed78bd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "28")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 167.64) (xy 71.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3469e475-0075-44d5-ad5f-8001edaa1da4")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e907cd5d-f706-4f1b-9e85-a9dd3d888412")
+	)
+	(wire
+		(pts
+			(xy 76.2 170.18) (xy 71.12 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b1a80df-f28e-42aa-9ec5-fb5939c6bf78")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72440894-dfdc-43d8-9088-372466ad966b")
+	)
+	(wire
+		(pts
+			(xy 76.2 172.72) (xy 71.12 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc68ab90-2d0f-48b1-b30c-0ca94bca0080")
+	)
+	(label "HS10_IN5"
+		(at 71.12 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "faef9429-ee38-41cc-9e8c-f2014aa6b18a")
+	)
+	(wire
+		(pts
+			(xy 76.2 175.26) (xy 71.12 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4faf4f31-dffb-407f-ad4d-db3af91c492b")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "368cd520-029a-4418-b45f-937749ba4cb5")
+	)
+	(wire
+		(pts
+			(xy 109.22 167.64) (xy 114.3 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a54ad1ee-30dc-4bd7-b752-8fa5bb03acf2")
+	)
+	(label "HS10_IS5"
+		(at 114.3 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfbf4be4-9c49-4ad9-869d-5b8637541196")
+	)
+	(wire
+		(pts
+			(xy 109.22 170.18) (xy 114.3 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90c0fdb-5e0a-463d-a6d6-63fc0766998f")
+	)
+	(label "HS10_OUT5"
+		(at 114.3 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cc5c388-9ba8-4827-a103-fc59774a6f29")
+	)
+	(sheet
+		(at 76.2 193.04)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9749299d-5b30-4207-9e6e-62080497d3c7")
+		(property "Sheetname" "HS10_CH6"
+			(at 76.2 192.3284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 76.2 206.3246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 76.2 195.58 180)
+			(uuid "97619ec5-950f-4baa-9c7e-7f003249bd25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 198.12 180)
+			(uuid "b8a01d73-f795-4757-87b3-3accdb99f102")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 200.66 180)
+			(uuid "495afaff-e74a-4999-ab0d-ee6f028ecf8c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 76.2 203.2 180)
+			(uuid "72c98d1e-43f5-4b09-9c4a-97f804d6262e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 109.22 195.58 0)
+			(uuid "1bf71f77-9265-4aeb-8daa-1ecdfc04509e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 109.22 198.12 0)
+			(uuid "0e211c9a-870c-490d-8a49-d2aef57783b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "29")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 195.58) (xy 71.12 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc004642-88e5-4209-92c2-a6d489bc5c15")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 71.12 195.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f8f1b317-2abc-4f54-aee3-35bc47b05c73")
+	)
+	(wire
+		(pts
+			(xy 76.2 198.12) (xy 71.12 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa38279f-27a3-4374-a98d-b68d2d2808df")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 71.12 198.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d45d7424-d479-45ea-8c21-cb8855c71a5e")
+	)
+	(wire
+		(pts
+			(xy 76.2 200.66) (xy 71.12 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e1cffa-6de8-4af4-bc05-8936b0557489")
+	)
+	(label "HS10_IN6"
+		(at 71.12 200.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21fbbe11-9158-4885-bd3e-490aa4b86f8e")
+	)
+	(wire
+		(pts
+			(xy 76.2 203.2) (xy 71.12 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fadcb6-8eb5-4571-b216-9ff227fa3bdf")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 71.12 203.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d9735783-b39e-486d-8ac2-d6358a618fdb")
+	)
+	(wire
+		(pts
+			(xy 109.22 195.58) (xy 114.3 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb22ceda-c37b-4ca5-83c0-2edd9f5166a0")
+	)
+	(label "HS10_IS6"
+		(at 114.3 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad154f40-5832-4483-b0db-4563c0d6e35f")
+	)
+	(wire
+		(pts
+			(xy 109.22 198.12) (xy 114.3 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c685cda-595a-4ecf-80c5-dadbb3079cd1")
+	)
+	(label "HS10_OUT6"
+		(at 114.3 198.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e86cdaff-e3be-4a6f-8863-82a545ec3fb2")
+	)
+	(sheet
+		(at 228.6 25.4)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "86594b22-d13f-4a7e-be5d-93b55c975533")
+		(property "Sheetname" "HS10_CH7"
+			(at 228.6 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 38.6846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 27.94 180)
+			(uuid "8886f59d-5dcb-4746-9e40-5021753b57de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 30.48 180)
+			(uuid "9a44369b-d37d-4489-8694-df32805c4448")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 33.02 180)
+			(uuid "f63afe39-ef24-4ec2-aeca-c52b0b277612")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 35.56 180)
+			(uuid "7ce0939d-4462-4432-8127-228f3330279b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 27.94 0)
+			(uuid "8331cf6b-473f-4200-91be-83341faada83")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 30.48 0)
+			(uuid "635531f6-31cd-4741-a5a3-779da3b695e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "30")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 27.94) (xy 223.52 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e785cf2f-caba-4666-91ec-67debe79ade0")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c948351f-1b77-4e46-8c37-c71f89727bc6")
+	)
+	(wire
+		(pts
+			(xy 228.6 30.48) (xy 223.52 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2340ce86-e143-4475-8ce9-ff65eca366e5")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "44b12ced-bd93-41ba-850d-8845228b5233")
+	)
+	(wire
+		(pts
+			(xy 228.6 33.02) (xy 223.52 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0768698-1af9-4328-a50d-580f9e3f04ea")
+	)
+	(label "HS10_IN7"
+		(at 223.52 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0605820c-4cbb-4950-bee7-a55591f2bebf")
+	)
+	(wire
+		(pts
+			(xy 228.6 35.56) (xy 223.52 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dea4903-f898-4972-b9dd-73b7a882eee9")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f869d23-5d6a-4f0a-bf75-8686c38ccc78")
+	)
+	(wire
+		(pts
+			(xy 261.62 27.94) (xy 266.7 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53294b37-dfdd-4bb4-bc7c-a365eef2db9c")
+	)
+	(label "HS10_IS7"
+		(at 266.7 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36622ba5-d566-4567-8bf2-32533bfc7441")
+	)
+	(wire
+		(pts
+			(xy 261.62 30.48) (xy 266.7 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ff4931a-3268-4869-98db-65227dc2f3e4")
+	)
+	(label "HS10_OUT7"
+		(at 266.7 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7c690c1-6a5c-4ce9-b9d7-087742376e13")
+	)
+	(sheet
+		(at 228.6 53.34)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f77a91bd-798a-4e3b-a3bf-c23d643f0d38")
+		(property "Sheetname" "HS10_CH8"
+			(at 228.6 52.6284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 66.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 55.88 180)
+			(uuid "b0c2c068-8eb9-4d87-a6e3-f369973ff636")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 58.42 180)
+			(uuid "6b970a87-5659-4522-ab5a-97ecd608d235")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 60.96 180)
+			(uuid "c7e4d43e-b44f-49a6-9aa3-7857ab87cf3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 63.5 180)
+			(uuid "ba1130e8-546f-426c-834d-6bc98ebb2d7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 55.88 0)
+			(uuid "f21a4f8b-a9e2-48bd-8ea8-a6c4b0cef773")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 58.42 0)
+			(uuid "9551a690-19b6-4536-891d-b02ee3975d0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "31")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 55.88) (xy 223.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973216f1-bc05-465f-8b9b-be0316f8f77c")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2dc7d7b4-0999-4b5b-b575-d49d55ec28de")
+	)
+	(wire
+		(pts
+			(xy 228.6 58.42) (xy 223.52 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb2bada4-93ea-4c74-b0b7-750786d2de1f")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "29658125-5b5e-4484-86cc-af73cb7a6497")
+	)
+	(wire
+		(pts
+			(xy 228.6 60.96) (xy 223.52 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "365f7151-edec-453a-8636-806c834b3b27")
+	)
+	(label "HS10_IN8"
+		(at 223.52 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52dad11e-4fd1-4dd2-96f1-fb1136c8b99a")
+	)
+	(wire
+		(pts
+			(xy 228.6 63.5) (xy 223.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47004bfb-9cf4-4018-959c-246236a0178e")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c69af567-1650-4992-8ac6-c73298bb2177")
+	)
+	(wire
+		(pts
+			(xy 261.62 55.88) (xy 266.7 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf4a342-d3c2-42ae-a995-8c7f98ca9634")
+	)
+	(label "HS10_IS8"
+		(at 266.7 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f05eeb3-3913-4f60-8b3f-abdb42e5ac2f")
+	)
+	(wire
+		(pts
+			(xy 261.62 58.42) (xy 266.7 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60ec842d-a427-4b2a-bd2f-118ad462ab05")
+	)
+	(label "HS10_OUT8"
+		(at 266.7 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e2bb7f8-56e9-4da5-97a0-9266218799c2")
+	)
+	(sheet
+		(at 228.6 81.28)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "01266bfe-4bc5-475b-be39-fc4b3c5b3834")
+		(property "Sheetname" "HS10_CH9"
+			(at 228.6 80.5684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 94.5646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 83.82 180)
+			(uuid "eef35b72-3616-4f78-a5c8-ee968225b9d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 86.36 180)
+			(uuid "3d2275d3-4116-4212-be4e-99e73bb86872")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 88.9 180)
+			(uuid "39de741c-1e12-4ba9-b115-14add005bc90")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 91.44 180)
+			(uuid "4e966997-deaa-432a-8045-263175637797")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 83.82 0)
+			(uuid "4a62b50d-dad9-459f-9045-f01e5a160256")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 86.36 0)
+			(uuid "5afeb147-e9db-4e3e-beaa-4130b2bfb847")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "32")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcee0aa2-7af8-4167-ae76-17bcaf81e3ce")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8d87cb60-b6ae-4d61-a092-c872f9ffceec")
+	)
+	(wire
+		(pts
+			(xy 228.6 86.36) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef87e927-28f9-4b73-82b3-1409f8b91fcd")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d8b4b7cd-6e6d-4cf2-a3d6-7763e6c7672c")
+	)
+	(wire
+		(pts
+			(xy 228.6 88.9) (xy 223.52 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cd733e-1fd9-4912-91c2-3f262ce87f53")
+	)
+	(label "HS10_IN9"
+		(at 223.52 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "06863bc5-e11d-4e55-9cc6-1658f3da66ca")
+	)
+	(wire
+		(pts
+			(xy 228.6 91.44) (xy 223.52 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1cc5c30-ccf8-4c30-a299-2b3e64ccf6d7")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c311b3b-3427-4e6b-9dbc-a52dfa42683d")
+	)
+	(wire
+		(pts
+			(xy 261.62 83.82) (xy 266.7 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c7928a-e900-46d3-a41c-52901dde2292")
+	)
+	(label "HS10_IS9"
+		(at 266.7 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1d86940-d08d-48e1-bca0-ff71b17f36ba")
+	)
+	(wire
+		(pts
+			(xy 261.62 86.36) (xy 266.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65098196-4105-486b-9089-dbcdab21b9da")
+	)
+	(label "HS10_OUT9"
+		(at 266.7 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc97382e-71d3-4de0-bec2-5300d1381f2e")
+	)
+	(sheet
+		(at 228.6 109.22)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "53ada8ca-644b-4b01-9df9-79722c062092")
+		(property "Sheetname" "HS10_CH10"
+			(at 228.6 108.5084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 122.5046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 111.76 180)
+			(uuid "f0d32574-8441-4eb9-933b-167287b68e32")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 114.3 180)
+			(uuid "08ea8d47-1119-4d2a-a293-be0e4b1ecf08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 116.84 180)
+			(uuid "8e4b2054-44a8-4dd0-9e23-8b53a6a49911")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 119.38 180)
+			(uuid "79f6af21-8272-4504-a4f4-88c5fca8160b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 111.76 0)
+			(uuid "5b04fcfd-ea2d-4b17-8464-c59512b7ffa8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 114.3 0)
+			(uuid "7aa5d233-d4e0-4aec-90a8-c645e5f6bc84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "33")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 111.76) (xy 223.52 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c433bc-7805-40ec-bbab-8e172306a7d6")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa3f7e7d-f813-4bca-bfc7-5cc241a30bfe")
+	)
+	(wire
+		(pts
+			(xy 228.6 114.3) (xy 223.52 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116e5afa-1f04-4729-9579-cb7ebc67f43c")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ec8a863-545e-4f81-9925-e2e49717eff8")
+	)
+	(wire
+		(pts
+			(xy 228.6 116.84) (xy 223.52 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f9125c3-f4f7-46ae-aa86-446ca8d2aac5")
+	)
+	(label "HS10_IN10"
+		(at 223.52 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d54a4a4f-4143-4aa7-bd6b-c970632b475b")
+	)
+	(wire
+		(pts
+			(xy 228.6 119.38) (xy 223.52 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "942f59a9-8c63-4fdb-994d-768e5a0a902c")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abdfa4f2-258d-476d-8d5f-cb984a9e4975")
+	)
+	(wire
+		(pts
+			(xy 261.62 111.76) (xy 266.7 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf5a578d-98d8-458b-97b9-dac776fa1cfd")
+	)
+	(label "HS10_IS10"
+		(at 266.7 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17f3d162-410a-4d22-8a1e-e0251c7b1ab8")
+	)
+	(wire
+		(pts
+			(xy 261.62 114.3) (xy 266.7 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d9d6d89-4a67-4740-bd28-e77c116e2b5a")
+	)
+	(label "HS10_OUT10"
+		(at 266.7 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14689a8f-e6e0-4ef4-a67d-d3032a77a2af")
+	)
+	(sheet
+		(at 228.6 137.16)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "29e44198-b0ad-4898-8858-9506cb9ade40")
+		(property "Sheetname" "HS10_CH11"
+			(at 228.6 136.4484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 150.4446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 139.7 180)
+			(uuid "1d50e7df-e8fa-4e59-885f-1a3aa723a080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 142.24 180)
+			(uuid "a9781701-41f5-44f6-8eb3-f2ef44f2131e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 144.78 180)
+			(uuid "b279cb15-80d2-4952-8de7-3f7f52f4d565")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 147.32 180)
+			(uuid "3fc8cdda-1443-4804-8824-0763e4c00862")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 139.7 0)
+			(uuid "1fb9e480-b74f-4101-8137-9896a2b669d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 142.24 0)
+			(uuid "83c7ea09-a969-4e38-87a4-2795e69381d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "34")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 139.7) (xy 223.52 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff3c029-1ec2-4357-8aed-17a568488717")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3661ce3f-23e0-4623-b04a-8c8f8b94fc4f")
+	)
+	(wire
+		(pts
+			(xy 228.6 142.24) (xy 223.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c5a2bc-b19b-4a6f-9a39-46abe5bec100")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "08dba7ee-aeeb-4980-a1a6-6c53ed1e92a7")
+	)
+	(wire
+		(pts
+			(xy 228.6 144.78) (xy 223.52 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c09b5809-736f-4a97-acfd-0509155d3256")
+	)
+	(label "HS10_IN11"
+		(at 223.52 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "176bee3a-b866-4c0f-a14c-b439cd8129fe")
+	)
+	(wire
+		(pts
+			(xy 228.6 147.32) (xy 223.52 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aad85aa6-d2da-4267-bf2a-5842c16610ec")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4666216d-fe81-403f-a796-4cdae33e5c6a")
+	)
+	(wire
+		(pts
+			(xy 261.62 139.7) (xy 266.7 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c247e008-6d74-4fd7-8b45-cf8317bad4b2")
+	)
+	(label "HS10_IS11"
+		(at 266.7 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49440496-597c-47fb-9477-9f3bbd2148bf")
+	)
+	(wire
+		(pts
+			(xy 261.62 142.24) (xy 266.7 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05d9c26-87e4-4e66-b31b-04d6d410039a")
+	)
+	(label "HS10_OUT11"
+		(at 266.7 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5125937a-d4ef-4839-844c-483c4840c959")
+	)
+	(sheet
+		(at 228.6 165.1)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a1ec557c-67fa-46a3-8bda-9863f311139d")
+		(property "Sheetname" "HS10_CH12"
+			(at 228.6 164.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 167.64 180)
+			(uuid "749dda82-9901-4f8b-a3fb-bd10b316c97e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 170.18 180)
+			(uuid "5b5daa76-1371-4ead-8516-e93452759e74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 172.72 180)
+			(uuid "82d2b7d3-edd2-40a0-bc69-6db5a81ea909")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 175.26 180)
+			(uuid "7718ba96-7f56-4276-a15d-24f7a468dfa0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 167.64 0)
+			(uuid "07da3c32-bbca-4b19-9105-e5987a53da9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 170.18 0)
+			(uuid "54f76c02-7682-46a4-bf4c-a772264c5c29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "35")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 167.64) (xy 223.52 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3376e08-5423-409f-b4c4-66b8116c96c5")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a80949f-e648-4f5c-ad13-e7eebdd2bd5b")
+	)
+	(wire
+		(pts
+			(xy 228.6 170.18) (xy 223.52 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3fe158a-16c1-489a-865f-152f88c90cde")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2ee588a-14c4-4bf2-b810-9e73cee14cd7")
+	)
+	(wire
+		(pts
+			(xy 228.6 172.72) (xy 223.52 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d31dd005-d1da-43d5-8c94-d1491ccdd508")
+	)
+	(label "HS10_IN12"
+		(at 223.52 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92578b03-067f-4670-bd49-d3215ee779ff")
+	)
+	(wire
+		(pts
+			(xy 228.6 175.26) (xy 223.52 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f963af3-6a51-4a75-84d8-e3d57f6def47")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88d7539b-9608-4641-907b-bee8a3d21bd6")
+	)
+	(wire
+		(pts
+			(xy 261.62 167.64) (xy 266.7 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fcf1cda-a1ce-4cf7-b549-2dd43be79dca")
+	)
+	(label "HS10_IS12"
+		(at 266.7 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30a00161-4d76-461b-b158-459999e6f69d")
+	)
+	(wire
+		(pts
+			(xy 261.62 170.18) (xy 266.7 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e5ee58-ff16-4de9-8898-f79eb4ec3339")
+	)
+	(label "HS10_OUT12"
+		(at 266.7 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c81c2245-0a8a-459d-9faf-b4cec7613403")
+	)
+	(sheet
+		(at 228.6 193.04)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "10d996d0-aded-4cc0-9dbf-db87c63870e2")
+		(property "Sheetname" "HS10_CH13"
+			(at 228.6 192.3284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS10_CHANNEL.kicad_sch"
+			(at 228.6 206.3246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 228.6 195.58 180)
+			(uuid "fd61870c-175c-4fc4-b213-f505b253cc2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 228.6 198.12 180)
+			(uuid "538169d5-a147-4e80-b1de-3ae5c04e8d92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 228.6 200.66 180)
+			(uuid "73f3f7fe-9ae0-4738-9991-22f056af9951")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 228.6 203.2 180)
+			(uuid "3b2bcf0c-a6ea-4e6c-add4-e1e6c8b5ae11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 261.62 195.58 0)
+			(uuid "b2fb88c2-4f4f-42e8-86fa-33ec51ae6886")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 261.62 198.12 0)
+			(uuid "2eea80c1-76cd-448c-81fc-da21c80c6117")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/e7ff53c7-1e8c-44ed-b754-b403337d43ca"
+					(page "36")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 195.58) (xy 223.52 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c230408-fcc7-4110-978a-3ca3559acb75")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 223.52 195.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e15cb67-3840-444f-aadf-045239a05cba")
+	)
+	(wire
+		(pts
+			(xy 228.6 198.12) (xy 223.52 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e757a2e2-6756-4cc2-bc3b-0b9264ab2d94")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 223.52 198.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0cffcbbb-ffc1-489f-bcd4-84c35ff44e81")
+	)
+	(wire
+		(pts
+			(xy 228.6 200.66) (xy 223.52 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b03dee7-69a8-45c7-9f4e-185f535c36ef")
+	)
+	(label "HS10_IN13"
+		(at 223.52 200.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd0f817e-5f08-4ce3-b776-50b3f3666fc1")
+	)
+	(wire
+		(pts
+			(xy 228.6 203.2) (xy 223.52 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0196d6ac-746c-43b6-a662-fccb60e27a0c")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape input)
+		(at 223.52 203.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d85d1d48-afc8-4b25-a7d4-f654f2f93992")
+	)
+	(wire
+		(pts
+			(xy 261.62 195.58) (xy 266.7 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa83bf5-f44e-45fb-8521-5751488cdc3e")
+	)
+	(label "HS10_IS13"
+		(at 266.7 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72502413-8fa8-4b35-b55b-591aa1915257")
+	)
+	(wire
+		(pts
+			(xy 261.62 198.12) (xy 266.7 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a62c58-b515-4f14-b3e3-37cc2e71edca")
+	)
+	(label "HS10_OUT13"
+		(at 266.7 198.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "accd2c88-4b4c-40ee-b8ad-c9ca36a03a3c")
+	)
+	(bus
+		(pts
+			(xy 55.88 236.22) (xy 50.8 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f5efbef-c6f7-462d-8b98-9a0ff33bd521")
+	)
+	(hierarchical_label "HS10_IN[0..13]"
+		(shape input)
+		(at 50.8 236.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d8e5db3-7c4f-4a03-803f-34503294f24f")
+	)
+	(bus
+		(pts
+			(xy 312.42 236.22) (xy 317.5 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "476962fc-bc3b-4524-8697-427d67239b5a")
+	)
+	(hierarchical_label "HS10_IS[0..13]"
+		(shape output)
+		(at 317.5 236.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aa296848-ed00-4b60-b0ee-ed42317c9f64")
+	)
+	(bus
+		(pts
+			(xy 312.42 241.3) (xy 317.5 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ce25c69-e2d2-410e-86e8-fe21fb732541")
+	)
+	(hierarchical_label "HS10_OUT[0..13]"
+		(shape output)
+		(at 317.5 241.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "648fc878-7db8-4f2e-92ff-d9593c198b3f")
+	)
+	(text "HIGH-SIDE STANDART - 14 kanal ~10 A\nKanal devresi HS10_CHANNEL.kicad_sch icinde (14 ornek)."
+		(exclude_from_sim no)
+		(at 20.32 256.54 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "b53669ee-b5a4-4ebe-8f9a-1e4666ff3be2")
+	)
 )

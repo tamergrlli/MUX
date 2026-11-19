@@ -1,0 +1,67 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "15fb2f85-a397-4e50-ab7b-ea1655f4d42a")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ba1b9a9-e92b-4312-936d-40074a0f383a")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f7890c2-2a01-4f8c-981d-383594991256")
+	)
+	(hierarchical_label "PROT"
+		(shape bidirectional)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7e4858f4-9cde-4ec3-9331-b5e20a6d4b55")
+	)
+	(hierarchical_label "ADC"
+		(shape output)
+		(at 203.2 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "26df476f-8b8c-4aed-8110-f562b177a39c")
+	)
+	(text "GIRIS KANALI SABLONU (evrensel)\nINPUT_CONDITIONING icinde 22 kez kullanilir (IN_CH0..21).\nIN (konnektor) -> clamp/ESD -> PROT dugumu (pull-up/down buraya) -> bolucu (0-5 / 0-36 V) -> RC -> ADC"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "801d4bbc-1a47-4ad2-89a2-42fe69319725")
+	)
+)

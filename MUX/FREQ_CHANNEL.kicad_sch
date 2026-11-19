@@ -1,0 +1,55 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2b0fce8e-01c0-4f09-b662-2e00ceedd2e1")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e24cc646-ac87-4f7c-9520-2abdb86adffa")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00ece59a-fc98-4c06-85e8-ab553efb0508")
+	)
+	(hierarchical_label "FREQ"
+		(shape output)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4236c637-c5ae-4fb1-8f69-7fc8c69405d4")
+	)
+	(text "FREKANS KANAL SABLONU\nINPUT_FREQ icinde 4 kez kullanilir.\nIN_PROT -> Schmitt/komparator -> timer capture"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "702dcb42-0f0a-4f40-8630-3bff2d933b34")
+	)
+)

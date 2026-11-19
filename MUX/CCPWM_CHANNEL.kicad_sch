@@ -1,0 +1,79 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "774f8a8b-c130-4ebd-8186-a73ba3a1e389")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 76.2 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1275eecb-1f3b-44ac-8c00-050c0051ba28")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 76.2 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da01eec2-6979-4ee5-b91a-fe200ecc32c8")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 76.2 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a51a144d-31b8-41d5-8329-dfb07a1d0010")
+	)
+	(hierarchical_label "ISENSE"
+		(shape output)
+		(at 203.2 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "382590a3-381f-47b6-a6c2-f257c8817b9f")
+	)
+	(hierarchical_label "OUT"
+		(shape output)
+		(at 203.2 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22e5dc80-cfbb-46e5-a672-124fbb82aad0")
+	)
+	(text "AKIM KONTROLLU PWM KANAL SABLONU\nCURRENT_CONTROLLED_PWM icinde 2 kez kullanilir.\nAday: MOSFET + shunt + INA181 (kontrol dongusu MCU'da) veya TLE7242-2G\nIN: PWM (timer), ISENSE: akim olcumu -> ADC, OUT: oransal valf"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "236988bf-edcb-492a-a152-b0ce8ee84de0")
+	)
+)

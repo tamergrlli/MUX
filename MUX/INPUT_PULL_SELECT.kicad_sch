@@ -1,0 +1,3863 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "daeaf3b6-fa38-442b-b55a-560eeb5a0c9d")
+	(paper "A3")
+	(lib_symbols)
+	(sheet
+		(at 76.2 25.4)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7ed51e84-fe9e-46b7-bb3d-558543a9da59")
+		(property "Sheetname" "PULL_CH0"
+			(at 76.2 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 36.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 27.94 180)
+			(uuid "dae9d0c1-7ae5-454b-ac00-4157f83cd95a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 30.48 180)
+			(uuid "49d83e4c-f199-4cfe-a787-115266e8d7b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 33.02 180)
+			(uuid "e4e34b78-1330-4f10-9d6b-5a42240d14ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 27.94 0)
+			(uuid "c0bfa87e-3bbe-40ca-b8e5-f9f8e749c623")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "64")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 27.94) (xy 71.12 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca32c2c1-9ad8-4ad1-b7a1-482a97b21071")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d14208bf-ac1d-48cd-ac25-61d32cb368c4")
+	)
+	(wire
+		(pts
+			(xy 76.2 30.48) (xy 71.12 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74e2ed1e-3f44-4a1c-8b55-73fd8eeb6396")
+	)
+	(label "PU_EN0"
+		(at 71.12 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53064673-c5e4-4ca5-b03d-cf14accc9673")
+	)
+	(wire
+		(pts
+			(xy 76.2 33.02) (xy 71.12 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8044d246-eba8-4413-b8d1-837c9da1ae44")
+	)
+	(label "PD_EN0"
+		(at 71.12 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eeb4f06f-4d8a-4e94-8f3c-a69e19ab73c2")
+	)
+	(wire
+		(pts
+			(xy 109.22 27.94) (xy 114.3 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f46cd0fe-5e9b-4525-8210-5622d93ad459")
+	)
+	(label "IN_PROT0"
+		(at 114.3 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5393131-29e8-4c20-8fe7-3884cabe39d8")
+	)
+	(sheet
+		(at 76.2 43.18)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "48ea835f-b1d7-4405-974d-04004f01aab1")
+		(property "Sheetname" "PULL_CH1"
+			(at 76.2 42.4684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 53.9246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 45.72 180)
+			(uuid "466ab79d-d65c-4bb2-902e-d38d9f269ab9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 48.26 180)
+			(uuid "87f2c541-f46c-4ff1-96d2-978c79e32806")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 50.8 180)
+			(uuid "f5d55d7c-8813-4343-973f-c23f5fdb1664")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 45.72 0)
+			(uuid "c6a6e904-b0a7-4d78-bc42-c506ed2a3538")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "65")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 45.72) (xy 71.12 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2769d1b6-6217-43cd-bcfc-fb5c44df0536")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e238d183-ee84-475a-89aa-508c77658718")
+	)
+	(wire
+		(pts
+			(xy 76.2 48.26) (xy 71.12 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b0abd5-479a-4bb7-8965-8eee5383aaee")
+	)
+	(label "PU_EN1"
+		(at 71.12 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61d9d08c-bbc9-478c-88d6-82c6d8721e11")
+	)
+	(wire
+		(pts
+			(xy 76.2 50.8) (xy 71.12 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcf90d75-e382-4252-b939-8c1a1ffb29d4")
+	)
+	(label "PD_EN1"
+		(at 71.12 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "13a86603-db6e-44ac-a709-61026dc97eb2")
+	)
+	(wire
+		(pts
+			(xy 109.22 45.72) (xy 114.3 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a01c9c2-e2eb-4891-ba20-297f09be59e2")
+	)
+	(label "IN_PROT1"
+		(at 114.3 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "942b2fa3-1473-4ab1-addd-93a30667d17c")
+	)
+	(sheet
+		(at 76.2 60.96)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "78b5b04b-6a52-4c19-8b0a-8cc272fa7e7f")
+		(property "Sheetname" "PULL_CH2"
+			(at 76.2 60.2484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 63.5 180)
+			(uuid "63ee2d12-4143-435e-820c-e1a79a0b0548")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 66.04 180)
+			(uuid "f8fd42c1-de62-449f-9980-1469d83ecd5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 68.58 180)
+			(uuid "7cbd2723-6c7b-4038-ad0f-ebc7a05b9beb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 63.5 0)
+			(uuid "a28e17f9-f602-4bc1-bf05-27a7ad35924f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "66")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 63.5) (xy 71.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca15d36f-9e04-4665-a3f6-9c35bc384a4a")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ccb675ff-00e8-42d2-b596-15f5dae61007")
+	)
+	(wire
+		(pts
+			(xy 76.2 66.04) (xy 71.12 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517fce8b-a93a-4174-8986-b7060e35c618")
+	)
+	(label "PU_EN2"
+		(at 71.12 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d606a20e-a056-4b38-b304-cd2bab3eeadc")
+	)
+	(wire
+		(pts
+			(xy 76.2 68.58) (xy 71.12 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28497ab4-13c6-48dc-a3db-1622272f5d72")
+	)
+	(label "PD_EN2"
+		(at 71.12 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f71deaa9-8601-43a8-afca-57845037df02")
+	)
+	(wire
+		(pts
+			(xy 109.22 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a1e698-9d68-4d4d-a790-0914a82e7f2c")
+	)
+	(label "IN_PROT2"
+		(at 114.3 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1962b4d-487a-438c-b45d-9e85af1480b6")
+	)
+	(sheet
+		(at 76.2 78.74)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0631421c-0e76-4008-bc15-8eeafb9be108")
+		(property "Sheetname" "PULL_CH3"
+			(at 76.2 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 81.28 180)
+			(uuid "8017fced-5bc9-4e2d-ae06-97b29f2102d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 83.82 180)
+			(uuid "f543c4b7-8e6b-4f26-ad5c-c9eca4351596")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 86.36 180)
+			(uuid "79b21665-c50e-46da-9f94-5b403772a50f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 81.28 0)
+			(uuid "cd5b79d3-c2f3-4902-80da-6a5c994fff3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "67")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 81.28) (xy 71.12 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d5ae82b-294b-4add-96b3-d32ed40c60e3")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb643212-b928-4141-a6cf-461a0650b567")
+	)
+	(wire
+		(pts
+			(xy 76.2 83.82) (xy 71.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bd2c5d9-d5b0-4728-b308-3932175a466e")
+	)
+	(label "PU_EN3"
+		(at 71.12 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d81dc6f5-2c7d-4e9c-abd1-27cadfd8ae26")
+	)
+	(wire
+		(pts
+			(xy 76.2 86.36) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1daee206-5bbf-4567-be8a-acd0bcb88521")
+	)
+	(label "PD_EN3"
+		(at 71.12 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "de968242-25f6-44d5-8dbb-0e9c41a288e7")
+	)
+	(wire
+		(pts
+			(xy 109.22 81.28) (xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786718bc-3c7f-42b1-8556-cb5b43cc1c05")
+	)
+	(label "IN_PROT3"
+		(at 114.3 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "438de72e-0c95-4818-9d52-7c45e5fdc20f")
+	)
+	(sheet
+		(at 76.2 96.52)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c68c2273-2410-46f8-8e71-e565722bad97")
+		(property "Sheetname" "PULL_CH4"
+			(at 76.2 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 107.2646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 99.06 180)
+			(uuid "47a8a31c-f2a7-44e2-aeee-619b3ee0a54a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 101.6 180)
+			(uuid "caa8d46b-71b7-4f00-b45e-947adf9ffb81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 104.14 180)
+			(uuid "71db1bc7-d00a-4279-a537-499bd89a2fea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 99.06 0)
+			(uuid "6d74b570-90b0-4342-b49d-85f29f7fd257")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "68")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 99.06) (xy 71.12 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d4b5dc6-5710-4c33-bff1-e7df2b5d85d7")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7c2d278-9edf-48f9-bbd2-7546819286b1")
+	)
+	(wire
+		(pts
+			(xy 76.2 101.6) (xy 71.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe3490d8-99f4-43e7-879e-411c77b3826f")
+	)
+	(label "PU_EN4"
+		(at 71.12 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c833a483-77f4-433f-8b88-775225c50b56")
+	)
+	(wire
+		(pts
+			(xy 76.2 104.14) (xy 71.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "009021e3-d1b0-4da7-a520-a878970aa1d9")
+	)
+	(label "PD_EN4"
+		(at 71.12 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08092d4d-db27-4bed-a6dd-b7dcd0340b58")
+	)
+	(wire
+		(pts
+			(xy 109.22 99.06) (xy 114.3 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6b7963-ea70-4cde-814e-7e99f83841d4")
+	)
+	(label "IN_PROT4"
+		(at 114.3 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "434a6efd-3561-4b4c-afee-0bbbba1452e7")
+	)
+	(sheet
+		(at 76.2 114.3)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "75bfa0ac-6696-420b-a15f-4a2089c12a47")
+		(property "Sheetname" "PULL_CH5"
+			(at 76.2 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 116.84 180)
+			(uuid "5c86b77c-bb96-42e1-aeaa-b6dab4eab5c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 119.38 180)
+			(uuid "d088f43b-5800-45f2-bda3-f1215d535171")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 121.92 180)
+			(uuid "880823ad-790e-423d-aba6-bb0369d225ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 116.84 0)
+			(uuid "14fb733c-e707-4f79-9fd7-d40e39b98525")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "69")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 116.84) (xy 71.12 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bffdb7a4-f5ab-4720-8e03-d9e28955dc29")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "baffbf4b-0cef-4310-8421-07c0ae8de670")
+	)
+	(wire
+		(pts
+			(xy 76.2 119.38) (xy 71.12 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9213542f-b0c3-41bd-9774-9d6b1f652675")
+	)
+	(label "PU_EN5"
+		(at 71.12 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fda6ee5e-81de-4116-9cdb-9b149799d800")
+	)
+	(wire
+		(pts
+			(xy 76.2 121.92) (xy 71.12 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e93827-4b33-43c5-8265-bbd129b2e49e")
+	)
+	(label "PD_EN5"
+		(at 71.12 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bfef9fd-1008-4e6b-afa5-8250e5cf6663")
+	)
+	(wire
+		(pts
+			(xy 109.22 116.84) (xy 114.3 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c33863f-2323-4fc2-9254-5cdb8746cb51")
+	)
+	(label "IN_PROT5"
+		(at 114.3 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fb1506f-aaf1-42dc-929a-d80db0575676")
+	)
+	(sheet
+		(at 76.2 132.08)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bb9ee271-18ce-4b38-b5ab-27ab2aee84ec")
+		(property "Sheetname" "PULL_CH6"
+			(at 76.2 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 142.8246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 134.62 180)
+			(uuid "632cbabe-77b8-4323-a4a7-912d8d061567")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 137.16 180)
+			(uuid "27c62a41-d5ab-41e1-b30b-7b89e9130631")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 139.7 180)
+			(uuid "dbace8cb-3927-4891-9c40-0adc76f8ccca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 134.62 0)
+			(uuid "4e66326d-4a3a-423b-b411-8cafe41ab3b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "70")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 134.62) (xy 71.12 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a72c12f0-6bd8-4408-a645-42be59dce034")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "22a56470-7671-40e5-a2f2-ab0e7035fa83")
+	)
+	(wire
+		(pts
+			(xy 76.2 137.16) (xy 71.12 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "414a6ce6-8a28-48bf-868d-5a750277d4f0")
+	)
+	(label "PU_EN6"
+		(at 71.12 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c001dc0f-ab6f-4fc1-9799-d33c9629ace8")
+	)
+	(wire
+		(pts
+			(xy 76.2 139.7) (xy 71.12 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "033f1690-90f7-4d56-ba68-92968d62da2f")
+	)
+	(label "PD_EN6"
+		(at 71.12 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1eee213a-9cf4-4a06-973e-1d6a545f7694")
+	)
+	(wire
+		(pts
+			(xy 109.22 134.62) (xy 114.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004e40c3-a77a-40e9-afed-75ebc87f4c2f")
+	)
+	(label "IN_PROT6"
+		(at 114.3 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a17aab71-ad4b-45b8-8144-8a3690f11f55")
+	)
+	(sheet
+		(at 76.2 149.86)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "85653361-f99f-495d-88e9-32645af23508")
+		(property "Sheetname" "PULL_CH7"
+			(at 76.2 149.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 160.6046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 152.4 180)
+			(uuid "b9b748b3-cde6-424d-880a-c44cebc34adc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 154.94 180)
+			(uuid "9df2112a-45a2-48ac-97a3-4e15432af7d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 157.48 180)
+			(uuid "4daf0558-3046-4bb5-a315-08b52238cd89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 152.4 0)
+			(uuid "e384ea60-fe6e-419b-a966-9e99f3fb460b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "71")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 152.4) (xy 71.12 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f4568f-ca68-4ebe-848e-c5928a456d77")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "37eb603f-a09e-43a6-b00f-7bc16058635b")
+	)
+	(wire
+		(pts
+			(xy 76.2 154.94) (xy 71.12 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25799bd2-dd40-45b5-8f5f-d590c08de0f8")
+	)
+	(label "PU_EN7"
+		(at 71.12 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2e7a0b57-6367-4a71-896a-c82fcfa63864")
+	)
+	(wire
+		(pts
+			(xy 76.2 157.48) (xy 71.12 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36f4a14-63a0-4d00-adb4-0254a92ee74d")
+	)
+	(label "PD_EN7"
+		(at 71.12 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c7a39910-a2d8-4c40-a36b-a7bf41ab1fd9")
+	)
+	(wire
+		(pts
+			(xy 109.22 152.4) (xy 114.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca45c20-2160-4f87-987e-34f90c935173")
+	)
+	(label "IN_PROT7"
+		(at 114.3 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca8259e8-055e-4431-ac3d-b3c0b27c06b5")
+	)
+	(sheet
+		(at 76.2 167.64)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e94e082c-5010-43bd-ab79-6713f4bdf9f6")
+		(property "Sheetname" "PULL_CH8"
+			(at 76.2 166.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 170.18 180)
+			(uuid "4682250e-4e53-4aac-9dae-0d780460dd0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 172.72 180)
+			(uuid "614f3e42-d4aa-451b-a1c8-d85b9d3cd64a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 175.26 180)
+			(uuid "ab42c882-b7c0-484b-aecc-a71cbab5a3ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 170.18 0)
+			(uuid "2d7559dd-0631-4da7-85b0-c3050f171881")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "72")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 170.18) (xy 71.12 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa87962-c6a2-4292-8930-a3702c22140f")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "baaf3ab4-33b7-4994-8d19-4307b2fb26ae")
+	)
+	(wire
+		(pts
+			(xy 76.2 172.72) (xy 71.12 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6dbeda0-4528-45c4-9fc2-e68b77760e86")
+	)
+	(label "PU_EN8"
+		(at 71.12 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3673a8f7-c7e5-45c9-9516-6c701316e787")
+	)
+	(wire
+		(pts
+			(xy 76.2 175.26) (xy 71.12 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de596e2-0745-4e0f-856b-402c56720533")
+	)
+	(label "PD_EN8"
+		(at 71.12 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da184ac5-d0a7-4812-a1b8-965a033214b6")
+	)
+	(wire
+		(pts
+			(xy 109.22 170.18) (xy 114.3 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04185f2-dc29-4106-87bf-942eaf2192ab")
+	)
+	(label "IN_PROT8"
+		(at 114.3 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9325ec3-503d-4890-bd18-fd8c024c6967")
+	)
+	(sheet
+		(at 76.2 185.42)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3de6c242-06e6-413e-a3ec-b9a6a984b49f")
+		(property "Sheetname" "PULL_CH9"
+			(at 76.2 184.7084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 196.1646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 187.96 180)
+			(uuid "f24413e4-aaab-4775-89ca-493fc5729019")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 190.5 180)
+			(uuid "70d98f2b-bf07-49bc-bafc-c2dc0911a24a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 193.04 180)
+			(uuid "fe05b1cb-8908-40c2-b5b3-9bc0c879d6c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 187.96 0)
+			(uuid "7f9e42c0-4712-4f53-8c93-77448198c48f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "73")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 187.96) (xy 71.12 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f772721-179b-4a9e-888b-7ea434c43b72")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "43655fc6-5ed5-4cab-ac0a-98326db4a432")
+	)
+	(wire
+		(pts
+			(xy 76.2 190.5) (xy 71.12 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd062e61-2b41-4028-ba8e-01cd13c70723")
+	)
+	(label "PU_EN9"
+		(at 71.12 190.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "861e63cd-cd36-4ef4-9db5-6d7dd3079a4e")
+	)
+	(wire
+		(pts
+			(xy 76.2 193.04) (xy 71.12 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ca2337-9cf8-4be3-9b63-11d7616d8f8c")
+	)
+	(label "PD_EN9"
+		(at 71.12 193.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "68ef92a7-a293-4c58-95eb-ad69eb51b4c9")
+	)
+	(wire
+		(pts
+			(xy 109.22 187.96) (xy 114.3 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fe723e-8446-4bf6-90d8-c82253a77f25")
+	)
+	(label "IN_PROT9"
+		(at 114.3 187.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7e6ffcf-cd11-4a88-8c7e-78192a4839d6")
+	)
+	(sheet
+		(at 76.2 203.2)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "94c6beb0-4c23-48de-b3e3-444313cbea40")
+		(property "Sheetname" "PULL_CH10"
+			(at 76.2 202.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 76.2 213.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 76.2 205.74 180)
+			(uuid "96f9376e-0019-403d-a830-9d9b96db02c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 76.2 208.28 180)
+			(uuid "780497ce-8bd5-4302-bd8e-71f73413644c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 76.2 210.82 180)
+			(uuid "ffa206c0-40a6-4eb4-ade0-874be2334a41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 109.22 205.74 0)
+			(uuid "de8c5ede-6345-42eb-9191-38659d19ab8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "74")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 205.74) (xy 71.12 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee33050-2040-4ab2-b275-7cb8d3b0f79b")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 71.12 205.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86593995-5d97-4d65-a3e3-f74b1c049c4e")
+	)
+	(wire
+		(pts
+			(xy 76.2 208.28) (xy 71.12 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2331d2c7-d6c0-461e-b7b6-59f875f189a8")
+	)
+	(label "PU_EN10"
+		(at 71.12 208.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7401b3c9-4f8b-48ea-b9f3-0a613346dba6")
+	)
+	(wire
+		(pts
+			(xy 76.2 210.82) (xy 71.12 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f0957b-fcf5-4c9f-b66e-d66c4a093d34")
+	)
+	(label "PD_EN10"
+		(at 71.12 210.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c26a06df-0735-434c-b2df-31bc86568252")
+	)
+	(wire
+		(pts
+			(xy 109.22 205.74) (xy 114.3 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bd52aac-5fb2-4db8-8a38-392dafa337fb")
+	)
+	(label "IN_PROT10"
+		(at 114.3 205.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a04d8004-eb27-495c-9f6f-b92b275c9a23")
+	)
+	(sheet
+		(at 228.6 25.4)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bea15c7a-4069-4d9b-8a2f-a03cb7f5da21")
+		(property "Sheetname" "PULL_CH11"
+			(at 228.6 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 36.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 27.94 180)
+			(uuid "f81f6e9a-10ea-41b2-99c0-8333bb0e909d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 30.48 180)
+			(uuid "615fac1e-016d-480a-85c3-e8134ade7cf2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 33.02 180)
+			(uuid "bdfd27cc-483e-4508-b850-f569151d872b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 27.94 0)
+			(uuid "858ffb3a-1706-4bc1-ad66-0daf75ca233e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "75")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 27.94) (xy 223.52 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a19b7930-45de-423b-937a-fed1ae17587f")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "654fa57d-43cf-4e2f-93b1-101521f3405e")
+	)
+	(wire
+		(pts
+			(xy 228.6 30.48) (xy 223.52 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2bf6fc-6f4f-453c-8b54-d2e44e79b779")
+	)
+	(label "PU_EN11"
+		(at 223.52 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d54389b-9500-4f7a-82eb-778ad25b86cd")
+	)
+	(wire
+		(pts
+			(xy 228.6 33.02) (xy 223.52 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1127deb-b2a8-45aa-9325-44a55fdf2fde")
+	)
+	(label "PD_EN11"
+		(at 223.52 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e62bd07e-713e-418c-bcd1-cd43d1239633")
+	)
+	(wire
+		(pts
+			(xy 261.62 27.94) (xy 266.7 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435afba8-222c-430c-8979-78de0c8811c9")
+	)
+	(label "IN_PROT11"
+		(at 266.7 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "848336ad-cc90-4474-aab5-1207b2dd6760")
+	)
+	(sheet
+		(at 228.6 43.18)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b29abd0b-124d-4bb0-90d3-c4475b764448")
+		(property "Sheetname" "PULL_CH12"
+			(at 228.6 42.4684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 53.9246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 45.72 180)
+			(uuid "1b939aff-0efa-434d-b167-8191ece27621")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 48.26 180)
+			(uuid "e9c9e5b5-049c-4a58-8139-6853ca6a707d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 50.8 180)
+			(uuid "3b811032-1f32-4195-a4ac-a868ab1fdee3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 45.72 0)
+			(uuid "b060ef3d-5707-48f0-9fea-e614e4b4dfd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "76")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 45.72) (xy 223.52 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6fbbc3-3683-4d8e-bdec-31f1286dd407")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4f574311-4c20-4380-a147-ebf17ad33e4f")
+	)
+	(wire
+		(pts
+			(xy 228.6 48.26) (xy 223.52 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de4cc43a-4dc5-4989-860c-6afd3d1ddea7")
+	)
+	(label "PU_EN12"
+		(at 223.52 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5340ace-7245-4834-8e14-0cb7b55896bd")
+	)
+	(wire
+		(pts
+			(xy 228.6 50.8) (xy 223.52 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ce6e81-bcdf-407d-a717-0c8cd2bf2a63")
+	)
+	(label "PD_EN12"
+		(at 223.52 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7765f6a-5d3c-44ff-ab79-68b3f257a587")
+	)
+	(wire
+		(pts
+			(xy 261.62 45.72) (xy 266.7 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a927b7-9e25-4c29-b0d9-2c63ff3fd87b")
+	)
+	(label "IN_PROT12"
+		(at 266.7 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca0e4d76-2afb-4ebc-98b1-0d1a8aeb1ebd")
+	)
+	(sheet
+		(at 228.6 60.96)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c993f7cf-bda1-408e-9da0-11ed06f53489")
+		(property "Sheetname" "PULL_CH13"
+			(at 228.6 60.2484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 63.5 180)
+			(uuid "44ced426-5e08-4541-985a-48dbb921244e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 66.04 180)
+			(uuid "12c78831-06c3-4586-8c93-de2f47e49592")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 68.58 180)
+			(uuid "915ed844-fff2-48fa-bfe6-169daffde58c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 63.5 0)
+			(uuid "315f107c-3e6a-446b-b07f-3b8f2dbc6642")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "77")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 63.5) (xy 223.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f117813-092d-4995-ab6d-35e0b15d02f3")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "43770b47-9384-481c-868c-a0e866fd1f2a")
+	)
+	(wire
+		(pts
+			(xy 228.6 66.04) (xy 223.52 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b77203-60d4-4091-9e47-f9d8b5d41205")
+	)
+	(label "PU_EN13"
+		(at 223.52 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f55814c-ccf3-4026-a2a1-55907350fa38")
+	)
+	(wire
+		(pts
+			(xy 228.6 68.58) (xy 223.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e83eb6-5403-4f55-89f8-b6a5e2ce12d4")
+	)
+	(label "PD_EN13"
+		(at 223.52 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0ad5156-ac3a-4169-93fe-1b15638b8241")
+	)
+	(wire
+		(pts
+			(xy 261.62 63.5) (xy 266.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e12cbf84-a0f8-4a26-8808-3e18d4835b3b")
+	)
+	(label "IN_PROT13"
+		(at 266.7 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbd39ad3-0755-4441-8338-a4ed71702289")
+	)
+	(sheet
+		(at 228.6 78.74)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6a846640-3c8a-455b-8467-885f0ac1583c")
+		(property "Sheetname" "PULL_CH14"
+			(at 228.6 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 81.28 180)
+			(uuid "5f1fbae8-7509-4b3b-b062-2c77747b87e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 83.82 180)
+			(uuid "18a93e09-2b2d-4f7c-b878-aa08de5fbc02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 86.36 180)
+			(uuid "159e56cd-e1a2-4bfd-8acb-e9d739fbd9cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 81.28 0)
+			(uuid "b9fe2bfd-6813-4f5e-bc91-7d0b1e260a41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "78")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d4ae39-afd8-4b3c-b59c-94b1dfc3b581")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b24471dd-ea7d-4f9e-a5a1-fb12481cfc0d")
+	)
+	(wire
+		(pts
+			(xy 228.6 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b245f7c-5c22-437e-9392-335cc014995e")
+	)
+	(label "PU_EN14"
+		(at 223.52 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d513a8f-e00f-4fbe-816f-886277df3a8d")
+	)
+	(wire
+		(pts
+			(xy 228.6 86.36) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4af3a55-5ee1-49c3-ab5a-89f6599cb789")
+	)
+	(label "PD_EN14"
+		(at 223.52 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e71acbab-5884-4ac4-ad4a-b25726399545")
+	)
+	(wire
+		(pts
+			(xy 261.62 81.28) (xy 266.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfcbfde8-5e8e-44e8-91c0-e929a0b71299")
+	)
+	(label "IN_PROT14"
+		(at 266.7 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fcf988c-2a86-4b77-823f-825cdf33b6a7")
+	)
+	(sheet
+		(at 228.6 96.52)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ba21c78a-6536-4c58-9277-920a41a17d60")
+		(property "Sheetname" "PULL_CH15"
+			(at 228.6 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 107.2646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 99.06 180)
+			(uuid "3f0f1542-597d-4e7e-86fb-e3cbc3a5f7cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 101.6 180)
+			(uuid "a0e2427b-c5a2-4576-98d5-d8d5ddc6e642")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 104.14 180)
+			(uuid "911d4383-c5a0-4326-aa7e-bb6f6b2bdfc0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 99.06 0)
+			(uuid "27349cbf-19d3-4f25-b97f-e001d47512fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "79")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 99.06) (xy 223.52 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0dd444-b225-4a58-99e6-0cbd8257c36e")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d39ae960-ca9d-498a-a9cb-d5425f113b0d")
+	)
+	(wire
+		(pts
+			(xy 228.6 101.6) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424a3099-0e8c-41e3-a3c8-fcac8d18665e")
+	)
+	(label "PU_EN15"
+		(at 223.52 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5cdf4944-8ae1-458f-a8ec-4fecccad9cc3")
+	)
+	(wire
+		(pts
+			(xy 228.6 104.14) (xy 223.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45b2cae3-3681-437b-b47b-af0d995207dc")
+	)
+	(label "PD_EN15"
+		(at 223.52 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52c5ac6f-e2d9-4d37-9907-b9b455ba0800")
+	)
+	(wire
+		(pts
+			(xy 261.62 99.06) (xy 266.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aee3fb8-289f-4892-ad65-c931083ed0a2")
+	)
+	(label "IN_PROT15"
+		(at 266.7 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f00e1816-5256-4d08-9200-9ad52826fdac")
+	)
+	(sheet
+		(at 228.6 114.3)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9063b63a-a73b-49f9-9c35-d17c82304367")
+		(property "Sheetname" "PULL_CH16"
+			(at 228.6 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 116.84 180)
+			(uuid "8bf1d501-ecac-4b1a-878b-27752060f8ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 119.38 180)
+			(uuid "86f23fd5-0afa-414d-ba78-ed637c37b71e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 121.92 180)
+			(uuid "088d1a71-bfd1-4ffa-8762-7f5e8e387793")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 116.84 0)
+			(uuid "703514e0-11c5-4b14-abd2-6f1345981cb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "80")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 116.84) (xy 223.52 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f8c24b-e28f-4ae3-b5ae-5da82f2acea4")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4ed0914-415b-4a61-ab47-58aa637ce460")
+	)
+	(wire
+		(pts
+			(xy 228.6 119.38) (xy 223.52 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c598d280-ddfd-4cb5-898a-84e32458beed")
+	)
+	(label "PU_EN16"
+		(at 223.52 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8de88a4c-17af-4a4b-a9dd-1d333ff80b86")
+	)
+	(wire
+		(pts
+			(xy 228.6 121.92) (xy 223.52 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5da9fb22-a516-4532-96e8-f335a74e2572")
+	)
+	(label "PD_EN16"
+		(at 223.52 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c56d8ac-0da8-48f9-a2e8-3daf205c1516")
+	)
+	(wire
+		(pts
+			(xy 261.62 116.84) (xy 266.7 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73072bd0-dbe7-4e5b-9e89-60dbc27ecf4c")
+	)
+	(label "IN_PROT16"
+		(at 266.7 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "78260ac5-e59b-4d3c-897b-57ad12c9a228")
+	)
+	(sheet
+		(at 228.6 132.08)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cdbc2e44-707b-40c5-9647-275711caffd5")
+		(property "Sheetname" "PULL_CH17"
+			(at 228.6 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 142.8246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 134.62 180)
+			(uuid "3a8ab1bc-c55d-41bb-be2b-47b2eacca27c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 137.16 180)
+			(uuid "5d198fa7-15eb-49a2-8540-a0f31fb4c7ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 139.7 180)
+			(uuid "8d0f34c1-1afb-4be4-bee3-cd6c11035260")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 134.62 0)
+			(uuid "9c60235d-64eb-4ff8-9035-dfa4e85318fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "81")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 134.62) (xy 223.52 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e1fe4b4-91fb-45eb-afcf-8a60a591c405")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba5e3537-3a3e-4bd1-afdd-6903aab65884")
+	)
+	(wire
+		(pts
+			(xy 228.6 137.16) (xy 223.52 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7efb922-8a12-4fa3-bb84-39371937b488")
+	)
+	(label "PU_EN17"
+		(at 223.52 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "978d6365-0557-42bf-a616-201b771da0f4")
+	)
+	(wire
+		(pts
+			(xy 228.6 139.7) (xy 223.52 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea8c29b-c869-485e-9d7c-abbd9d4280a4")
+	)
+	(label "PD_EN17"
+		(at 223.52 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "89605c60-9361-4cdc-be09-04c3c3b01b8d")
+	)
+	(wire
+		(pts
+			(xy 261.62 134.62) (xy 266.7 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f687f002-a27a-4f7f-b57a-c525d674d3b4")
+	)
+	(label "IN_PROT17"
+		(at 266.7 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e496d3b-cdbb-4d35-b0e0-f5c6886b9467")
+	)
+	(sheet
+		(at 228.6 149.86)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d34f8f33-0af6-4121-a624-65568fa54309")
+		(property "Sheetname" "PULL_CH18"
+			(at 228.6 149.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 160.6046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 152.4 180)
+			(uuid "74e7fd82-56be-4674-a4d8-ecc089281ca4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 154.94 180)
+			(uuid "14ee7e48-f7f7-4bf1-ac1a-a5b9dc1a2654")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 157.48 180)
+			(uuid "1d616cde-c5c2-4f6d-bf33-7ad351b2272f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 152.4 0)
+			(uuid "03e51d21-655f-4572-9030-5d0be6ffaf22")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "82")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 152.4) (xy 223.52 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ebe194-2f62-47f0-80f0-8c98474a1b82")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9452b751-0777-4be0-8b5d-833424257a40")
+	)
+	(wire
+		(pts
+			(xy 228.6 154.94) (xy 223.52 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219a9183-5637-4584-952a-7f34e63c2caa")
+	)
+	(label "PU_EN18"
+		(at 223.52 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "02c19153-274c-4b82-bf4e-e52ffd47f1cf")
+	)
+	(wire
+		(pts
+			(xy 228.6 157.48) (xy 223.52 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bf6bcab-c739-4402-a180-c3d5b38a3813")
+	)
+	(label "PD_EN18"
+		(at 223.52 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4497bdfc-60d8-454c-99cb-8e2a286cc35a")
+	)
+	(wire
+		(pts
+			(xy 261.62 152.4) (xy 266.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "728c5039-a0cd-49dd-b64c-e22650ab91f7")
+	)
+	(label "IN_PROT18"
+		(at 266.7 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd373179-159d-4bf4-93cd-a16fecc761de")
+	)
+	(sheet
+		(at 228.6 167.64)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "50433917-b9c0-4969-bb43-010b2ab56bc3")
+		(property "Sheetname" "PULL_CH19"
+			(at 228.6 166.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 170.18 180)
+			(uuid "cc6c27c0-be3b-4eef-a610-fca95ffd9883")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 172.72 180)
+			(uuid "803e2e7a-9ba1-401e-a31d-b9ccd9a32f2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 175.26 180)
+			(uuid "dd92da86-8e3a-447d-bae3-7ca1bdaa5a63")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 170.18 0)
+			(uuid "a59c21d4-4bc4-4f88-9ba8-d10da91f60a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "83")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 170.18) (xy 223.52 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6be189f4-639e-424e-b3f2-7ebfd906abb3")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fed82b49-f2a8-4ccc-a3d8-0bbff23358ad")
+	)
+	(wire
+		(pts
+			(xy 228.6 172.72) (xy 223.52 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f2d527f-17e8-463c-9cc7-b9d6e7e97a14")
+	)
+	(label "PU_EN19"
+		(at 223.52 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15f4a386-2c7c-4b09-b1d4-4c7f1f41f094")
+	)
+	(wire
+		(pts
+			(xy 228.6 175.26) (xy 223.52 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41c6f732-8d1c-41fd-b033-0037b6c5c0cb")
+	)
+	(label "PD_EN19"
+		(at 223.52 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "012e0b81-9ce8-49fb-aaa2-a1c92ff818dc")
+	)
+	(wire
+		(pts
+			(xy 261.62 170.18) (xy 266.7 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e67041a-4a78-4d58-82e6-fc67d79b8f32")
+	)
+	(label "IN_PROT19"
+		(at 266.7 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f2f20db-8af4-4d01-a0c6-dc5a7238a286")
+	)
+	(sheet
+		(at 228.6 185.42)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7ecc771e-6ce0-43f6-b595-31d234de4d5a")
+		(property "Sheetname" "PULL_CH20"
+			(at 228.6 184.7084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 196.1646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 187.96 180)
+			(uuid "c02c8fb5-bb07-4cb2-8c97-8dea191ea56c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 190.5 180)
+			(uuid "ee74a41b-e954-45cd-9841-e35b90f059a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 193.04 180)
+			(uuid "780f0c2b-c435-44da-80c4-8ab29c046d64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 187.96 0)
+			(uuid "c58fcd0d-3672-4dce-9b32-da2e0eb1ee50")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "84")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 187.96) (xy 223.52 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a792ee4-711b-47ca-9244-278375aa0b9e")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f088ea6d-67cd-48f0-86e6-f22772b6fe1a")
+	)
+	(wire
+		(pts
+			(xy 228.6 190.5) (xy 223.52 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd9c6bdd-bb99-4b1d-b811-1f81f8d319cb")
+	)
+	(label "PU_EN20"
+		(at 223.52 190.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26a37f0a-d3fa-4367-b769-939d993a079a")
+	)
+	(wire
+		(pts
+			(xy 228.6 193.04) (xy 223.52 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8287a94-a06d-4de6-bf67-d3586822ca1c")
+	)
+	(label "PD_EN20"
+		(at 223.52 193.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ef9f3c45-2c13-409f-9ad6-2618cd9e6cda")
+	)
+	(wire
+		(pts
+			(xy 261.62 187.96) (xy 266.7 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ace0157-e1b7-4477-8bd2-d4d48ecd6a26")
+	)
+	(label "IN_PROT20"
+		(at 266.7 187.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89550a99-7c37-4abc-877c-5f8889cd8998")
+	)
+	(sheet
+		(at 228.6 203.2)
+		(size 33.02 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b9849010-adbb-4876-8fcb-1a41c5944ccb")
+		(property "Sheetname" "PULL_CH21"
+			(at 228.6 202.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PULL_CHANNEL.kicad_sch"
+			(at 228.6 213.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 228.6 205.74 180)
+			(uuid "321a0dd7-65dc-442a-8e35-208823926194")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PU_EN" input
+			(at 228.6 208.28 180)
+			(uuid "8e3cc1ab-133c-4043-aa0a-5e52e0ead505")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PD_EN" input
+			(at 228.6 210.82 180)
+			(uuid "03e4d9d8-c0e6-4fd8-82f3-e0e3618727c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NODE" bidirectional
+			(at 261.62 205.74 0)
+			(uuid "b54377e1-fdb1-44df-956b-e41508a7fef6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/ce265f4a-d272-4809-9178-30e1ae663de9"
+					(page "85")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 205.74) (xy 223.52 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e53a64bd-a31e-4474-9e40-7587681cafbc")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 223.52 205.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d48bd10-df47-4641-9ea4-dd06b822ade8")
+	)
+	(wire
+		(pts
+			(xy 228.6 208.28) (xy 223.52 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f59c7a5-b10b-4a22-8d5a-6c90e2b9f4cd")
+	)
+	(label "PU_EN21"
+		(at 223.52 208.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e39ebd2-8d86-47dc-aaf6-394b6ab7edbd")
+	)
+	(wire
+		(pts
+			(xy 228.6 210.82) (xy 223.52 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bbdeb77-4eca-4f91-9e35-5a859cf82a26")
+	)
+	(label "PD_EN21"
+		(at 223.52 210.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8d17861-c156-4705-aa69-c090692d0ccf")
+	)
+	(wire
+		(pts
+			(xy 261.62 205.74) (xy 266.7 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9fa8be-e8fa-403b-b68b-3f87da379706")
+	)
+	(label "IN_PROT21"
+		(at 266.7 205.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94ca35c1-d788-48b5-abfb-fe01e6f9dfcb")
+	)
+	(bus
+		(pts
+			(xy 312.42 236.22) (xy 317.5 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d31c235-46bd-4c8c-96cc-7123a29a047d")
+	)
+	(hierarchical_label "IN_PROT[0..21]"
+		(shape bidirectional)
+		(at 317.5 236.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1f9e8be8-8db2-453c-a0f5-5bd66411bd1e")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 342.9 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c16a164-21f0-439e-9b41-63ee2d57d229")
+	)
+	(hierarchical_label "PU_SCK"
+		(shape input)
+		(at 342.9 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "53724a41-2f41-49ac-9602-1c3b617c94ce")
+	)
+	(hierarchical_label "PU_MOSI"
+		(shape input)
+		(at 342.9 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "daaef8c9-a497-45e0-85c5-06e502214097")
+	)
+	(hierarchical_label "PU_LATCH"
+		(shape input)
+		(at 342.9 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c50d3d1-c29f-4205-854d-7c2f1bf677e1")
+	)
+	(hierarchical_label "PU_OE_N"
+		(shape input)
+		(at 342.9 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b480378-99f5-417f-a632-ca7a8663f238")
+	)
+	(text "PULL-UP / PULL-DOWN SECIMI\n74HC595 zinciri bu sayfaya cizilir (22 kanal x 2 bit = 44 bit, 6 adet).\n595 cikislari PU_ENk / PD_ENk etiketlerine baglanir. Kanal devresi PULL_CHANNEL.kicad_sch (22 ornek)."
+		(exclude_from_sim no)
+		(at 20.32 256.54 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "d30921e9-7f06-4bf1-8daf-d7b04ff37d48")
+	)
+)
