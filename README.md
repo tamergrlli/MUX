@@ -1,30 +1,42 @@
-# Programlanabilir IO ve CAN Modülü (PDM)
+# Programlanabilir IO ve CAN Modülü
 
-Araçlar için kullanıcının blok programlama aracıyla yapılandırabildiği, 2 CAN hatlı giriş/çıkış yönetim modülü.
+Araçlar için blok programlama ile yapılandırılabilen, 2 CAN hatlı giriş/çıkış yönetim modülü (PDM).
 
-> Durum: **Tasarım taslağı.** Bu belge şimdiye kadar alınan kararları ve açık konuları toplar.
+Proje tasarım aşamasındadır.
 
----
+## İçindekiler
 
-## 1. Temel fikir
+1. [Genel bakış](#1-genel-bakış)
+2. [Kapsam](#2-kapsam)
+3. [Sistem mimarisi](#3-sistem-mimarisi)
+4. [Donanım](#4-donanım)
+5. [Flash bölümleme](#5-flash-bölümleme)
+6. [Firmware mimarisi](#6-firmware-mimarisi)
+7. [Kullanıcı programlama akışı](#7-kullanıcı-programlama-akışı)
+8. [Güvenlik ilkeleri](#8-güvenlik-ilkeleri)
+9. [Açık konular](#9-açık-konular)
+10. [Yol haritası](#10-yol-haritası)
 
-- **Çekirdek firmware** (bizim) flash'ın sabit, yazma korumalı bölgesinde durur. Donanım yönetimi, koruma ve CAN hep çekirdekte kalır.
-- **Kullanıcı bölgesi** flash'ta ayrı sektörlerdedir. Burada kod değil, **veri** bulunur: IO yönlendirme tabloları, CAN eşlemeleri ve blok programı.
-- Kullanıcı, **blok programlama aracımızla** mantık kurar. Araç bunu binary bir imaja derler ve imaj CAN üzerinden karta yüklenir.
-- Çekirdek imajı doğrular ve blokları sabit bir döngüde çalıştırır. Kullanıcı yeni blok yazamaz, sadece çekirdekteki blokları birbirine bağlar.
+## 1. Genel bakış
+
+- Çekirdek firmware flash'ın sabit ve yazma korumalı bölgesinde çalışır. Donanım yönetimi, koruma fonksiyonları ve CAN haberleşmesi çekirdekte kalır.
+- Kullanıcı bölgesi flash'ta ayrı sektörlerde bulunur ve yalnızca veri içerir: IO yönlendirme tabloları, CAN eşlemeleri ve blok programı.
+- Kullanıcı mantığı blok programlama aracında oluşturulur, binary imaja derlenir ve CAN üzerinden karta yüklenir.
+- Çekirdek imajı doğrular ve blokları sabit periyotlu bir döngüde çalıştırır. Kullanıcı yeni blok tipi tanımlayamaz; yalnızca çekirdekteki blokları birbirine bağlar.
 
 ## 2. Kapsam
 
-| Konu | Karar |
+| Konu | Değer |
 |---|---|
-| Hedef pazar | Sivil araç: ticari araç, iş makinesi, özel araç |
-| Besleme | 12 V ve 24 V sistemler (çalışma aralığı ~9–36 V) |
+| Uygulama | Ticari araç, iş makinesi, özel araç |
+| Besleme | 12 V ve 24 V sistemler (çalışma aralığı 9–36 V) |
 | Standartlar | ISO 16750-2, ISO 7637-2 |
-| Kanal sayısı | 22 evrensel giriş, 23 çıkış (bkz. §4.3, §4.4) |
-| CAN | 2 hat, CAN FD destekli, **SAE J1939** (3. hat opsiyon olarak değerlendirilecek) |
+| Kanal sayısı | 22 evrensel giriş, 23 çıkış |
+| CAN | 2 hat, CAN FD, SAE J1939 |
 | Çalışma sıcaklığı | −40…+85 °C |
-| Zorunlu özellikler | 5 V ve 12 V sensör beslemesi, CAN ve dijital girişle uyandırma |
-| Askeri versiyon | **Şimdilik kapsam dışı.** Güç girişi ayrı blok olarak çizilecek; ileride MIL-STD-1275E surge modülü eklenebilir |
+| Yardımcı fonksiyonlar | 5 V ve 12 V sensör beslemesi, CAN ve dijital girişle uyandırma |
+
+Askeri araç versiyonu (MIL-STD-1275E) şimdilik kapsam dışıdır. Güç girişi ayrı bir blok olarak tasarlanır; ileride surge koruma modülü eklenebilir.
 
 ## 3. Sistem mimarisi
 
@@ -32,14 +44,14 @@ Araçlar için kullanıcının blok programlama aracıyla yapılandırabildiği,
  Akü (12/24 V) ──► Koruma ──► Güç kaynağı (5 V / 3,3 V)
                     │                  │
                     ▼                  ▼
- Girişler ──► Giriş koşullama ──► STM32 ──► Çıkış sürücüleri ──► Yükler
+ Girişler ──► Giriş koşullama ──► MCU ──► Çıkış sürücüleri ──► Yükler
                                    │  ▲          │
                                    │  └─ akım ölçümü ┘
                                    ▼
                           2× CAN transceiver ──► CAN1 / CAN2
 ```
 
-Tüm veri akışı **merkezi bir sinyal tablosu** üzerinden geçer:
+Tüm veri akışı merkezi bir sinyal tablosu üzerinden geçer:
 
 ```
 Fiziksel girişler ─┐                         ┌─► Fiziksel çıkışlar
@@ -52,107 +64,130 @@ CAN RX ────────────┼─►  SİNYAL TABLOSU  ◄─┐
 
 ### 4.1 MCU
 
-- **Prototip:** STM32G474QE (LQFP128). FDCAN, 5 ADC ve bol timer'ı var. LQFP100 pin sayısı açısından yetmiyor.
-- İlk geliştirme Nucleo-G474RE ve değerlendirme kartlarıyla yapılabilir.
-- **MCU ileride değişebilir.** Yazılım ve donanım buna göre modüler tasarlanacak (bkz. §6.5).
-- Not: Standart STM32'ler AEC-Q100 sertifikalı değil. OEM/Tier-1 hedeflenirse otomotiv sınıfı bir MCU'ya geçilecek.
+- Mevcut seçim: STM32G474QE (LQFP128). 3× FDCAN, 5 ADC.
+- Değerlendirilen alternatif: STM32H533 / STM32H523 (Cortex-M33, TrustZone, 2× FDCAN, 512 KB çift bank flash, 2 ADC). Bu seçenekte girişler analog mux üzerinden okunur.
+- İlk geliştirme Nucleo kartlarıyla yapılabilir.
+- Firmware MCU değişikliğine uygun şekilde katmanlı tasarlanır (bkz. [6.5](#65-taşınabilirlik)).
 
 ### 4.2 Güç ve koruma
 
-- Ters kutup koruması: ideal diyot kontrolcüsü + MOSFET (ör. LM74700-Q1)
-- Load dump / transient: TVS (24 V sisteme göre boyutlandırılacak)
+- Ters kutup koruması: ideal diyot kontrolcüsü + MOSFET
+- Load dump ve transient koruması: 24 V sisteme göre boyutlandırılmış TVS
 - Mantık beslemesi çıkış güç yolundan ayrı ve filtreli
 - Ana besleme girişi: cıvatalı terminal (M6/M8)
-- Güç girişi ayrı bir blok olarak çizilecek (askeri modül için yer)
 
 ### 4.3 Çıkışlar
 
-Toplam **23 çıkış**:
-
-| Tip | Adet | Kullanım | Not |
+| Tip | Adet | Tipik yük | Akım |
 |---|---|---|---|
 | High-side, yüksek akım | 4 | Fan, pompa, kompresör | ~20 A |
-| High-side, standart | 14 | Lamba, valf, röle, motor | ~10 A, PWM destekli |
-| Half-bridge | 3 | DC motor (cam, kapak, aktüatör), çift yönlü yükler | High tarafı ~10 A. İkisi birlikte H-köprü kurabilir. Alt taraf low-side çıkış ihtiyacını karşılar |
-| Akım kontrollü PWM | 2 | Oransal hidrolik valf | Kapalı çevrim akım kontrolü |
+| High-side, standart | 14 | Lamba, valf, röle, motor | ~10 A |
+| Half-bridge | 3 | DC motor, çift yönlü aktüatör | ~10 A, iki yönde |
+| Akım kontrollü PWM | 2 | Oransal hidrolik valf | Kapalı çevrim |
 
 Tüm çıkışlarda:
-- Akım ölçümü ADC'ye bağlanacak, yazılımda **elektronik sigorta**, açık devre ve kısa devre tespiti yapılacak
-- PWM ve soft-start desteklenecek
-- CAN timeout veya arıza durumunda konfig'den gelen **failsafe** duruma geçilecek
 
-High-side için aday aile: Infineon PROFET+ 24V (BTT6xxx). 12 V ailesiyle pin uyumlu olduğu için aynı footprint'e farklı akım sınıfları takılabilir. Half-bridge ve low-side parçaları 24 V uyumuna göre seçilecek.
+- Akım ölçümü ile elektronik sigorta, açık devre ve kısa devre tespiti
+- PWM ve soft-start
+- CAN timeout veya arıza durumunda yapılandırılmış güvenli duruma geçiş
 
-**Standart yardımcı çıkışlar:**
-- **Sensör beslemesi:** korumalı 5 V ve 12 V, akım sınırlı ve arıza tespitli
+İki half-bridge birlikte H-köprü olarak kullanılabilir.
 
-**Eklenebilecek diğer çıkış tipleri (değerlendirilecek):**
-- **Analog çıkış:** 0–10 V veya 4–20 mA, harici kontrolörlere referans için
+Yardımcı çıkışlar:
 
-### 4.3.1 Uyku ve uyandırma
+- Korumalı 5 V ve 12 V sensör beslemesi (akım sınırlı, arıza tespitli)
 
-- Park halinde düşük tüketim modu (hedef: birkaç mA veya altı, netleşecek)
-- **CAN** ve **dijital girişlerle** uyandırma (ignition dahil)
-- Uyandırma kaynağı yapılandırılabilir; kullanıcı blok aracından seçer
+Değerlendirilen ek çıkışlar:
 
-### 4.4 Girişler
+- 0–10 V veya 4–20 mA analog çıkış
 
-Toplam **22 giriş**. Tüm girişler mümkün olduğunca **evrensel** olacak: tipi kullanıcı blok aracından seçer, donanım buna hazır olur. (Rakipte giriş tipleri sabit dağılımlı; bu bizim farkımız.)
+### 4.4 Uyku ve uyandırma
 
-| Giriş modu | Açıklama |
+- Park halinde düşük tüketim modu (hedef değer belirlenecek)
+- CAN ve dijital girişlerle uyandırma (ignition dahil)
+- Uyandırma kaynakları yapılandırılabilir
+
+### 4.5 Girişler
+
+22 giriş. Girişler evrenseldir; her pinin modu yazılımdan seçilir.
+
+| Mod | Açıklama |
 |---|---|
 | Dijital | Aktif yüksek/alçak, yazılımdan seçilebilir pull-up/pull-down, debounce |
-| Analog gerilim | 0–5 V ve 0–36 V aralığı |
-| PWM / frekans | Duty ve frekans ölçümü (hız sensörü, debimetre). Timer'a bağlı pinlerde (en az 4 kanal) |
-| NTC / dirençli | Sıcaklık sensörü, dirençli şamandıra ve basınç sensörü. **Ölçüm aralığı en az 0–500 Ω**, kart üzerinde referans dirençle |
+| Analog gerilim | 0–5 V ve 0–36 V |
+| PWM / frekans | Duty ve frekans ölçümü (hız sensörü, debimetre). Timer'a bağlı en az 4 kanal |
+| NTC / dirençli | Sıcaklık, şamandıra ve basınç sensörleri. Ölçüm aralığı en az 0–500 Ω |
 
-**Eklenebilecek diğer giriş tipleri (değerlendirilecek):**
-- 4–20 mA akım girişi (endüstriyel sensörler)
-- Kablo arıza tespiti (açık devre / kısa devre) dirençli switch girişlerinde
-- Ignition / wake-up girişi
+Değerlendirilen ek giriş tipleri:
+
+- 4–20 mA akım girişi
+- Dirençli switch girişlerinde kablo arıza tespiti
 
 Donanım notları:
-- Her girişte bölücü, RC filtre ve clamp bulunacak
-- Pull-up/pull-down seçimi sadece konfig değişince güncelleniyor. MCU pini harcamamak için SPI üzerinden shift register zinciri (74HC595 vb.) kullanılacak
-- ADC yükü 5 ADC'ye eşit dağıtılacak; çıkış akım ölçümleri ayrı bir ADC'de toplanacak
 
-### 4.5 CAN
+- Her girişte bölücü, RC filtre ve clamp
+- Pull-up/pull-down seçimi SPI üzerinden shift register zinciri ile yapılır (konfigürasyon değiştiğinde güncellenir)
+- Çıkış akım ölçümleri ayrı bir ADC'de toplanır
 
-- 2× CAN FD transceiver (ör. TCAN1042-Q1, TJA1462), uyandırma destekli
-- Protokol: **SAE J1939** (PGN/SPN eşleme, adres talebi) ve serbest CAN ID'li özel mesajlar
-- 3. CAN hattı opsiyon olarak değerlendirilecek (G474'te 3 FDCAN mevcut)
-- 120 Ω sonlandırma yazılımdan açılıp kapanabilir
+### 4.6 CAN
+
+- 2× CAN FD transceiver, uyandırma destekli
+- SAE J1939 (PGN/SPN eşleme, adres talebi) ve serbest CAN ID'li mesajlar
+- 120 Ω sonlandırma yazılımdan açılıp kapatılabilir
 - Common-mode choke ve ESD koruması
-- Bus-off kurtarma firmware'de
+- Bus-off kurtarma
 
-### 4.6 Mekanik
+### 4.7 Malzeme listesi (taslak)
 
-- Konnektör: Deutsch DT/DTM veya benzeri otomotiv konnektörü
-- PCB: en az 4 katman, güç hatlarında 2 oz bakır ve termal via'lar
-- Conformal coating, −40…+85 °C bileşen seçimi
+Seçim ölçütleri:
 
-## 5. Flash bölümleme (STM32G474QE, 512 KB, öneri)
+- Tüm parçalar 24 V araç sistemine uygun olmalı (en az 36 V çalışma, 24 V load dump dayanımı). Bu nedenle PROFET+2 12V (BTS700x) ailesi kullanılmaz (en fazla 28 V çalışma).
+- Prototip aşamasında AEC-Q100 sertifikası zorunlu değildir.
+
+| Blok | Parça | Durum | Not |
+|---|---|---|---|
+| MCU | STM32G474QE | Seçildi | Alternatif: STM32H533 (bkz. 4.1) |
+| High-side 10 A | Infineon BTT6010-1ERB | Seçildi | PROFET+ 24V, 5–36 V, 9 A nominal |
+| High-side düşük akım | Infineon BTT6100-2ERA | Seçildi | PROFET+ 24V, çift kanal, ~2,2 A/kanal |
+| High-side orta akım | Infineon BTT6030-2ERA | Aday | Çift kanal, ~4 A/kanal |
+| High-side 20 A | TI TPS12S24F-Q1 + harici MOSFET veya Classic PROFET 24V | Açık | |
+| Half-bridge | TI DRV8323SRTAR + 6× 60 V N-MOSFET | Seçildi | 6–60 V, bağımsız PWM modu, 3 dahili akım yükselticisi. Yedek: DRV8323RS (pin uyumlu değil) |
+| Akım kontrollü PWM | Infineon TLE7242-2G veya MOSFET + INA181 + MCU kontrol döngüsü | Açık | |
+| 5 V sensör beslemesi | Infineon TLE4250-2G | Aday | Kısa devre ve ters kutup korumalı tracker |
+| 12 V sensör beslemesi | Akım sınırlı buck-boost | Açık | |
+| CAN | TI TCAN1043A-Q1 veya NXP TJA1043 | Aday | INH/WAKE ile uyandırma |
+| Pull-up/down seçimi | 74HC595 zinciri + sinyal MOSFET'leri | Aday | |
+
+### 4.8 Mekanik
+
+- Konnektör: Deutsch DT/DTM veya benzeri
+- PCB: en az 4 katman, güç hatlarında 2 oz bakır ve termal via
+- Conformal coating
+
+## 5. Flash bölümleme
+
+Örnek: 512 KB flash.
 
 | Bölge | Adres | Boyut | İçerik | Koruma |
 |---|---|---|---|---|
 | Bootloader | `0x0800_0000` | 32 KB | CAN üzerinden firmware güncelleme | Yazma korumalı |
-| Çekirdek | `0x0800_8000` | 352 KB | Ana firmware | Yazma korumalı (WRP) |
-| Kullanıcı A | `0x0806_0000` | 32 KB | Kullanıcı imajı (aktif / yedek) | Çekirdek yazar |
-| Kullanıcı B | `0x0806_8000` | 32 KB | Kullanıcı imajı (aktif / yedek) | Çekirdek yazar |
-| Ayrılmış | `0x0807_0000` | 64 KB | Fabrika kalibrasyonu, arıza kaydı | Çekirdek yazar |
+| Çekirdek | `0x0800_8000` | 352 KB | Ana firmware | Yazma korumalı |
+| Kullanıcı A | `0x0806_0000` | 32 KB | Kullanıcı imajı | Çekirdek yazar |
+| Kullanıcı B | `0x0806_8000` | 32 KB | Kullanıcı imajı | Çekirdek yazar |
+| Ayrılmış | `0x0807_0000` | 64 KB | Kalibrasyon, arıza kaydı | Çekirdek yazar |
 
-**A/B mantığı:** Yeni imaj boştaki bölgeye yazılır ve doğrulanır, sonra aktif yapılır. Yazma yarıda kalırsa eski imaj çalışmaya devam eder, cihaz kilitlenmez.
+Yeni imaj boştaki bölgeye yazılır, doğrulanır ve ardından aktif yapılır. Yazma yarıda kalırsa önceki imaj çalışmaya devam eder.
 
 ## 6. Firmware mimarisi
 
 ### 6.1 Katmanlar
 
-| Katman | Görev | MCU'ya bağımlı mı? |
+| Katman | Görev | MCU'ya bağımlı |
 |---|---|---|
-| HAL | GPIO, ADC, PWM, timer, FDCAN, flash | **Evet** (MCU değişince sadece bu yeniden yazılır) |
+| HAL | GPIO, ADC, PWM, timer, FDCAN, flash | Evet |
 | IO yöneticisi | Filtre, debounce, giriş modları, çıkış sürme, elektronik sigorta | Hayır |
 | CAN katmanı | Frame ↔ sinyal dönüşümü, periyodik TX, RX timeout | Hayır |
-| Sinyal tablosu | Tüm mantıksal sinyallerin merkezi deposu | Hayır |
+| Sinyal tablosu | Mantıksal sinyallerin merkezi deposu | Hayır |
 | Blok çalıştırıcı | Kullanıcı blok programını sabit döngüde yürütür | Hayır |
 | Konfig yükleyici | İmajı doğrular (magic, versiyon, CRC), tabloları kurar | Hayır |
 | Güvenlik | Failsafe, watchdog, arıza yönetimi | Hayır |
@@ -174,7 +209,7 @@ Donanım notları:
 +----------------------+
 ```
 
-Örnek kayıtlar:
+Kayıt yapıları:
 
 ```c
 typedef struct {            /* Giriş: fiziksel pin -> sinyal */
@@ -212,13 +247,15 @@ typedef struct {            /* Blok programı kaydı */
 ```
 
 Kurallar:
-- Format **little-endian**, byte-byte serileştirilmiş, pointer yok. Böylece MCU değişse de imaj aynen çalışır
-- Sinyal ID'leri sabit ve versiyonlu
-- Durum tutan bloklar (timer, sayaç) için RAM açılışta statik olarak ayrılır, dinamik bellek kullanılmaz
 
-### 6.3 Blok kütüphanesi (çekirdekte)
+- Format little-endian ve byte bazında serileştirilmiştir; pointer içermez
+- Sinyal ID'leri sabit ve versiyonludur
+- Durum tutan bloklar (timer, sayaç) için RAM açılışta statik olarak ayrılır; dinamik bellek kullanılmaz
 
-İlk sürüm için önerilen bloklar:
+### 6.3 Blok kütüphanesi
+
+İlk sürüm:
+
 - Mantık: AND, OR, NOT, XOR
 - Karşılaştırma: >, <, =, histerezisli eşik
 - Zaman: on-delay, off-delay, pulse, flaşör
@@ -228,65 +265,61 @@ Kurallar:
 
 ### 6.4 Çalışma döngüsü
 
-1. Girişleri oku ve filtrele, sinyal tablosuna yaz
-2. CAN RX sinyallerini güncelle, timeout'ları kontrol et
-3. Blok programını sırayla çalıştır (5–10 ms periyot)
+1. Girişleri oku, filtrele, sinyal tablosuna yaz
+2. CAN RX sinyallerini güncelle, timeout kontrolü yap
+3. Blok programını çalıştır (5–10 ms periyot)
 4. Güvenlik kontrolleri: sigorta, failsafe
 5. Çıkışları sür, CAN TX mesajlarını gönder
 
 ### 6.5 Taşınabilirlik
 
-- MCU'ya özel her şey HAL'de (`hal_gpio_set`, `hal_adc_read`, `hal_can_send`, ...)
-- Flash adresleri ve sektör boyutları tek bir yapılandırma dosyasında
-- Donanım modüler çizilecek: MCU değişince sadece MCU bölümü yeniden çizilir
+- MCU'ya özel kod yalnızca HAL katmanında bulunur (`hal_gpio_set`, `hal_adc_read`, `hal_can_send`, ...)
+- Flash adresleri ve sektör boyutları tek bir yapılandırma dosyasında tanımlanır
+- Donanım modüler çizilir; MCU değişikliği yalnızca MCU sayfasını etkiler
 
 ## 7. Kullanıcı programlama akışı
 
-1. Kullanıcı blok programlama aracında girişleri, blokları, çıkışları ve CAN sinyallerini bağlar
+1. Blok programlama aracında girişler, bloklar, çıkışlar ve CAN sinyalleri bağlanır
 2. Araç diyagramı doğrular, topolojik sıraya dizer ve imaj üretir
-3. Araç karta bağlanır ve **firmware'in desteklediği blok kütüphanesi versiyonunu sorgular**
-4. İmaj CAN üzerinden boştaki kullanıcı bölgesine (A/B) yazılır
+3. Araç karta bağlanır ve firmware'in desteklediği blok kütüphanesi versiyonunu sorgular
+4. İmaj CAN üzerinden boştaki kullanıcı bölgesine yazılır
 5. Çekirdek CRC ve versiyonu doğrular, imajı aktif eder
-6. **Canlı izleme:** araç sinyal tablosunu CAN üzerinden okur ve değerleri blokların üzerinde gösterir
+6. Canlı izleme: araç sinyal tablosunu CAN üzerinden okuyup blok diyagramı üzerinde gösterir
 
-Ek öneriler:
-- CAN eşlemesi için DBC dosyası içe aktarma
-- Hazır **J1939 sinyal kütüphanesi**: kullanıcı PGN/SPN'i listeden seçer, bit konumu elle girilmez
+Planlanan araç özellikleri:
 
-## 7.1 Rakip referansı ve farklılaşma
-
-Referans ürün: Ortem oMux 22×24. Sayfada görülen özellikler: 9–36 V, 22 giriş (8 analog: 0–500 Ω / 0–5 V / NTC, 12 aktif yüksek, 2 aktif düşük), 24 çıkış (21× 10 A high-side, 3 half-bridge), 5 V ve 12 V sensör beslemesi, 3× CAN (J1939), CAN ve dijital girişle uyandırma, −40…+85 °C.
-
-Bizim farklılaşma noktalarımız:
-- **Blok programlama:** kullanıcı veya araç üreticisi kendi mantığını kurar, fabrika müdahalesi gerekmez
-- **Evrensel girişler:** her pinin modu yazılımdan seçilir
-- **Karışık çıkış sınıfları:** 20 A kanallar ve akım kontrollü valf çıkışları
-- **Canlı izleme** ve blok aracından ayarlanabilen elektronik sigorta
+- DBC dosyası içe aktarma
+- J1939 sinyal kütüphanesi (PGN/SPN listeden seçilir)
 
 ## 8. Güvenlik ilkeleri
 
-- Kullanıcı programı **hiçbir koşulda** çekirdek korumalarını kapatamaz (sigorta, failsafe, watchdog)
-- Geçersiz veya bozuk imaj varsa güvenli varsayılan konfigürasyonla açılır
-- Blok sayısına üst sınır var. İmaj kabul edilirken en kötü durum döngü süresi kontrol edilir
-- CAN timeout'ta her çıkış kendi failsafe durumuna geçer
+- Kullanıcı programı çekirdek korumalarını (sigorta, failsafe, watchdog) devre dışı bırakamaz
+- Geçersiz veya bozuk imaj durumunda varsayılan güvenli konfigürasyonla açılır
+- Blok sayısı sınırlıdır; imaj kabul edilirken en kötü durum döngü süresi kontrol edilir
+- CAN timeout durumunda her çıkış tanımlı failsafe durumuna geçer
 
 ## 9. Açık konular
 
-- [ ] Çıkış akım sınıflarının kesinleşmesi (4× 20 A + 14× 10 A + 3 half-bridge + 2 akım kontrollü PWM taslak)
-- [ ] Kaç girişin frekans ölçümüne bağlanacağı
-- [ ] Half-bridge ve akım kontrollü PWM entegre seçimi (24 V uyumlu)
+- [ ] Çıkış akım sınıflarının kesinleşmesi
+- [ ] Frekans ölçümüne bağlanacak giriş sayısı
+- [ ] Half-bridge MOSFET seçimi (60 V)
+- [ ] 20 A kanal çözümü
+- [ ] Akım kontrollü PWM çözümü
 - [ ] Uyku modu tüketim hedefi
-- [ ] 3. CAN hattı gerekli mi?
-- [ ] 22 giriş + 23 çıkış ile MCU pin bütçesi (LQFP128 yetiyor mu, yoksa GPIO genişletici mi?)
+- [ ] MCU kesinleşmesi ve pin bütçesi
 - [ ] Toplam sürekli akım ve konnektör seçimi
-- [ ] Blok aracının mevcut çıktı formatı (JSON/XML/C) ve imaj dönüştürücüsü
-- [ ] CAN yükleme protokolü: özel protokol mü, ISO-TP/UDS mi?
-- [ ] Pin atama tablosu (çıkış listesi kesinleşince yeniden yapılacak)
+- [ ] Blok aracının çıktı formatı ve imaj dönüştürücüsü
+- [ ] CAN yükleme protokolü (özel protokol veya ISO-TP/UDS)
+- [ ] Pin atama tablosu
 
-## 10. Sonraki adımlar
+## 10. Yol haritası
 
-1. Çıkış akım sınıflarını kesinleştir, pin bütçesini yeniden hesapla
+1. Çıkış akım sınıflarını kesinleştir, pin bütçesini hesapla
 2. Entegre seçimleri ve pin atama tablosu
 3. Güç giriş katı şeması
-4. KiCad şematik
-5. Paralelde: Nucleo üzerinde çekirdek iskeleti (HAL, sinyal tablosu, blok çalıştırıcı)
+4. KiCad şematik ve PCB
+5. Nucleo üzerinde çekirdek iskeleti (HAL, sinyal tablosu, blok çalıştırıcı)
+
+## Lisans
+
+Belirlenecek.

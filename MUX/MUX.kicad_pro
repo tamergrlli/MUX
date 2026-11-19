@@ -464,6 +464,22 @@
     [
       "3b983841-33cd-410d-a6ef-22c53c7a3d89",
       "CURRENT_CONTROLLED_PWM"
+    ],
+    [
+      "0e790c85-2c43-4e6a-83c7-c39416b6d2a7",
+      "INPUT"
+    ],
+    [
+      "ce265f4a-d272-4809-9178-30e1ae663de9",
+      "DIGITAL_IN"
+    ],
+    [
+      "0070de1d-b449-4c8a-9169-4d804a8767ff",
+      "ANALOG_IN"
+    ],
+    [
+      "db012dac-fa8a-4d41-bed6-137e5a00e79c",
+      "PWM_IN"
     ]
   ],
   "text_variables": {},

@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "f223be91-178e-4ae2-af31-5f3ba9c3305e")
+	(uuid "24daebdf-e110-49fa-ad13-bb6d2fbda0cf")
 	(paper "A3")
 	(lib_symbols
 		(symbol "MCU_ST_STM32G4:STM32G474QETx"
