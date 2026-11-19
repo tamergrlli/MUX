@@ -1,0 +1,146 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "a2060a4a-3ed4-4a95-9966-7d7e41077692")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 39.37 85.09)
+		(size 34.29 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0070de1d-b449-4c8a-9169-4d804a8767ff")
+		(property "Sheetname" "ANALOG_IN"
+			(at 39.37 84.3784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ANALOG_IN.kicad_sch"
+			(at 39.37 123.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 33.02)
+		(size 25.4 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ce265f4a-d272-4809-9178-30e1ae663de9")
+		(property "Sheetname" "DIGITAL_IN"
+			(at 38.1 32.3084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DIGITAL_IN.kicad_sch"
+			(at 38.1 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 137.16)
+		(size 41.91 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "db012dac-fa8a-4d41-bed6-137e5a00e79c")
+		(property "Sheetname" "PWM_IN"
+			(at 39.37 136.4484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PWM_IN.kicad_sch"
+			(at 39.37 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7"
+					(page "12")
+				)
+			)
+		)
+	)
+)

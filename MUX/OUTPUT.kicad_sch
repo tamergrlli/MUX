@@ -1,0 +1,192 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "59d619a7-0979-4691-82cf-c3cbb2efb6ff")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 41.91 33.02)
+		(size 27.94 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "14b4b732-37d8-4eb2-84ce-c33c950a863b")
+		(property "Sheetname" "HIGH_SIDE_HIGH_CURRENT"
+			(at 41.91 32.3084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HIGH_SIDE_HIGH_CURRENT.kicad_sch"
+			(at 41.91 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 85.09)
+		(size 25.4 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3b983841-33cd-410d-a6ef-22c53c7a3d89")
+		(property "Sheetname" "CURRENT_CONTROLLED_PWM"
+			(at 109.22 84.3784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CURRENT_CONTROLLED_PWM.kicad_sch"
+			(at 109.22 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 33.02)
+		(size 27.94 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "db658624-3d9d-4378-b1db-4f7110ac4b3d")
+		(property "Sheetname" "HALF_BRIDGE"
+			(at 109.22 32.3084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HALF_BRIDGE.kicad_sch"
+			(at 109.22 67.8946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 80.01)
+		(size 29.21 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e7ff53c7-1e8c-44ed-b754-b403337d43ca")
+		(property "Sheetname" "HIGH_SIDE_LOW_CURRENT"
+			(at 40.64 79.2984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HIGH_SIDE_LOW_CURRENT.kicad_sch"
+			(at 40.64 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394"
+					(page "6")
+				)
+			)
+		)
+	)
+)
