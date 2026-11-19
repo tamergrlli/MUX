@@ -1,0 +1,18 @@
+# KiCad geçici ve kullanıcıya özel dosyalar
+*.lck
+~*.lck
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.bak
+*.bck
+*.kicad_sch-bak
+*.kicad_pcb-bak
+_autosave-*
+\#auto_saved_files#
+
+# İşletim sistemi / editör
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
