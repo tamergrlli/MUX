@@ -1,0 +1,63 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9bd09dd8-790c-4ed4-ab1e-856c128ab5ff")
+	(paper "A4")
+	(lib_symbols)
+	(text "GUC GIRISI / KORUMA (LM74800-Q1 + TVS)\nVBAT_RAW -> TVS (24 V load dump) -> VBAT: ana guc yolu (high-side, half-bridge surucu beslemesi)\nVBAT -> LM74800-Q1 + 2x 60 V N-MOSFET (ters kutup + OV kesme ~37 V) -> VBAT_OVP\nVBAT_OVP: mantik, sensor, CAN ve TLE82453 beslemesi (maks. 45 V parcalar)\nVBAT_SENSE: MCU ADC icin bolunmus aku gerilimi\nISO 16750-2, ISO 7637-2"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "df18d222-a622-4bb0-814f-6918edc7fe43")
+	)
+	(hierarchical_label "VBAT_RAW"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1870591c-7eef-4f35-8a44-35546dbb5971")
+	)
+	(hierarchical_label "VBAT_OVP"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3347966c-0558-4c08-b2b0-f5eb2d595e20")
+	)
+	(hierarchical_label "VBAT"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7d26820-866b-464c-aa3e-0b02416af64f")
+	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db35b18b-7f64-48b8-81d7-162c7fb68795")
+	)
+)

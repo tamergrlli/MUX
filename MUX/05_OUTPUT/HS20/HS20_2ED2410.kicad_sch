@@ -1,0 +1,129 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ea4d4c26-bd9b-415f-bd9f-a2860991017e")
+	(paper "A4")
+	(lib_symbols)
+	(text "HS20 SURUCU SABLONU - 2ED2410-EM (2 kanal / entegre, ~20 A)\nHIGH_SIDE_20A icinde 2 kez kullanilir (HS20_DRV0: kanal 0-1, HS20_DRV1: kanal 2-3).\nIcerik: 2ED2410-EM, 2x IAUC120N06S5N015 (60 V, 1,5 mohm), 2x shunt, boost bobini (SW/RS/BC), NTC (TMP)\nINA/INB: MCU PWM, EN: ortak enable, ISA/ISB (CSO1/CSO2): akim olcumu -> ADC\nINT: acik drain kesme -> MCU, OUTA/OUTB: yuk cikislari"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "5add2e2f-dc92-4e33-a85c-28e577999681")
+	)
+	(hierarchical_label "INB"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41b349ec-b3cd-48f1-86c0-fafda87a43d0")
+	)
+	(hierarchical_label "ISB"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "480a9819-9594-46c0-94e7-98a080076d8c")
+	)
+	(hierarchical_label "ISA"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c8d9010-7f5d-425b-866a-da2f469d31bc")
+	)
+	(hierarchical_label "INT"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6ac8869e-1ae8-4222-beea-951fc86f7b88")
+	)
+	(hierarchical_label "INA"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89aadb1f-ec60-4e18-b406-4ef2086d6f2f")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "971e72e4-336a-4cab-a304-9e7c97c46dab")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3b20fd8-87ce-47b0-aa8e-1cba00733ed5")
+	)
+	(hierarchical_label "OUTA"
+		(shape output)
+		(at 203.2 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f85addf6-7502-4ef5-96a1-d72bf0ee946c")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd6d254d-163b-4ac3-9972-345bf247878d")
+	)
+	(hierarchical_label "OUTB"
+		(shape output)
+		(at 203.2 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fef97e81-ebfb-4174-a10a-b3ec16ea2e55")
+	)
+)

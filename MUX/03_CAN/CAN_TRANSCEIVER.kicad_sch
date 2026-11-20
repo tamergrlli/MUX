@@ -1,0 +1,162 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "25eadea3-62d0-4f81-8c62-b6dd74533a60")
+	(paper "A4")
+	(lib_symbols)
+	(text "CAN FD TRANSCEIVER (CAN1 ve CAN2 ayni sayfa, 2 ornek)\nTCAN1043A-Q1 (SOIC-14, +-58 V bus), VSUP = VBAT_OVP\nINH -> LOGIC_SUPPLY uyandirma, WAKE: yerel uyandirma girisi\n120 ohm sonlandirma TERM_EN ile acilip kapanir\nCommon-mode choke + 24 V uyumlu CAN ESD"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "32a78f81-2003-4fb9-8795-f6b3cf05dd71")
+	)
+	(hierarchical_label "NFAULT"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1e342262-f797-4e1b-ac96-b8850bd13dbf")
+	)
+	(hierarchical_label "CANL"
+		(shape bidirectional)
+		(at 203.2 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f5ae7bf-2803-4c81-8362-bd17f07e89e0")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36272a77-3393-4e09-a29f-f7e1d5a37be9")
+	)
+	(hierarchical_label "TERM_EN"
+		(shape input)
+		(at 50.8 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b10641e-2a82-4a00-81c8-975265edb935")
+	)
+	(hierarchical_label "TXD"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c6586ff-e942-4996-8b68-dda49dd5ad2e")
+	)
+	(hierarchical_label "RXD"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e768810-c339-4df4-a2f2-8efb914de99f")
+	)
+	(hierarchical_label "WAKE"
+		(shape input)
+		(at 50.8 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "75619c1f-e8bb-46c6-b5e9-9773ef6b2ccd")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad747def-303d-4067-a726-4775fdd92d19")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae67677c-06f3-4f88-9c7f-86728fb508ac")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c43c3dcf-fe36-4a5f-91f3-6a5ce7f2653a")
+	)
+	(hierarchical_label "CANH"
+		(shape bidirectional)
+		(at 203.2 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d694004e-35cf-4248-abbf-081c5e6d4979")
+	)
+	(hierarchical_label "INH"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc6540de-8d0d-4d55-b0bf-f344f5cdc115")
+	)
+	(hierarchical_label "STB_N"
+		(shape input)
+		(at 50.8 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe4dfc8f-334a-4143-95ee-d01cbc7fa0c1")
+	)
+)

@@ -1,0 +1,861 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c823e850-b793-4c38-aeb3-cc4b3969ea09")
+	(paper "A4")
+	(lib_symbols)
+	(text "PWM / FREKANS GIRISLERI - 4 kanal (IN0..IN3)\nKanal devresi FREQ_CHANNEL.kicad_sch icinde (4 ornek)."
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "f308198a-eb4d-4aa2-8578-15e4c56190f9")
+	)
+	(bus_entry
+		(at 25.4 55.88)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d7eb2e-671e-4a86-a9f6-88e8b032898d")
+	)
+	(bus_entry
+		(at 25.4 50.8)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30137088-c3c3-4a85-9417-5473a721a261")
+	)
+	(bus_entry
+		(at 271.6 50.8)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36444573-897e-4fcf-829a-6d8280f75d85")
+	)
+	(bus_entry
+		(at 271.6 55.88)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5929a0cc-dd77-4da3-97a1-c854f8508e3c")
+	)
+	(bus_entry
+		(at 25.4 53.34)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73f7ede7-d2f7-44f9-9480-81d4aea5369e")
+	)
+	(bus_entry
+		(at 271.6 53.34)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e4eb14-c8d0-4885-8847-0f77f239cfae")
+	)
+	(bus_entry
+		(at 271.6 58.42)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73f22ce-8a93-419d-a0a3-5e6b5d3d8467")
+	)
+	(bus_entry
+		(at 25.4 58.42)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f506decb-3ce9-4e57-b32e-aa65784957ec")
+	)
+	(wire
+		(pts
+			(xy 68.58 73.66) (xy 76.2 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08470d6a-e0ac-4b4a-98ef-6b03fa440d4a")
+	)
+	(bus
+		(pts
+			(xy 271.6 50.8) (xy 281.76 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "088bfca1-dc82-43d7-acba-6794ec8dc811")
+	)
+	(wire
+		(pts
+			(xy 116.84 73.66) (xy 124.46 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bfcc66a-1ed5-41fc-8379-c3c1eb454af3")
+	)
+	(wire
+		(pts
+			(xy 27.94 58.42) (xy 35.56 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e551e4d-47f7-40b4-a030-c32160f337e9")
+	)
+	(wire
+		(pts
+			(xy 68.58 93.98) (xy 76.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "222806e0-5466-4187-9275-4e5281413277")
+	)
+	(bus
+		(pts
+			(xy 271.6 50.8) (xy 271.6 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e500002-cd07-4128-aa55-d8f938c00dbf")
+	)
+	(wire
+		(pts
+			(xy 68.58 55.88) (xy 76.2 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3376c5a1-5d5a-4699-a851-36f7f98d3f0f")
+	)
+	(wire
+		(pts
+			(xy 261.44 58.42) (xy 269.06 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bebbdc6-6c48-429b-a646-6bb1fadf340e")
+	)
+	(wire
+		(pts
+			(xy 68.58 116.84) (xy 76.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c97869-b52b-4798-86c8-9a46478fb3c2")
+	)
+	(wire
+		(pts
+			(xy 116.84 93.98) (xy 124.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "583be67e-2b19-48ea-88b8-a91fee2826cb")
+	)
+	(wire
+		(pts
+			(xy 68.58 53.34) (xy 76.2 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7927829b-bc49-4831-9ce5-ac99f71adedc")
+	)
+	(wire
+		(pts
+			(xy 27.94 53.34) (xy 35.56 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7969c128-8190-470b-bfca-9c634a1bde76")
+	)
+	(wire
+		(pts
+			(xy 27.94 55.88) (xy 35.56 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b33e587-0b63-491e-9535-0ec86e9c0610")
+	)
+	(wire
+		(pts
+			(xy 68.58 76.2) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c60d96b-a942-4fe1-82d3-2aabf0beea82")
+	)
+	(wire
+		(pts
+			(xy 261.44 55.88) (xy 269.06 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb0195d-39fa-4fc6-b045-bdb130ff3766")
+	)
+	(wire
+		(pts
+			(xy 68.58 96.52) (xy 76.2 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95afec55-2783-4150-9b26-1db458c6ab36")
+	)
+	(wire
+		(pts
+			(xy 261.44 53.34) (xy 269.06 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5151650-30bc-4b75-b5fa-44e51b34dece")
+	)
+	(bus
+		(pts
+			(xy 15.24 50.8) (xy 25.4 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba4b7605-a5f1-49e3-845d-21524df9b95a")
+	)
+	(wire
+		(pts
+			(xy 27.94 60.96) (xy 35.56 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd3c36dc-e0d6-417e-a68c-d7a677c49973")
+	)
+	(wire
+		(pts
+			(xy 68.58 114.3) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccc72745-4c82-421a-a300-620b91c6e58a")
+	)
+	(bus
+		(pts
+			(xy 25.4 50.8) (xy 25.4 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d957e5da-a2cf-4ad3-90a4-4a6b9c2c8611")
+	)
+	(wire
+		(pts
+			(xy 261.44 60.96) (xy 269.06 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd4ef725-3f80-47c2-b504-a716f1b98cf5")
+	)
+	(wire
+		(pts
+			(xy 116.84 53.34) (xy 124.46 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3f99cc3-97a8-4841-8250-7d274d0590a3")
+	)
+	(wire
+		(pts
+			(xy 116.84 114.3) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55acef7-52e8-41c4-9e69-4b451f3b81b6")
+	)
+	(label "IN_FREQ2"
+		(at 261.44 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1cfc28f8-faae-4e93-b441-3ba5b981e02d")
+	)
+	(label "IN_FREQ0"
+		(at 261.44 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "30baa0bc-a604-4dbd-94a6-9fc440a234d9")
+	)
+	(label "IN_FREQ2"
+		(at 124.46 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46f60cc3-c915-4923-b24a-ce5db3343359")
+	)
+	(label "IN_FREQ1"
+		(at 124.46 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5640770a-0c1c-47ed-bd43-cab2a06e8bfa")
+	)
+	(label "IN_PROT2"
+		(at 35.56 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "675e6d88-2fbc-4e17-bff4-12200b0e1580")
+	)
+	(label "IN_FREQ3"
+		(at 261.44 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6fc74399-dee1-4031-95dd-23e7fff0f3da")
+	)
+	(label "IN_PROT1"
+		(at 68.58 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "82eb5d32-221c-48b0-b514-447730902f60")
+	)
+	(label "IN_PROT1"
+		(at 35.56 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ca85cda-20e3-4e76-a8bd-13d5ca25d7b3")
+	)
+	(label "IN_PROT3"
+		(at 35.56 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e5adbc2-efbd-4e4d-a856-6e8815c1b521")
+	)
+	(label "IN_PROT2"
+		(at 68.58 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b8c8a7b3-478e-4596-8da7-b2060820d835")
+	)
+	(label "IN_PROT0"
+		(at 68.58 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd059a1b-7b9e-468c-bb1a-7863f1b8e41c")
+	)
+	(label "IN_PROT0"
+		(at 35.56 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9ce87c5-f1f4-44e8-91af-8a99d02d39f9")
+	)
+	(label "IN_FREQ0"
+		(at 124.46 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ccaf8f92-41d3-407b-ba0a-8172a3f117ef")
+	)
+	(label "IN_FREQ3"
+		(at 124.46 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3ee0c4e-db2b-4f75-8732-85be5c790bf7")
+	)
+	(label "IN_PROT3"
+		(at 68.58 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6f895ee-ac10-4f31-9c00-04b604f508b5")
+	)
+	(label "IN_FREQ1"
+		(at 261.44 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8ad1d98-0316-453e-a227-d8e30bcbca51")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 68.58 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d74a81f-e9f4-42c7-83cf-3f5caee2a91e")
+	)
+	(hierarchical_label "IN_FREQ[0..3]"
+		(shape output)
+		(at 281.76 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55290204-0774-4b6b-9bb5-7ee87fe6c1c6")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 68.58 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c375629-dd85-4749-86bc-f92680d3c1fc")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 68.58 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76992a0f-b132-4283-a2d5-471c26e149be")
+	)
+	(hierarchical_label "IN_PROT[0..21]"
+		(shape input)
+		(at 15.24 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "84c63de5-8923-4293-b14d-ac0936e3ca92")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 68.58 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aa743cb0-bc5c-4308-9ab1-3a8228923556")
+	)
+	(sheet
+		(at 76.2 91.44)
+		(size 40.64 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6786d893-e251-483a-a05d-b8a6edcba921")
+		(property "Sheetname" "FREQ_CH2"
+			(at 76.2 90.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FREQ_CHANNEL.kicad_sch"
+			(at 76.2 99.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 93.98 180)
+			(uuid "1f86ded4-8395-4863-adc9-fcc78e59b518")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 96.52 180)
+			(uuid "096135fe-c60d-45e1-a44c-5eebd714f9d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FREQ" output
+			(at 116.84 93.98 0)
+			(uuid "5b11f8b5-d2af-4f06-b49d-ddb3453c0742")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/95d15d81-72b3-4f01-99ec-034e69e7d314"
+					(page "58")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 71.12)
+		(size 40.64 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a37235ba-e1a9-4592-88f8-2257dba64aa2")
+		(property "Sheetname" "FREQ_CH1"
+			(at 76.2 70.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FREQ_CHANNEL.kicad_sch"
+			(at 76.2 79.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 73.66 180)
+			(uuid "c1e23c87-15c0-4190-b92d-6e0c047441da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 76.2 180)
+			(uuid "3ad96ae6-1c8c-41b7-8527-e8022885a500")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FREQ" output
+			(at 116.84 73.66 0)
+			(uuid "89910ec8-52e0-47c6-a4af-2a6a30641ff1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/95d15d81-72b3-4f01-99ec-034e69e7d314"
+					(page "57")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 50.8)
+		(size 40.64 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e11a3741-bbdb-457d-9c77-657b7251d2ac")
+		(property "Sheetname" "FREQ_CH0"
+			(at 76.2 50.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FREQ_CHANNEL.kicad_sch"
+			(at 76.2 59.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 53.34 180)
+			(uuid "c4894070-54ce-4816-bfff-904466cc9639")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 55.88 180)
+			(uuid "4eb4ad37-da6a-4d92-94a6-18fcf95cd8c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FREQ" output
+			(at 116.84 53.34 0)
+			(uuid "68bb7ac3-dfb2-46b2-9f43-013344be53b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/95d15d81-72b3-4f01-99ec-034e69e7d314"
+					(page "56")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 111.76)
+		(size 40.64 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fb523356-8213-4d88-a221-3a94c0cde44b")
+		(property "Sheetname" "FREQ_CH3"
+			(at 76.2 111.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FREQ_CHANNEL.kicad_sch"
+			(at 76.2 119.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 76.2 114.3 180)
+			(uuid "cdcc183d-18a9-42ed-8013-4fda9e0309b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 76.2 116.84 180)
+			(uuid "2b932c8a-a96c-4677-be84-818a6033ea1f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FREQ" output
+			(at 116.84 114.3 0)
+			(uuid "20588a99-1286-45e8-971c-9a490cafc8bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/0e790c85-2c43-4e6a-83c7-c39416b6d2a7/95d15d81-72b3-4f01-99ec-034e69e7d314"
+					(page "59")
+				)
+			)
+		)
+	)
+)

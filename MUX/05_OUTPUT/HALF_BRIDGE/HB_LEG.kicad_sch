@@ -1,0 +1,85 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3b89d2f4-74d6-45f3-8a2c-8f2aa34e3eec")
+	(paper "A4")
+	(lib_symbols)
+	(text "HALF-BRIDGE BACAGI SABLONU (1 faz)\nHALF_BRIDGE icinde 3 kez kullanilir (HB_LEG0..2).\nIcerik: high-side + low-side IAUC120N06S5N022 (60 V, 2,2 mohm), gate direncleri, shunt direnci.\nGH/GL: DRV8323 GHx/GLx, OUT: SHx = faz cikisi, SP/SN: shunt -> DRV SPx/SNx"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "e444de6b-95a7-4531-83f7-0c3912f17c27")
+	)
+	(hierarchical_label "GL"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1dbd9a6e-1bd0-4623-a471-67007526b66e")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d9737b1-1332-4e98-aa95-011e03af2e37")
+	)
+	(hierarchical_label "SP"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57217c65-5c6f-4cdf-a59c-06bd34523d43")
+	)
+	(hierarchical_label "GH"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a48dd28-4bbf-40e5-931e-df1626b21f04")
+	)
+	(hierarchical_label "SN"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c49c70d5-8acb-422c-91f5-a84028b93424")
+	)
+	(hierarchical_label "OUT"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "faafd514-b463-4c8b-b0ec-2318830cc284")
+	)
+)

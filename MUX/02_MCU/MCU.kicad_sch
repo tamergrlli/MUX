@@ -3394,457 +3394,6 @@
 		)
 		(uuid "2f2b7fff-6a9f-4653-9dc7-5e126b9ba3cf")
 	)
-	(hierarchical_label "VBAT_SENSE"
-		(shape input)
-		(at 60.96 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "030a7cf3-baac-4abb-b9be-18e207b4449b")
-	)
-	(hierarchical_label "CAN1_TERM_EN"
-		(shape output)
-		(at 172.72 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "194ad893-ffa8-4f4f-9d55-b4829eaf1271")
-	)
-	(hierarchical_label "DRV_MISO"
-		(shape input)
-		(at 60.96 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1dd7a404-ca16-4222-bbe4-896692b5dfb9")
-	)
-	(hierarchical_label "CAN1_STB_N"
-		(shape output)
-		(at 172.72 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "29b9ba4d-6e9c-4aae-a791-6ab2c91c4463")
-	)
-	(hierarchical_label "CAN1_EN"
-		(shape output)
-		(at 172.72 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2c82c4e4-a246-4654-a971-0970c97e8723")
-	)
-	(hierarchical_label "CCPWM_IN[0..1]"
-		(shape output)
-		(at 172.72 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2e110278-0f69-4641-b475-5810671e2645")
-	)
-	(hierarchical_label "HS20_IN[0..3]"
-		(shape output)
-		(at 172.72 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "32928e32-f526-4ab4-a315-621bb2f40a60")
-	)
-	(hierarchical_label "CAN1_NFAULT"
-		(shape input)
-		(at 60.96 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "371d92d3-973d-4b98-a4bb-415c1543cce3")
-	)
-	(hierarchical_label "PU_MOSI"
-		(shape output)
-		(at 172.72 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3fb67381-a551-480c-87c1-6b747de54701")
-	)
-	(hierarchical_label "CCPWM_ISENSE[0..1]"
-		(shape input)
-		(at 60.96 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42c0114c-eb08-42b6-9d8c-f7688f51c4bf")
-	)
-	(hierarchical_label "CAN2_NFAULT"
-		(shape input)
-		(at 60.96 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48bcb9e7-5d6d-4fd0-ba99-e30b21c68efa")
-	)
-	(hierarchical_label "DRV_EN"
-		(shape output)
-		(at 172.72 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4eb1d505-c74a-4bb7-ac21-7d5035e15f3a")
-	)
-	(hierarchical_label "HB_INH[0..2]"
-		(shape output)
-		(at 172.72 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "54d441b8-85ab-453f-a776-8f29bf0ad4ff")
-	)
-	(hierarchical_label "IN_FREQ[0..3]"
-		(shape input)
-		(at 60.96 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "54d8eedc-68ab-4683-bdc8-f3842e0c6760")
-	)
-	(hierarchical_label "PU_LATCH"
-		(shape output)
-		(at 172.72 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5cacee7f-aedd-4253-81af-b595f04c3808")
-	)
-	(hierarchical_label "CAN2_EN"
-		(shape output)
-		(at 172.72 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "63c8a045-3bee-4d98-b995-09a98fb74ad6")
-	)
-	(hierarchical_label "CAN1_TXD"
-		(shape output)
-		(at 172.72 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "65a961d0-d9e8-4440-907a-be816ff63802")
-	)
-	(hierarchical_label "HB_INL[0..2]"
-		(shape output)
-		(at 172.72 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6bce2ecd-2c54-43d0-91a7-b3c61652edef")
-	)
-	(hierarchical_label "CAN2_RXD"
-		(shape input)
-		(at 60.96 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7bddf78a-a279-4ec8-b0c2-6bcc13a0c9d2")
-	)
-	(hierarchical_label "DRV_SCK"
-		(shape output)
-		(at 172.72 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8a779e84-b6cf-4ac2-a77b-ed58554fab55")
-	)
-	(hierarchical_label "IN_ADC[0..21]"
-		(shape input)
-		(at 60.96 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b19e720-29e5-470a-8626-a058bd4ca960")
-	)
-	(hierarchical_label "PU_SCK"
-		(shape output)
-		(at 172.72 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8d82410e-3c12-458d-bfa7-505dbe3825f9")
-	)
-	(hierarchical_label "SENS_5V_FAULT"
-		(shape input)
-		(at 60.96 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "95b29a59-bc10-46bd-bb4d-7d940a55f590")
-	)
-	(hierarchical_label "HS10_IN[0..13]"
-		(shape output)
-		(at 172.72 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9c7f1c35-efc6-448f-98df-bb133b305e9a")
-	)
-	(hierarchical_label "HS10_IS[0..13]"
-		(shape input)
-		(at 60.96 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a215104c-d7de-4dde-be22-11bb92f781f8")
-	)
-	(hierarchical_label "DRV_MOSI"
-		(shape output)
-		(at 172.72 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac039bea-4050-4921-bffa-0507c1aa6dbf")
-	)
-	(hierarchical_label "SENS_12V_FAULT"
-		(shape input)
-		(at 60.96 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b9914f4b-437c-4f55-ad0a-58781a97b110")
-	)
-	(hierarchical_label "CAN1_RXD"
-		(shape input)
-		(at 60.96 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ba55031d-d41a-46f6-84c4-d56908bd32f5")
-	)
-	(hierarchical_label "CAN2_TERM_EN"
-		(shape output)
-		(at 172.72 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "be9a3eca-dfa8-42da-808f-aa7252acda2b")
-	)
-	(hierarchical_label "CAN2_TXD"
-		(shape output)
-		(at 172.72 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bfb6cb9d-24c2-4eb3-9f17-a452f465aac5")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 60.96 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c114fe18-12c4-4875-a8b5-dfff3c0d1709")
-	)
-	(hierarchical_label "HS10_DEN"
-		(shape output)
-		(at 172.72 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c11f471e-e9a3-4df1-ab61-92b7454d1d91")
-	)
-	(hierarchical_label "CAN2_STB_N"
-		(shape output)
-		(at 172.72 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c1a33fe4-0c4d-4a56-ad0f-3c9f1a4d7120")
-	)
-	(hierarchical_label "HB_ISENSE[0..2]"
-		(shape input)
-		(at 60.96 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c5539e12-52f3-4061-90e8-9775fa5cb773")
-	)
-	(hierarchical_label "PU_OE_N"
-		(shape output)
-		(at 172.72 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cf0c37df-7c13-49a9-b946-e8be1b09d146")
-	)
-	(hierarchical_label "HS20_IS[0..3]"
-		(shape input)
-		(at 60.96 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d6271fc6-90ed-4065-902e-aceef331dcbc")
-	)
-	(hierarchical_label "SENS_12V_EN"
-		(shape output)
-		(at 172.72 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dba16f5e-aa7a-4ca3-a418-7bdbe4c137ae")
-	)
-	(hierarchical_label "HS20_DEN"
-		(shape output)
-		(at 172.72 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e3b6e743-0f2a-4b23-be4f-9ab1130aa634")
-	)
-	(hierarchical_label "DRV_CS_N"
-		(shape output)
-		(at 172.72 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e46028e5-e28c-490b-b541-53d65efe0af1")
-	)
-	(hierarchical_label "SENS_5V_EN"
-		(shape output)
-		(at 172.72 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ebe96b0d-ea7e-4552-9449-c0c2b1346b5c")
-	)
-	(hierarchical_label "DRV_FAULT_N"
-		(shape input)
-		(at 60.96 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ed5dd650-9a55-4e16-b2d2-55b2e4cb6482")
-	)
 	(symbol
 		(lib_id "MCU_ST_STM32G4:STM32G474QETx")
 		(at 114.3 106.68 0)
@@ -4305,5 +3854,511 @@
 				)
 			)
 		)
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 60.96 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c8fd2fc-055a-49ef-b9e7-8e0af481536e")
+	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape input)
+		(at 60.96 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba67f247-e768-47bb-9cb0-e64c76903439")
+	)
+	(hierarchical_label "IN_ADC[0..21]"
+		(shape input)
+		(at 60.96 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "17144b20-83d2-498f-9ae9-556e0a926f8c")
+	)
+	(hierarchical_label "IN_FREQ[0..3]"
+		(shape input)
+		(at 60.96 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a601997-7a66-43d3-8848-6506d9de4224")
+	)
+	(hierarchical_label "HS20_IS[0..3]"
+		(shape input)
+		(at 60.96 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b6038cd-1f2f-4b87-8fae-bb8b87468c0b")
+	)
+	(hierarchical_label "HS20_INT[0..1]"
+		(shape input)
+		(at 60.96 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b6e1fb95-c4e0-4100-ad7a-892db8691d52")
+	)
+	(hierarchical_label "HS10_IS[0..9]"
+		(shape input)
+		(at 60.96 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da4588cf-20b9-4f31-93cd-ee4c553c4f82")
+	)
+	(hierarchical_label "HB_ISENSE[0..2]"
+		(shape input)
+		(at 60.96 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa6e7adc-c66a-44dd-8bd3-18f2c7d8ca25")
+	)
+	(hierarchical_label "OUT_SPI_MISO"
+		(shape input)
+		(at 60.96 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "184436ac-6adf-4df8-a359-fa74981505cd")
+	)
+	(hierarchical_label "DRV_FAULT_N"
+		(shape input)
+		(at 60.96 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8cc2b419-a7c2-4c9c-81c7-718715755fd7")
+	)
+	(hierarchical_label "CCPWM_FAULT_N"
+		(shape input)
+		(at 60.96 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aae30501-743d-46cd-ae4e-616abcf63db4")
+	)
+	(hierarchical_label "CAN1_RXD"
+		(shape input)
+		(at 60.96 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69e74790-4a01-40d0-84cf-41d52b7bebd9")
+	)
+	(hierarchical_label "CAN1_NFAULT"
+		(shape input)
+		(at 60.96 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "90ec112d-0bfe-4c1a-a40c-b1324f348bc5")
+	)
+	(hierarchical_label "CAN2_RXD"
+		(shape input)
+		(at 60.96 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a8e1741-43b9-42ac-9c49-6bfd82b826ac")
+	)
+	(hierarchical_label "CAN2_NFAULT"
+		(shape input)
+		(at 60.96 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6eab5743-48fd-4e15-a7b5-0d04b7ccbb4a")
+	)
+	(hierarchical_label "SENS_5V_FAULT"
+		(shape input)
+		(at 60.96 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5e27402-7375-4701-850f-f945fb2ff5ee")
+	)
+	(hierarchical_label "SENS_12V_FAULT"
+		(shape input)
+		(at 60.96 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "edf2e5d0-8e1d-499d-8bb3-3d3077f519e7")
+	)
+	(hierarchical_label "HS20_IN[0..3]"
+		(shape output)
+		(at 172.72 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2bde52a-ffe2-444a-b9cc-acb2e747d714")
+	)
+	(hierarchical_label "HS20_EN"
+		(shape output)
+		(at 172.72 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9fc33d1e-b965-4251-8260-2a63cc3f56b6")
+	)
+	(hierarchical_label "HS10_IN[0..13]"
+		(shape output)
+		(at 172.72 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f01b7f4e-c8d7-4604-8e1b-178e44841d0e")
+	)
+	(hierarchical_label "HS10_DEN"
+		(shape output)
+		(at 172.72 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e5ebb72d-a933-44e1-b9c7-538838001faf")
+	)
+	(hierarchical_label "HS10_DSEL"
+		(shape output)
+		(at 172.72 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "effe201f-3985-4102-8f0a-9a3f5ee766e0")
+	)
+	(hierarchical_label "HB_INH[0..2]"
+		(shape output)
+		(at 172.72 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b45e49a6-8231-40d3-8c83-4615733aa21b")
+	)
+	(hierarchical_label "HB_INL[0..2]"
+		(shape output)
+		(at 172.72 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f23470fd-e8fd-4961-86b5-8b9d5b4fb96c")
+	)
+	(hierarchical_label "DRV_EN"
+		(shape output)
+		(at 172.72 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a47fc1af-40b5-400f-818d-6806ac6dc4ee")
+	)
+	(hierarchical_label "DRV_CS_N"
+		(shape output)
+		(at 172.72 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c4de6c63-4643-47f5-b603-6852753aef2f")
+	)
+	(hierarchical_label "OUT_SPI_SCK"
+		(shape output)
+		(at 172.72 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cba2f246-3787-4136-a974-e62a06bf5765")
+	)
+	(hierarchical_label "OUT_SPI_MOSI"
+		(shape output)
+		(at 172.72 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18d08e7f-1f3a-4419-a201-6db2465fe5a7")
+	)
+	(hierarchical_label "CCPWM_EN"
+		(shape output)
+		(at 172.72 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e9e3225e-69e6-449f-aa7c-29a0b59ccee9")
+	)
+	(hierarchical_label "CCPWM_RESN"
+		(shape output)
+		(at 172.72 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e9ba830a-46d7-4096-89dd-d2899f2495cd")
+	)
+	(hierarchical_label "CCPWM_CLK"
+		(shape output)
+		(at 172.72 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ffaab99-be0e-4dae-a666-a2a23241b752")
+	)
+	(hierarchical_label "CCPWM_CS_N"
+		(shape output)
+		(at 172.72 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b26eb568-d9d7-48bd-8e63-1c769fcf251b")
+	)
+	(hierarchical_label "PU_SCK"
+		(shape output)
+		(at 172.72 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a33bb390-3804-459c-a467-59091f22926d")
+	)
+	(hierarchical_label "PU_MOSI"
+		(shape output)
+		(at 172.72 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75e4b76b-08de-4a61-9c01-d2783a3ea6eb")
+	)
+	(hierarchical_label "PU_LATCH"
+		(shape output)
+		(at 172.72 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac162960-b75e-4102-94ec-60e3d370a1e7")
+	)
+	(hierarchical_label "PU_OE_N"
+		(shape output)
+		(at 172.72 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e30f31ef-b3d4-4bc3-93f7-e5c713de2974")
+	)
+	(hierarchical_label "CAN1_TXD"
+		(shape output)
+		(at 172.72 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e28b7558-e9ce-4aad-8064-75c380263727")
+	)
+	(hierarchical_label "CAN1_STB_N"
+		(shape output)
+		(at 172.72 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "02efec39-2583-48cd-b77e-e06dce6ae5ad")
+	)
+	(hierarchical_label "CAN1_EN"
+		(shape output)
+		(at 172.72 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a9cdf3e-abb4-4130-ae9c-63939238a69f")
+	)
+	(hierarchical_label "CAN1_TERM_EN"
+		(shape output)
+		(at 172.72 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cea311e-5523-4a91-8680-51eecabe4a35")
+	)
+	(hierarchical_label "CAN2_TXD"
+		(shape output)
+		(at 172.72 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d11469bc-4b7a-4b03-98ad-05dc286cf3c1")
+	)
+	(hierarchical_label "CAN2_STB_N"
+		(shape output)
+		(at 172.72 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1cc56616-866f-4305-9c1b-340f7b8769b1")
+	)
+	(hierarchical_label "CAN2_EN"
+		(shape output)
+		(at 172.72 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "acff93e9-a7c3-4453-a39a-75dd95ce35d4")
+	)
+	(hierarchical_label "CAN2_TERM_EN"
+		(shape output)
+		(at 172.72 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1d462f91-b6d3-49df-8eac-49675e964038")
+	)
+	(hierarchical_label "SENS_5V_EN"
+		(shape output)
+		(at 172.72 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "318ef315-3969-4ab3-8006-bc5e57e69a75")
+	)
+	(hierarchical_label "SENS_12V_EN"
+		(shape output)
+		(at 172.72 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7e7f67ae-6a4e-4d3a-825d-2fa814e72ae1")
 	)
 )

@@ -1,0 +1,151 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "682b150e-91e9-4544-a294-d2834897685a")
+	(paper "A4")
+	(lib_symbols)
+	(text "AKIM KONTROLLU PWM - TLE82453-3SA (3 kanal, 2 kullanilir, 1 yedek)\nVBAT ve LSUPx: VBAT_OVP (LM74800 OV kesmeli dal, entegre maks. 45 V)\nVDDD/VDDA/VDDAREF: +5V, VIO: +3V3, CLK: MCU timer/MCO\nSPI: OUT_SPI (DRV8323 ile ortak), CS: CCPWM_CS_N\nHSLSx: low-side konfigurasyon, LOAD0/LOAD1 -> oransal valfler"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "2eb0b01d-9e00-4914-99fd-22fa5ad5764f")
+	)
+	(hierarchical_label "CCPWM_RESN"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00b01ee3-5b8f-40b3-a6b1-d2f9fbe0a955")
+	)
+	(hierarchical_label "OUT_SPI_SCK"
+		(shape input)
+		(at 50.8 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1fd809da-9b0d-4071-b1b4-595199ef087c")
+	)
+	(hierarchical_label "VBAT_OVP"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36f00bac-36e5-476d-a34a-63eac25326e4")
+	)
+	(hierarchical_label "CCPWM_FAULT_N"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e4d373c-809d-4d74-8b28-d3e90ef43cbb")
+	)
+	(hierarchical_label "OUT_SPI_MISO"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40b28b8c-847a-4695-8355-c8962946cbe3")
+	)
+	(hierarchical_label "CCPWM_EN"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "84fa8914-6f3b-42f4-b623-d1b7da965f3d")
+	)
+	(hierarchical_label "CCPWM_OUT[0..1]"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9099949b-21eb-4359-baa3-57bf57590590")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9ecbdd83-4a5e-4b79-826a-206699f78e56")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a2cf93bf-aa11-482a-9237-3b7a8aeb8480")
+	)
+	(hierarchical_label "OUT_SPI_MOSI"
+		(shape input)
+		(at 50.8 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf1b8dee-69a9-4004-964c-fb7cc4fd1f42")
+	)
+	(hierarchical_label "CCPWM_CLK"
+		(shape input)
+		(at 50.8 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e810c582-b8dc-4af4-84d0-6a105c00f48f")
+	)
+	(hierarchical_label "CCPWM_CS_N"
+		(shape input)
+		(at 50.8 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9eab54c-1f9b-41f3-94b2-7ce135770145")
+	)
+)

@@ -1,0 +1,107 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d0a961d5-fb01-4970-be81-a9ff81fa0d25")
+	(paper "A4")
+	(lib_symbols)
+	(text "SENSOR BESLEMELERI\n5 V: TPS7B4254-Q1 (150 mA tracker, ADJ = +5V referans)\n12 V: TPS7B4260-Q1 (300 mA tracker, yalnizca 24 V aracta 12 V garanti)\nEN: MCU, FAULT: akim/kisa devre tespiti -> MCU"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "016f5612-e975-4c1a-a83e-5b51833bf0f4")
+	)
+	(hierarchical_label "SENS_5V_FAULT"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f919a55-3f60-4891-8eea-9cf486601f1e")
+	)
+	(hierarchical_label "SENS_5V_EN"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41ed7ed6-ea7f-42d8-bd22-09d69511b6d8")
+	)
+	(hierarchical_label "SENS_12V"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7df59d7d-922d-4042-a75b-6d2505c83f6f")
+	)
+	(hierarchical_label "SENS_5V"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7e7017c4-e1d1-4736-b37c-43f53bd26f0b")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89ca0264-d805-494f-9584-f0605b43bfc0")
+	)
+	(hierarchical_label "SENS_12V_EN"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b465ff84-3698-4474-85eb-720955514b7d")
+	)
+	(hierarchical_label "VBAT_OVP"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4a871d8-8440-40f3-b5dd-5e9dc6847e77")
+	)
+	(hierarchical_label "SENS_12V_FAULT"
+		(shape output)
+		(at 203.2 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be269ede-e49a-49ee-b23b-c76aa24115fb")
+	)
+)

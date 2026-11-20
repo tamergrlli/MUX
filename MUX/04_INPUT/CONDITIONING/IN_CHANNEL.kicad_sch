@@ -2,62 +2,62 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "15fb2f85-a397-4e50-ab7b-ea1655f4d42a")
+	(uuid "9d842080-67a0-42c5-9592-9fb49a97caed")
 	(paper "A4")
 	(lib_symbols)
 	(text "GIRIS KANALI SABLONU (evrensel)\nINPUT_CONDITIONING icinde 22 kez kullanilir (IN_CH0..21).\nIN (konnektor) -> clamp/ESD -> PROT dugumu (pull-up/down buraya) -> bolucu (0-5 / 0-36 V) -> RC -> ADC"
 		(exclude_from_sim no)
-		(at 20.32 160.02 0)
+		(at 20.32 20.32 0)
 		(effects
 			(font
 				(size 2 2)
 			)
 			(justify left top)
 		)
-		(uuid "801d4bbc-1a47-4ad2-89a2-42fe69319725")
-	)
-	(hierarchical_label "ADC"
-		(shape output)
-		(at 203.2 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "26df476f-8b8c-4aed-8110-f562b177a39c")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 76.2 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ba1b9a9-e92b-4312-936d-40074a0f383a")
+		(uuid "a6bdf447-cc72-4fa9-b6e0-41de48baafdd")
 	)
 	(hierarchical_label "PROT"
 		(shape bidirectional)
-		(at 203.2 30.48 0)
+		(at 203.2 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "7e4858f4-9cde-4ec3-9331-b5e20a6d4b55")
+		(uuid "14cec0b7-0a6d-40a7-b601-0357fcfc5dde")
 	)
-	(hierarchical_label "IN"
+	(hierarchical_label "+3V3"
 		(shape input)
-		(at 76.2 35.56 180)
+		(at 50.8 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "8f7890c2-2a01-4f8c-981d-383594991256")
+		(uuid "3b0195c8-0a05-4c24-b98e-55d07a8d6455")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56e38fa8-02f3-43e4-a25a-032439d0f512")
+	)
+	(hierarchical_label "ADC"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e4fcd4f3-5be3-4e1b-9660-28443404ca5c")
 	)
 )

@@ -1,0 +1,63 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3a463acd-0c99-45de-9b4f-b4fccd8d4ced")
+	(paper "A4")
+	(lib_symbols)
+	(text "PULL-UP / PULL-DOWN KANAL SABLONU\nINPUT_PULL_SELECT icinde 22 kez kullanilir (PULL_CH0..21).\nPU_EN / PD_EN: 74HC595-Q100 cikislarindan, sinyal MOSFET'leri ile pull direncini NODE'a baglar."
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "1a933f73-bd5a-42d1-8291-e1906fb69a69")
+	)
+	(hierarchical_label "PD_EN"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b321a31-2275-4439-bece-c310d1ce0dd8")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95e6e37c-49cf-4ec0-931a-7e2944cc68d7")
+	)
+	(hierarchical_label "PU_EN"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ce25453b-6d8f-4f81-b1db-2ea57f813346")
+	)
+	(hierarchical_label "NODE"
+		(shape bidirectional)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbf8239b-8e9a-45fd-9488-3d4056ace30d")
+	)
+)

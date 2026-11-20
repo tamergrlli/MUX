@@ -1,0 +1,52 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "40391efd-cd9f-4c5d-a090-53ad2e956d6e")
+	(paper "A4")
+	(lib_symbols)
+	(text "FREKANS KANAL SABLONU\nINPUT_FREQ icinde 4 kez kullanilir.\nIN_PROT -> Schmitt tetik / STM32G4 dahili komparator -> timer capture"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "1c25f9a2-0054-4e16-9c17-f7784941cbe5")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "25d5fcc6-c8e6-402f-b2d5-c5abc3b1395c")
+	)
+	(hierarchical_label "FREQ"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5bd4e63a-ec96-4636-a106-5ae5ee21bd75")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66e56963-1071-4f19-a793-220aee7b230c")
+	)
+)

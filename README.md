@@ -174,6 +174,44 @@ Seçim ölçütleri:
 - PCB: en az 4 katman, güç hatlarında 2 oz bakır ve termal via
 - Conformal coating
 
+### 4.9 Şema yapısı (KiCad)
+
+Her blok kendi klasöründedir; alt sayfa yolları üst sayfanın klasörüne göre görelidir.
+
+```
+MUX/
+├─ MUX.kicad_sch                 Kök: blok şeması
+├─ 01_POWER/                     POWER → POWER_INPUT (LM74800-Q1 + TVS), LOGIC_SUPPLY (LM5164-Q1 + TPS7B81-Q1),
+│                                SENSOR_SUPPLY (TPS7B4254-Q1 + TPS7B4260-Q1)
+├─ 02_MCU/                       MCU (STM32G474QE)
+├─ 03_CAN/                       CAN_TRANSCEIVER (TCAN1043A-Q1) × 2 (CAN1, CAN2)
+├─ 04_INPUT/                     INPUT
+│  ├─ CONDITIONING/              INPUT_CONDITIONING → IN_CHANNEL × 22
+│  ├─ PULL_SELECT/               INPUT_PULL_SELECT (74HC595-Q100 × 6) → PULL_CHANNEL × 22
+│  └─ FREQ/                      INPUT_FREQ → FREQ_CHANNEL × 4
+├─ 05_OUTPUT/                    OUTPUT
+│  ├─ HS20/                      HIGH_SIDE_20A → HS20_2ED2410 × 2 (entegre başına 2 kanal)
+│  ├─ HS_STD/                    HIGH_SIDE_STD → HS10_BTT6010 × 6 (kanal 0–5) + HS4_BTT6030 × 4 (kanal 6–13)
+│  ├─ CCPWM/                     CCPWM_TLE82453 (tek entegre, 2 kanal + 1 yedek)
+│  └─ HALF_BRIDGE/               HALF_BRIDGE (DRV8323SRTAR) → HB_LEG × 3
+└─ 06_CONNECTORS/                CONNECTORS
+```
+
+Güç rayları:
+
+| Ray | Kaynak | Kullanan |
+|---|---|---|
+| VBAT | TVS sonrası ana güç yolu | High-side kanallar, half-bridge |
+| VBAT_OVP | LM74800-Q1 çıkışı (ters kutup + ~37 V OV kesme) | Mantık ve sensör beslemesi, CAN VSUP, TLE82453 |
+| +5V / +3V3 | LOGIC_SUPPLY | MCU, transceiver, TLE82453 lojik beslemesi, 595 zinciri |
+
+MCU arayüzündeki entegre kaynaklı değişiklikler:
+
+- `HS20_DEN` yerine `HS20_EN` (2ED2410 ortak EN) ve `HS20_INT[0..1]` (entegre başına açık drain kesme)
+- `HS10_IS[0..9]`: 0–5 BTT6010 kanalları, 6–9 BTT6030 entegreleri; `HS10_DSEL` ortak IS kanal seçimi
+- `OUT_SPI_SCK/MOSI/MISO`: DRV8323 ve TLE82453 ortak SPI (`DRV_CS_N`, `CCPWM_CS_N`)
+- `CCPWM_IN` / `CCPWM_ISENSE` kaldırıldı; yerine `CCPWM_EN`, `CCPWM_RESN`, `CCPWM_CLK`, `CCPWM_FAULT_N` (akım ayarı ve ölçümü SPI üzerinden)
+
 ## 5. Flash bölümleme
 
 Örnek: 512 KB flash.

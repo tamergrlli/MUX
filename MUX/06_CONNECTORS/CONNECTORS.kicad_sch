@@ -1,0 +1,173 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "71c93416-e9fd-41e9-9598-d22d20c55049")
+	(paper "A4")
+	(lib_symbols)
+	(text "KONNEKTORLER\nAna besleme: civatali terminal (M6/M8)\nSinyal: Deutsch DT/DTM\n22 evrensel giris, 23 cikis, 2x CAN, sensor beslemeleri"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "e457830e-198b-45bc-b4d7-37eb52b64b58")
+	)
+	(hierarchical_label "SENS_12V"
+		(shape input)
+		(at 50.8 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "32e4114a-ee40-4993-bd57-bd8172848935")
+	)
+	(hierarchical_label "SENS_5V"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "369e3a76-c62a-451b-8967-63d4c8c937df")
+	)
+	(hierarchical_label "CAN2_CANH"
+		(shape bidirectional)
+		(at 203.2 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fa0533d-fabb-4486-8142-261400124070")
+	)
+	(hierarchical_label "IGN"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41be8c7b-3290-46a0-977f-5d905d9aa5fe")
+	)
+	(hierarchical_label "VBAT_RAW"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c999bb9-387c-4c15-91a9-63cb55afa3fa")
+	)
+	(hierarchical_label "HS10_OUT[0..13]"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c2d0657-4b71-4a90-9448-d174c489423a")
+	)
+	(hierarchical_label "CAN1_CANH"
+		(shape bidirectional)
+		(at 203.2 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b28d8894-391d-4ab8-bd81-2110e9ab86c6")
+	)
+	(hierarchical_label "WAKE2"
+		(shape output)
+		(at 203.2 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be9c5d2c-fedf-4de9-a411-155b03c8439c")
+	)
+	(hierarchical_label "HS20_OUT[0..3]"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c16fe44c-d146-494e-9583-ad1c61420cae")
+	)
+	(hierarchical_label "CAN2_CANL"
+		(shape bidirectional)
+		(at 203.2 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c86d020b-91af-4593-8ef3-183e7a7438a3")
+	)
+	(hierarchical_label "CCPWM_OUT[0..1]"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c92c1f73-c3fe-4e56-884d-dd8cde8e023b")
+	)
+	(hierarchical_label "CAN1_CANL"
+		(shape bidirectional)
+		(at 203.2 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cad0b49b-402e-4382-ae05-8a25d09bb719")
+	)
+	(hierarchical_label "HB_OUT[0..2]"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d398fb5e-313d-48c7-a683-ffbb745150d2")
+	)
+	(hierarchical_label "IN[0..21]"
+		(shape output)
+		(at 203.2 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "faf28b8a-ab57-4b12-a2cc-efba22008a30")
+	)
+)

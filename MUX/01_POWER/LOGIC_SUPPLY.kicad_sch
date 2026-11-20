@@ -1,0 +1,74 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ff73e66e-b548-4eb3-b9ee-923e980d815b")
+	(paper "A4")
+	(lib_symbols)
+	(text "MANTIK BESLEMESI\nVBAT_OVP -> LM5164-Q1 (100 V, 1 A buck) -> +5V\n+5V -> TPS7B81-Q1 (LDO) -> +3V3\nINH1/INH2 (TCAN1043A) diyot-OR -> LM5164 EN/UVLO (uyandirma)"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "ff9b6f87-be9d-4fd8-84b2-215b1ff50ce6")
+	)
+	(hierarchical_label "VBAT_OVP"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e7b47b8-fc51-41fe-9901-5935853d140a")
+	)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36dac721-ed24-4b95-a867-3169c6f8c87c")
+	)
+	(hierarchical_label "+3V3"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "43d901f2-ad18-4160-855c-c39536760865")
+	)
+	(hierarchical_label "INH2"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "697382b6-5a5a-4a1e-b690-a4e5af84ba9f")
+	)
+	(hierarchical_label "INH1"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "699c0b86-660c-4882-855f-7a37e857e2db")
+	)
+)
