@@ -5,6 +5,308 @@
 	(uuid "64cd72fe-607a-4bc6-aaaa-5ecdc16a5496")
 	(paper "A4")
 	(lib_symbols)
+	(text "GIRIS BLOGU\n22 evrensel giris: dijital / analog / PWM-frekans / NTC\nMod yazilimdan secilir"
+		(exclude_from_sim no)
+		(at 20.32 170.18 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "531e5e5b-664f-44b8-b6a2-98e5ff7a4816")
+	)
+	(wire
+		(pts
+			(xy 165.1 43.18) (xy 160.02 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02fb9ec9-4621-4d09-973f-c15d19b94ac8")
+	)
+	(bus
+		(pts
+			(xy 96.52 35.56) (xy 101.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17e9a3b3-7b37-4271-9b12-66cbb519401d")
+	)
+	(bus
+		(pts
+			(xy 165.1 106.68) (xy 160.02 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bafd90a-cdab-4a3d-b1e2-f797f3fc0a7d")
+	)
+	(wire
+		(pts
+			(xy 165.1 104.14) (xy 160.02 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "282861f3-2f31-444a-9936-018e146e4e93")
+	)
+	(wire
+		(pts
+			(xy 165.1 33.02) (xy 160.02 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434bf8cb-9ff3-4694-a5a7-77f6e439c498")
+	)
+	(bus
+		(pts
+			(xy 50.8 35.56) (xy 45.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a84da73-560b-4376-acf6-afca93ec28c7")
+	)
+	(wire
+		(pts
+			(xy 165.1 38.1) (xy 160.02 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a2def4-e075-48d2-975f-637198d4e575")
+	)
+	(bus
+		(pts
+			(xy 96.52 33.02) (xy 101.6 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9010db09-1d43-4575-b80d-305ebc27d2e5")
+	)
+	(bus
+		(pts
+			(xy 210.82 33.02) (xy 215.9 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af991924-b7b1-4d1e-97e1-2e33e5283560")
+	)
+	(wire
+		(pts
+			(xy 165.1 40.64) (xy 160.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b03b9266-2346-429a-ba7d-48ba2cbb5ced")
+	)
+	(wire
+		(pts
+			(xy 165.1 45.72) (xy 160.02 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b896ce28-bd4e-4ba0-90af-57242354167b")
+	)
+	(wire
+		(pts
+			(xy 50.8 33.02) (xy 45.72 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc377be1-ed5c-4cfb-a710-f01dfa23460e")
+	)
+	(wire
+		(pts
+			(xy 165.1 35.56) (xy 160.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1abfd86-f773-48ed-aa0e-7fa54b980b7c")
+	)
+	(bus
+		(pts
+			(xy 210.82 104.14) (xy 215.9 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71d6f22-2d8e-44ca-a7c8-182f2ffdd27c")
+	)
+	(label "IN_PROT[0..3]"
+		(at 160.02 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "31206f6e-6652-433a-b8bc-e53decd6c51a")
+	)
+	(label "IN_PROT[0..21]"
+		(at 101.6 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b790826a-b625-4b32-acf3-0bd84e4b9715")
+	)
+	(label "IN_PROT[0..21]"
+		(at 215.9 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0a6d7a0-44e4-47f4-ae78-aad6ed59a1b6")
+	)
+	(hierarchical_label "IN[0..21]"
+		(shape input)
+		(at 45.72 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0474e773-cd55-48fa-a26f-d2779823b808")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 45.72 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "058a200e-ecc6-4f8f-9217-e2f5e42c62b5")
+	)
+	(hierarchical_label "PU_LATCH"
+		(shape input)
+		(at 160.02 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18a7511a-bd24-4764-ac81-8665b169692a")
+	)
+	(hierarchical_label "IN_FREQ[0..3]"
+		(shape output)
+		(at 215.9 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46362fc9-b9f9-42ca-800a-115558a565dc")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 160.02 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "607ce4a5-c1e9-4199-87d5-3bc87334c2e5")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 160.02 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66ad4f5c-b921-4a6e-917e-d98cada4f289")
+	)
+	(hierarchical_label "PU_OE_N"
+		(shape input)
+		(at 160.02 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6adf8cf0-a550-452c-bb85-73f877d45a68")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 160.02 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7dab2107-ce45-4b2f-96ca-cbe4b04d2a3c")
+	)
+	(hierarchical_label "PU_SCK"
+		(shape input)
+		(at 160.02 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93868512-83aa-42de-a68b-bc2265d3f9a9")
+	)
+	(hierarchical_label "PU_MOSI"
+		(shape input)
+		(at 160.02 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eaf4c4ac-b53f-45c0-888f-577f3806fc04")
+	)
+	(hierarchical_label "IN_ADC[0..21]"
+		(shape output)
+		(at 101.6 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f55c7230-bf34-4ef9-aca4-a3efa308b528")
+	)
 	(sheet
 		(at 50.8 30.48)
 		(size 45.72 7.62)
@@ -90,93 +392,6 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 50.8 33.02) (xy 45.72 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc377be1-ed5c-4cfb-a710-f01dfa23460e")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 45.72 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "058a200e-ecc6-4f8f-9217-e2f5e42c62b5")
-	)
-	(bus
-		(pts
-			(xy 50.8 35.56) (xy 45.72 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a84da73-560b-4376-acf6-afca93ec28c7")
-	)
-	(hierarchical_label "IN[0..21]"
-		(shape input)
-		(at 45.72 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0474e773-cd55-48fa-a26f-d2779823b808")
-	)
-	(bus
-		(pts
-			(xy 96.52 33.02) (xy 101.6 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9010db09-1d43-4575-b80d-305ebc27d2e5")
-	)
-	(label "IN_PROT[0..21]"
-		(at 101.6 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b790826a-b625-4b32-acf3-0bd84e4b9715")
-	)
-	(bus
-		(pts
-			(xy 96.52 35.56) (xy 101.6 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17e9a3b3-7b37-4271-9b12-66cbb519401d")
-	)
-	(hierarchical_label "IN_ADC[0..21]"
-		(shape output)
-		(at 101.6 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f55c7230-bf34-4ef9-aca4-a3efa308b528")
 	)
 	(sheet
 		(at 165.1 30.48)
@@ -294,159 +509,6 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 165.1 33.02) (xy 160.02 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "434bf8cb-9ff3-4694-a5a7-77f6e439c498")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 160.02 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "607ce4a5-c1e9-4199-87d5-3bc87334c2e5")
-	)
-	(wire
-		(pts
-			(xy 165.1 35.56) (xy 160.02 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1abfd86-f773-48ed-aa0e-7fa54b980b7c")
-	)
-	(hierarchical_label "+5V"
-		(shape input)
-		(at 160.02 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7dab2107-ce45-4b2f-96ca-cbe4b04d2a3c")
-	)
-	(wire
-		(pts
-			(xy 165.1 38.1) (xy 160.02 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73a2def4-e075-48d2-975f-637198d4e575")
-	)
-	(hierarchical_label "PU_SCK"
-		(shape input)
-		(at 160.02 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "93868512-83aa-42de-a68b-bc2265d3f9a9")
-	)
-	(wire
-		(pts
-			(xy 165.1 40.64) (xy 160.02 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b03b9266-2346-429a-ba7d-48ba2cbb5ced")
-	)
-	(hierarchical_label "PU_MOSI"
-		(shape input)
-		(at 160.02 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eaf4c4ac-b53f-45c0-888f-577f3806fc04")
-	)
-	(wire
-		(pts
-			(xy 165.1 43.18) (xy 160.02 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02fb9ec9-4621-4d09-973f-c15d19b94ac8")
-	)
-	(hierarchical_label "PU_LATCH"
-		(shape input)
-		(at 160.02 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "18a7511a-bd24-4764-ac81-8665b169692a")
-	)
-	(wire
-		(pts
-			(xy 165.1 45.72) (xy 160.02 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b896ce28-bd4e-4ba0-90af-57242354167b")
-	)
-	(hierarchical_label "PU_OE_N"
-		(shape input)
-		(at 160.02 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6adf8cf0-a550-452c-bb85-73f877d45a68")
-	)
-	(bus
-		(pts
-			(xy 210.82 33.02) (xy 215.9 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af991924-b7b1-4d1e-97e1-2e33e5283560")
-	)
-	(label "IN_PROT[0..21]"
-		(at 215.9 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f0a6d7a0-44e4-47f4-ae78-aad6ed59a1b6")
-	)
 	(sheet
 		(at 165.1 101.6)
 		(size 45.72 7.62)
@@ -522,81 +584,5 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 165.1 104.14) (xy 160.02 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "282861f3-2f31-444a-9936-018e146e4e93")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 160.02 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "66ad4f5c-b921-4a6e-917e-d98cada4f289")
-	)
-	(bus
-		(pts
-			(xy 165.1 106.68) (xy 160.02 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bafd90a-cdab-4a3d-b1e2-f797f3fc0a7d")
-	)
-	(label "IN_PROT[0..3]"
-		(at 160.02 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "31206f6e-6652-433a-b8bc-e53decd6c51a")
-	)
-	(bus
-		(pts
-			(xy 210.82 104.14) (xy 215.9 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e71d6f22-2d8e-44ca-a7c8-182f2ffdd27c")
-	)
-	(hierarchical_label "IN_FREQ[0..3]"
-		(shape output)
-		(at 215.9 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "46362fc9-b9f9-42ca-800a-115558a565dc")
-	)
-	(text "GIRIS BLOGU\n22 evrensel giris: dijital / analog / PWM-frekans / NTC\nMod yazilimdan secilir"
-		(exclude_from_sim no)
-		(at 20.32 170.18 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
-		)
-		(uuid "531e5e5b-664f-44b8-b6a2-98e5ff7a4816")
 	)
 )

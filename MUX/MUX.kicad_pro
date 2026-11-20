@@ -237,6 +237,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -284,8 +285,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -466,6 +467,138 @@
       "INPUT_CONDITIONING"
     ],
     [
+      "ce265f4a-d272-4809-9178-30e1ae663de9",
+      "INPUT_PULL_SELECT"
+    ],
+    [
+      "db012dac-fa8a-4d41-bed6-137e5a00e79c",
+      "INPUT_FREQ"
+    ],
+    [
+      "95768193-d67f-4168-95a1-7dff291c21b3",
+      "CAN1"
+    ],
+    [
+      "c5098549-a02b-425e-8f20-a49ca3769f58",
+      "CAN2"
+    ],
+    [
+      "de2f182d-8693-42fa-bd55-f3bc14afab07",
+      "MCU"
+    ],
+    [
+      "8630adb0-f1b1-4bbb-85d6-f38af2c93394",
+      "OUTPUT"
+    ],
+    [
+      "14b4b732-37d8-4eb2-84ce-c33c950a863b",
+      "HIGH_SIDE_HIGH_CURRENT"
+    ],
+    [
+      "e7ff53c7-1e8c-44ed-b754-b403337d43ca",
+      "HIGH_SIDE_LOW_CURRENT"
+    ],
+    [
+      "db658624-3d9d-4378-b1db-4f7110ac4b3d",
+      "HALF_BRIDGE"
+    ],
+    [
+      "3b983841-33cd-410d-a6ef-22c53c7a3d89",
+      "CURRENT_CONTROLLED_PWM"
+    ],
+    [
+      "c5d16943-3974-4c22-8dd3-7f72929136e6",
+      "HS20_CH0"
+    ],
+    [
+      "59dfde61-4bdc-40a6-86ce-70b4a04e2a0e",
+      "HS20_CH1"
+    ],
+    [
+      "216d8f96-e48f-4eb5-9fb9-3f233b0d0e95",
+      "HS20_CH2"
+    ],
+    [
+      "883d07bd-0ebe-4464-a423-8471a3a18430",
+      "HS20_CH3"
+    ],
+    [
+      "a0d18706-e596-4b41-9883-262afcc41e89",
+      "HS10_CH0"
+    ],
+    [
+      "c8575c30-ded0-4262-b640-d98aaae091e1",
+      "HS10_CH1"
+    ],
+    [
+      "b300f9bc-e263-49cd-9f80-7b02527ee31d",
+      "HS10_CH2"
+    ],
+    [
+      "cf1760f6-03df-496e-9d18-26867e67a439",
+      "HS10_CH3"
+    ],
+    [
+      "c95117b3-a4ad-4ef4-a8aa-cac119e0b6d4",
+      "HS10_CH4"
+    ],
+    [
+      "17a7072a-6191-44df-91c4-5446df0165c5",
+      "HS10_CH5"
+    ],
+    [
+      "9749299d-5b30-4207-9e6e-62080497d3c7",
+      "HS10_CH6"
+    ],
+    [
+      "86594b22-d13f-4a7e-be5d-93b55c975533",
+      "HS10_CH7"
+    ],
+    [
+      "f77a91bd-798a-4e3b-a3bf-c23d643f0d38",
+      "HS10_CH8"
+    ],
+    [
+      "01266bfe-4bc5-475b-be39-fc4b3c5b3834",
+      "HS10_CH9"
+    ],
+    [
+      "53ada8ca-644b-4b01-9df9-79722c062092",
+      "HS10_CH10"
+    ],
+    [
+      "29e44198-b0ad-4898-8858-9506cb9ade40",
+      "HS10_CH11"
+    ],
+    [
+      "a1ec557c-67fa-46a3-8bda-9863f311139d",
+      "HS10_CH12"
+    ],
+    [
+      "10d996d0-aded-4cc0-9dbf-db87c63870e2",
+      "HS10_CH13"
+    ],
+    [
+      "daaaef62-b4e1-44a0-be25-6afdc35dc2d6",
+      "HB_LEG0"
+    ],
+    [
+      "38922bb6-e994-43a2-b5ad-1c7a885cf5a3",
+      "HB_LEG1"
+    ],
+    [
+      "7b9b01be-0521-4c54-a158-3f16bc8fa5b4",
+      "HB_LEG2"
+    ],
+    [
+      "e02779ec-602c-4b68-b212-44e70568ee37",
+      "CCPWM_CH0"
+    ],
+    [
+      "6fbda3b6-a7c4-4f04-a099-c9e6e2bc5edf",
+      "CCPWM_CH1"
+    ],
+    [
       "c8a05153-93bd-4050-8c3c-4d9c148208d7",
       "IN_CH0"
     ],
@@ -552,10 +685,6 @@
     [
       "6ff8379b-db55-421e-bd7f-dec9a9bf779d",
       "IN_CH21"
-    ],
-    [
-      "ce265f4a-d272-4809-9178-30e1ae663de9",
-      "INPUT_PULL_SELECT"
     ],
     [
       "7ed51e84-fe9e-46b7-bb3d-558543a9da59",
@@ -646,10 +775,6 @@
       "PULL_CH21"
     ],
     [
-      "db012dac-fa8a-4d41-bed6-137e5a00e79c",
-      "INPUT_FREQ"
-    ],
-    [
       "89e9b3bc-38e4-42d3-89a9-d6060d445eb9",
       "FREQ_CH0"
     ],
@@ -664,130 +789,6 @@
     [
       "b5d324d5-1bdb-4fe7-8324-cc2c0c258e40",
       "FREQ_CH3"
-    ],
-    [
-      "95768193-d67f-4168-95a1-7dff291c21b3",
-      "CAN1"
-    ],
-    [
-      "c5098549-a02b-425e-8f20-a49ca3769f58",
-      "CAN2"
-    ],
-    [
-      "de2f182d-8693-42fa-bd55-f3bc14afab07",
-      "MCU"
-    ],
-    [
-      "8630adb0-f1b1-4bbb-85d6-f38af2c93394",
-      "OUTPUT"
-    ],
-    [
-      "14b4b732-37d8-4eb2-84ce-c33c950a863b",
-      "HIGH_SIDE_HIGH_CURRENT"
-    ],
-    [
-      "c5d16943-3974-4c22-8dd3-7f72929136e6",
-      "HS20_CH0"
-    ],
-    [
-      "59dfde61-4bdc-40a6-86ce-70b4a04e2a0e",
-      "HS20_CH1"
-    ],
-    [
-      "216d8f96-e48f-4eb5-9fb9-3f233b0d0e95",
-      "HS20_CH2"
-    ],
-    [
-      "883d07bd-0ebe-4464-a423-8471a3a18430",
-      "HS20_CH3"
-    ],
-    [
-      "e7ff53c7-1e8c-44ed-b754-b403337d43ca",
-      "HIGH_SIDE_LOW_CURRENT"
-    ],
-    [
-      "a0d18706-e596-4b41-9883-262afcc41e89",
-      "HS10_CH0"
-    ],
-    [
-      "c8575c30-ded0-4262-b640-d98aaae091e1",
-      "HS10_CH1"
-    ],
-    [
-      "b300f9bc-e263-49cd-9f80-7b02527ee31d",
-      "HS10_CH2"
-    ],
-    [
-      "cf1760f6-03df-496e-9d18-26867e67a439",
-      "HS10_CH3"
-    ],
-    [
-      "c95117b3-a4ad-4ef4-a8aa-cac119e0b6d4",
-      "HS10_CH4"
-    ],
-    [
-      "17a7072a-6191-44df-91c4-5446df0165c5",
-      "HS10_CH5"
-    ],
-    [
-      "9749299d-5b30-4207-9e6e-62080497d3c7",
-      "HS10_CH6"
-    ],
-    [
-      "86594b22-d13f-4a7e-be5d-93b55c975533",
-      "HS10_CH7"
-    ],
-    [
-      "f77a91bd-798a-4e3b-a3bf-c23d643f0d38",
-      "HS10_CH8"
-    ],
-    [
-      "01266bfe-4bc5-475b-be39-fc4b3c5b3834",
-      "HS10_CH9"
-    ],
-    [
-      "53ada8ca-644b-4b01-9df9-79722c062092",
-      "HS10_CH10"
-    ],
-    [
-      "29e44198-b0ad-4898-8858-9506cb9ade40",
-      "HS10_CH11"
-    ],
-    [
-      "a1ec557c-67fa-46a3-8bda-9863f311139d",
-      "HS10_CH12"
-    ],
-    [
-      "10d996d0-aded-4cc0-9dbf-db87c63870e2",
-      "HS10_CH13"
-    ],
-    [
-      "db658624-3d9d-4378-b1db-4f7110ac4b3d",
-      "HALF_BRIDGE"
-    ],
-    [
-      "daaaef62-b4e1-44a0-be25-6afdc35dc2d6",
-      "HB_LEG0"
-    ],
-    [
-      "38922bb6-e994-43a2-b5ad-1c7a885cf5a3",
-      "HB_LEG1"
-    ],
-    [
-      "7b9b01be-0521-4c54-a158-3f16bc8fa5b4",
-      "HB_LEG2"
-    ],
-    [
-      "3b983841-33cd-410d-a6ef-22c53c7a3d89",
-      "CURRENT_CONTROLLED_PWM"
-    ],
-    [
-      "e02779ec-602c-4b68-b212-44e70568ee37",
-      "CCPWM_CH0"
-    ],
-    [
-      "6fbda3b6-a7c4-4f04-a099-c9e6e2bc5edf",
-      "CCPWM_CH1"
     ]
   ],
   "text_variables": {},

@@ -5,10 +5,31 @@
 	(uuid "20ee059d-15fd-4981-ad2e-a98eeb23f780")
 	(paper "A4")
 	(lib_symbols)
+	(text "GUC GIRISI / KORUMA\nTers kutup: ideal diyot kontrolcusu + MOSFET\nLoad dump / transient: 24 V sisteme gore TVS\nISO 16750-2, ISO 7637-2\nVBAT_SENSE: MCU ADC icin bolunmus akü gerilimi"
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "9c86fdd9-6e7a-4f41-9866-b912c391ab10")
+	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape output)
+		(at 203.2 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "94e81c4d-9325-4736-bfbb-e423e579c4ff")
+	)
 	(hierarchical_label "VBAT_RAW"
 		(shape input)
 		(at 76.2 30.48 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20,7 +41,6 @@
 	(hierarchical_label "VBAT"
 		(shape output)
 		(at 203.2 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28,28 +48,5 @@
 			(justify left)
 		)
 		(uuid "d6f86d6a-5429-4951-b391-3a04d1bbc6ad")
-	)
-	(hierarchical_label "VBAT_SENSE"
-		(shape output)
-		(at 203.2 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "94e81c4d-9325-4736-bfbb-e423e579c4ff")
-	)
-	(text "GUC GIRISI / KORUMA\nTers kutup: ideal diyot kontrolcusu + MOSFET\nLoad dump / transient: 24 V sisteme gore TVS\nISO 16750-2, ISO 7637-2\nVBAT_SENSE: MCU ADC icin bolunmus akü gerilimi"
-		(exclude_from_sim no)
-		(at 20.32 160.02 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
-		)
-		(uuid "9c86fdd9-6e7a-4f41-9866-b912c391ab10")
 	)
 )

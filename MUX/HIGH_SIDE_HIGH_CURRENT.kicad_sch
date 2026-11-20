@@ -5,176 +5,16 @@
 	(uuid "993227ce-edb2-4c32-b004-701f1904e8ad")
 	(paper "A4")
 	(lib_symbols)
-	(sheet
-		(at 101.6 30.48)
-		(size 33.02 12.7)
+	(text "HIGH-SIDE YUKSEK AKIM - 4 kanal ~20 A\nKanal devresi HS20_CHANNEL.kicad_sch icinde (4 ornek).\nHS20_IN/IS/OUT bus'larinin uyeleri (HS20_IN0..3 vb.) kanal etiketlerine isimle baglanir."
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "c5d16943-3974-4c22-8dd3-7f72929136e6")
-		(property "Sheetname" "HS20_CH0"
-			(at 101.6 29.7684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "HS20_CHANNEL.kicad_sch"
-			(at 101.6 43.7646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VBAT" input
-			(at 101.6 33.02 180)
-			(uuid "6ee7ced6-d414-4bc1-a6af-b0ea53d9ac8e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "+3V3" input
-			(at 101.6 35.56 180)
-			(uuid "23b7afd6-106c-4826-80cb-c788eebf0d74")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IN" input
-			(at 101.6 38.1 180)
-			(uuid "ba8407ee-c231-44eb-a044-77de61590512")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "DEN" input
-			(at 101.6 40.64 180)
-			(uuid "78be7629-b8bb-49aa-8d0e-58666efb040c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IS" output
-			(at 134.62 33.02 0)
-			(uuid "054ab163-9217-41f0-8721-aac9848fe9a9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OUT" output
-			(at 134.62 35.56 0)
-			(uuid "c2afa1f3-806e-49b1-8f36-d81af04c8840")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "MUX"
-				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/14b4b732-37d8-4eb2-84ce-c33c950a863b"
-					(page "19")
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 101.6 33.02) (xy 96.52 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec2b03c9-68ab-4cbc-adac-a722f01fd417")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 96.52 33.02 180)
-		(fields_autoplaced yes)
+		(at 20.32 170.18 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2 2)
 			)
-			(justify right)
+			(justify left top)
 		)
-		(uuid "a20ec810-febb-4be4-865f-c36b723058d4")
-	)
-	(wire
-		(pts
-			(xy 101.6 35.56) (xy 96.52 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25e622d0-7da8-446d-bac6-374d94b550fb")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 96.52 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b850d886-afd3-4b20-925a-a4ecbfe7cd9d")
-	)
-	(wire
-		(pts
-			(xy 101.6 38.1) (xy 96.52 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e8c21b9-edb5-4690-8844-f7871a16c079")
-	)
-	(label "HS20_IN0"
-		(at 96.52 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7295ec7a-fca1-4a7a-a15d-9659b775b205")
+		(uuid "06f58f27-6662-4e31-8a57-5d30852980b0")
 	)
 	(wire
 		(pts
@@ -186,252 +26,65 @@
 		)
 		(uuid "018a89e4-a258-4812-9782-697b98f2f061")
 	)
-	(hierarchical_label "HS20_DEN"
-		(shape input)
-		(at 96.52 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ee6a52e-c333-49c3-b4fc-c50a26500e41")
-	)
-	(wire
+	(bus
 		(pts
-			(xy 134.62 33.02) (xy 139.7 33.02)
+			(xy 185.42 157.48) (xy 190.5 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b4facc3-4517-4a1d-965a-7c9187856ccf")
-	)
-	(label "HS20_IS0"
-		(at 139.7 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "824cab8b-006f-487d-a360-86cbb552fc49")
+		(uuid "026f8473-068d-4d16-8852-f7c5d1b6dfd6")
 	)
 	(wire
 		(pts
-			(xy 134.62 35.56) (xy 139.7 35.56)
+			(xy 134.62 93.98) (xy 139.7 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89490ae8-1ce1-4f5e-b8f5-cc04d60aa64e")
-	)
-	(label "HS20_OUT0"
-		(at 139.7 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9f4e832-6312-4f66-81f2-7101d8df8c7b")
-	)
-	(sheet
-		(at 101.6 60.96)
-		(size 33.02 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "59dfde61-4bdc-40a6-86ce-70b4a04e2a0e")
-		(property "Sheetname" "HS20_CH1"
-			(at 101.6 60.2484 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "HS20_CHANNEL.kicad_sch"
-			(at 101.6 74.2446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VBAT" input
-			(at 101.6 63.5 180)
-			(uuid "3571bbe9-7e40-415b-82a9-9917c508a131")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "+3V3" input
-			(at 101.6 66.04 180)
-			(uuid "04f47fe2-0c76-4fbc-899b-dbc4f58ba85e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IN" input
-			(at 101.6 68.58 180)
-			(uuid "6cc6c180-8116-40ec-8ea9-95e6ad464396")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "DEN" input
-			(at 101.6 71.12 180)
-			(uuid "eec32361-16d9-491e-920d-daf950f9e2cf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IS" output
-			(at 134.62 63.5 0)
-			(uuid "e7ca5ea4-0b63-4ba0-81fe-57fd390a7c77")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OUT" output
-			(at 134.62 66.04 0)
-			(uuid "b5cf97ea-b8b6-4815-a35e-599adf635332")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "MUX"
-				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/14b4b732-37d8-4eb2-84ce-c33c950a863b"
-					(page "20")
-				)
-			)
-		)
+		(uuid "20974927-3b84-4c6a-a7f0-defac37fd488")
 	)
 	(wire
 		(pts
-			(xy 101.6 63.5) (xy 96.52 63.5)
+			(xy 101.6 35.56) (xy 96.52 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b3e8582f-44ca-4bdb-ac4f-7dacc9b7443f")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 96.52 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "af13990d-5120-40f5-9ef8-1e6951aedddf")
+		(uuid "25e622d0-7da8-446d-bac6-374d94b550fb")
 	)
 	(wire
 		(pts
-			(xy 101.6 66.04) (xy 96.52 66.04)
+			(xy 101.6 129.54) (xy 96.52 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b52dde3-5fc4-4718-8f86-e86938fc76cf")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 96.52 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "591262b6-1c6a-4dfe-ac9f-d47e4a416401")
+		(uuid "2cc6b08a-5e8a-42f9-8b2d-dad5d22387e2")
 	)
 	(wire
 		(pts
-			(xy 101.6 68.58) (xy 96.52 68.58)
+			(xy 101.6 132.08) (xy 96.52 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad9a67f5-2de5-4fdf-88e2-8c7411c33be3")
+		(uuid "35dec608-0023-4fa1-8306-13aa591cc1c8")
 	)
-	(label "HS20_IN1"
-		(at 96.52 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0db4124a-b195-49fe-822a-21285d00999d")
-	)
-	(wire
+	(bus
 		(pts
-			(xy 101.6 71.12) (xy 96.52 71.12)
+			(xy 55.88 152.4) (xy 50.8 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f0e2899-7ba8-4309-a436-5c646fc74dc1")
-	)
-	(hierarchical_label "HS20_DEN"
-		(shape input)
-		(at 96.52 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c81b0440-ce3c-492e-8697-8269174160ac")
+		(uuid "47fa88ae-efba-49b2-9e2e-cdb53eb873c6")
 	)
 	(wire
 		(pts
@@ -443,16 +96,155 @@
 		)
 		(uuid "6e88d03c-3a0e-468e-943d-643843c3daac")
 	)
-	(label "HS20_IS1"
-		(at 139.7 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+	(wire
+		(pts
+			(xy 101.6 71.12) (xy 96.52 71.12)
 		)
-		(uuid "ad330be6-6a11-41c9-9b16-76b0b7024ef7")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f0e2899-7ba8-4309-a436-5c646fc74dc1")
+	)
+	(wire
+		(pts
+			(xy 134.62 124.46) (xy 139.7 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fedb5fb-8693-4f8c-b021-de04073985ac")
+	)
+	(wire
+		(pts
+			(xy 134.62 35.56) (xy 139.7 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89490ae8-1ce1-4f5e-b8f5-cc04d60aa64e")
+	)
+	(wire
+		(pts
+			(xy 134.62 33.02) (xy 139.7 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b4facc3-4517-4a1d-965a-7c9187856ccf")
+	)
+	(wire
+		(pts
+			(xy 134.62 96.52) (xy 139.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9174a8f8-5d1d-4f57-ac5d-d45ad2877864")
+	)
+	(wire
+		(pts
+			(xy 101.6 93.98) (xy 96.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98bec7b3-1f2e-4f0a-b83a-8f0b5cde53ac")
+	)
+	(wire
+		(pts
+			(xy 101.6 66.04) (xy 96.52 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b52dde3-5fc4-4718-8f86-e86938fc76cf")
+	)
+	(wire
+		(pts
+			(xy 101.6 38.1) (xy 96.52 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e8c21b9-edb5-4690-8844-f7871a16c079")
+	)
+	(wire
+		(pts
+			(xy 101.6 68.58) (xy 96.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9a67f5-2de5-4fdf-88e2-8c7411c33be3")
+	)
+	(wire
+		(pts
+			(xy 101.6 124.46) (xy 96.52 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af8bb055-08ed-4406-81d3-95998849f931")
+	)
+	(wire
+		(pts
+			(xy 101.6 99.06) (xy 96.52 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b11547f1-848c-4774-95bc-7a3d0bd9b089")
+	)
+	(wire
+		(pts
+			(xy 101.6 63.5) (xy 96.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e8582f-44ca-4bdb-ac4f-7dacc9b7443f")
+	)
+	(bus
+		(pts
+			(xy 185.42 152.4) (xy 190.5 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b413d255-a2c2-49fc-96bf-cb48ff34f0ba")
+	)
+	(wire
+		(pts
+			(xy 134.62 127) (xy 139.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be092ffe-7a33-4f94-ba2e-1a69159595a2")
+	)
+	(wire
+		(pts
+			(xy 101.6 127) (xy 96.52 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4b62643-af45-4ab4-a064-83e96dc08a11")
 	)
 	(wire
 		(pts
@@ -464,9 +256,68 @@
 		)
 		(uuid "d595b3ad-d2a4-4632-a2ce-e849d2b16555")
 	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 96.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48e6575-da07-4a4b-bb0f-d44ddcd5fa57")
+	)
+	(wire
+		(pts
+			(xy 101.6 33.02) (xy 96.52 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec2b03c9-68ab-4cbc-adac-a722f01fd417")
+	)
+	(wire
+		(pts
+			(xy 101.6 96.52) (xy 96.52 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d72308-7120-42de-a5a9-b2081f3b080d")
+	)
+	(label "HS20_IN1"
+		(at 96.52 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0db4124a-b195-49fe-822a-21285d00999d")
+	)
+	(label "HS20_OUT3"
+		(at 139.7 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c943ddd-1dc2-47c2-84f8-6619a2439096")
+	)
+	(label "HS20_IS2"
+		(at 139.7 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c7807c8-984d-44d1-9d44-9244ba491fc4")
+	)
 	(label "HS20_OUT1"
 		(at 139.7 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -474,6 +325,251 @@
 			(justify left bottom)
 		)
 		(uuid "32a4aacf-c2ca-4230-8529-143687dd2b7e")
+	)
+	(label "HS20_IN0"
+		(at 96.52 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7295ec7a-fca1-4a7a-a15d-9659b775b205")
+	)
+	(label "HS20_IN2"
+		(at 96.52 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a4b3df2-d030-4834-a709-e115deee4364")
+	)
+	(label "HS20_IS0"
+		(at 139.7 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "824cab8b-006f-487d-a360-86cbb552fc49")
+	)
+	(label "HS20_IS3"
+		(at 139.7 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8533c1c5-d950-470f-b16a-f82825e9987c")
+	)
+	(label "HS20_OUT2"
+		(at 139.7 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a060ae20-6e37-4d2d-8b1b-806078d2ec25")
+	)
+	(label "HS20_IN3"
+		(at 96.52 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0e14d1b-7be1-4f6d-aa7a-937cb7a9efc2")
+	)
+	(label "HS20_IS1"
+		(at 139.7 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad330be6-6a11-41c9-9b16-76b0b7024ef7")
+	)
+	(label "HS20_OUT0"
+		(at 139.7 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9f4e832-6312-4f66-81f2-7101d8df8c7b")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 96.52 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03a10166-4e4c-4fe0-98d6-4f1f2f892de4")
+	)
+	(hierarchical_label "HS20_DEN"
+		(shape input)
+		(at 96.52 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1ee6a52e-c333-49c3-b4fc-c50a26500e41")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 96.52 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "338cda87-ddd6-497d-98ac-d075ff5f727d")
+	)
+	(hierarchical_label "HS20_OUT[0..3]"
+		(shape output)
+		(at 190.5 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4eb2e9c0-6a19-4eea-bb00-197b04d24edf")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 96.52 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "591262b6-1c6a-4dfe-ac9f-d47e4a416401")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 96.52 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66036283-4671-4fa7-a29a-29d6b6982aa5")
+	)
+	(hierarchical_label "HS20_IS[0..3]"
+		(shape output)
+		(at 190.5 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a3d4df1-8bbe-4ed9-b6f1-86aeb741ec6f")
+	)
+	(hierarchical_label "HS20_IN[0..3]"
+		(shape input)
+		(at 50.8 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "73c14191-396f-4d5d-8cc4-b1c170cf9e79")
+	)
+	(hierarchical_label "HS20_DEN"
+		(shape input)
+		(at 96.52 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78cea709-919d-47e1-b96e-9787f727cf8c")
+	)
+	(hierarchical_label "HS20_DEN"
+		(shape input)
+		(at 96.52 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8cadc79b-0c09-488a-b501-828aae907d75")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 96.52 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a20ec810-febb-4be4-865f-c36b723058d4")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 96.52 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af13990d-5120-40f5-9ef8-1e6951aedddf")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 96.52 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b207e41c-97ba-4cbc-8440-876def060706")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 96.52 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b850d886-afd3-4b20-925a-a4ecbfe7cd9d")
+	)
+	(hierarchical_label "HS20_DEN"
+		(shape input)
+		(at 96.52 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c81b0440-ce3c-492e-8697-8269174160ac")
 	)
 	(sheet
 		(at 101.6 91.44)
@@ -581,134 +677,111 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 101.6 93.98) (xy 96.52 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98bec7b3-1f2e-4f0a-b83a-8f0b5cde53ac")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 96.52 93.98 180)
+	(sheet
+		(at 101.6 60.96)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "03a10166-4e4c-4fe0-98d6-4f1f2f892de4")
-	)
-	(wire
-		(pts
-			(xy 101.6 96.52) (xy 96.52 96.52)
-		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "f1d72308-7120-42de-a5a9-b2081f3b080d")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 96.52 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "59dfde61-4bdc-40a6-86ce-70b4a04e2a0e")
+		(property "Sheetname" "HS20_CH1"
+			(at 101.6 60.2484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
 			)
-			(justify right)
 		)
-		(uuid "338cda87-ddd6-497d-98ac-d075ff5f727d")
-	)
-	(wire
-		(pts
-			(xy 101.6 99.06) (xy 96.52 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b11547f1-848c-4774-95bc-7a3d0bd9b089")
-	)
-	(label "HS20_IN2"
-		(at 96.52 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Sheetfile" "HS20_CHANNEL.kicad_sch"
+			(at 101.6 74.2446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
-			(justify right bottom)
 		)
-		(uuid "7a4b3df2-d030-4834-a709-e115deee4364")
-	)
-	(wire
-		(pts
-			(xy 101.6 101.6) (xy 96.52 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e48e6575-da07-4a4b-bb0f-d44ddcd5fa57")
-	)
-	(hierarchical_label "HS20_DEN"
-		(shape input)
-		(at 96.52 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(pin "VBAT" input
+			(at 101.6 63.5 180)
+			(uuid "3571bbe9-7e40-415b-82a9-9917c508a131")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify right)
 		)
-		(uuid "78cea709-919d-47e1-b96e-9787f727cf8c")
-	)
-	(wire
-		(pts
-			(xy 134.62 93.98) (xy 139.7 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20974927-3b84-4c6a-a7f0-defac37fd488")
-	)
-	(label "HS20_IS2"
-		(at 139.7 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(pin "+3V3" input
+			(at 101.6 66.04 180)
+			(uuid "04f47fe2-0c76-4fbc-899b-dbc4f58ba85e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify left bottom)
 		)
-		(uuid "2c7807c8-984d-44d1-9d44-9244ba491fc4")
-	)
-	(wire
-		(pts
-			(xy 134.62 96.52) (xy 139.7 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9174a8f8-5d1d-4f57-ac5d-d45ad2877864")
-	)
-	(label "HS20_OUT2"
-		(at 139.7 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(pin "IN" input
+			(at 101.6 68.58 180)
+			(uuid "6cc6c180-8116-40ec-8ea9-95e6ad464396")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify left bottom)
 		)
-		(uuid "a060ae20-6e37-4d2d-8b1b-806078d2ec25")
+		(pin "DEN" input
+			(at 101.6 71.12 180)
+			(uuid "eec32361-16d9-491e-920d-daf950f9e2cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 134.62 63.5 0)
+			(uuid "e7ca5ea4-0b63-4ba0-81fe-57fd390a7c77")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 134.62 66.04 0)
+			(uuid "b5cf97ea-b8b6-4815-a35e-599adf635332")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/14b4b732-37d8-4eb2-84ce-c33c950a863b"
+					(page "20")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 101.6 121.92)
@@ -816,210 +889,110 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 101.6 124.46) (xy 96.52 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af8bb055-08ed-4406-81d3-95998849f931")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 96.52 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b207e41c-97ba-4cbc-8440-876def060706")
-	)
-	(wire
-		(pts
-			(xy 101.6 127) (xy 96.52 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4b62643-af45-4ab4-a064-83e96dc08a11")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 96.52 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "66036283-4671-4fa7-a29a-29d6b6982aa5")
-	)
-	(wire
-		(pts
-			(xy 101.6 129.54) (xy 96.52 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cc6b08a-5e8a-42f9-8b2d-dad5d22387e2")
-	)
-	(label "HS20_IN3"
-		(at 96.52 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a0e14d1b-7be1-4f6d-aa7a-937cb7a9efc2")
-	)
-	(wire
-		(pts
-			(xy 101.6 132.08) (xy 96.52 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35dec608-0023-4fa1-8306-13aa591cc1c8")
-	)
-	(hierarchical_label "HS20_DEN"
-		(shape input)
-		(at 96.52 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8cadc79b-0c09-488a-b501-828aae907d75")
-	)
-	(wire
-		(pts
-			(xy 134.62 124.46) (xy 139.7 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fedb5fb-8693-4f8c-b021-de04073985ac")
-	)
-	(label "HS20_IS3"
-		(at 139.7 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8533c1c5-d950-470f-b16a-f82825e9987c")
-	)
-	(wire
-		(pts
-			(xy 134.62 127) (xy 139.7 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be092ffe-7a33-4f94-ba2e-1a69159595a2")
-	)
-	(label "HS20_OUT3"
-		(at 139.7 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1c943ddd-1dc2-47c2-84f8-6619a2439096")
-	)
-	(bus
-		(pts
-			(xy 55.88 152.4) (xy 50.8 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47fa88ae-efba-49b2-9e2e-cdb53eb873c6")
-	)
-	(hierarchical_label "HS20_IN[0..3]"
-		(shape input)
-		(at 50.8 152.4 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73c14191-396f-4d5d-8cc4-b1c170cf9e79")
-	)
-	(bus
-		(pts
-			(xy 185.42 152.4) (xy 190.5 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b413d255-a2c2-49fc-96bf-cb48ff34f0ba")
-	)
-	(hierarchical_label "HS20_IS[0..3]"
-		(shape output)
-		(at 190.5 152.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6a3d4df1-8bbe-4ed9-b6f1-86aeb741ec6f")
-	)
-	(bus
-		(pts
-			(xy 185.42 157.48) (xy 190.5 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "026f8473-068d-4d16-8852-f7c5d1b6dfd6")
-	)
-	(hierarchical_label "HS20_OUT[0..3]"
-		(shape output)
-		(at 190.5 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4eb2e9c0-6a19-4eea-bb00-197b04d24edf")
-	)
-	(text "HIGH-SIDE YUKSEK AKIM - 4 kanal ~20 A\nKanal devresi HS20_CHANNEL.kicad_sch icinde (4 ornek).\nHS20_IN/IS/OUT bus'larinin uyeleri (HS20_IN0..3 vb.) kanal etiketlerine isimle baglanir."
+	(sheet
+		(at 101.6 30.48)
+		(size 33.02 12.7)
 		(exclude_from_sim no)
-		(at 20.32 170.18 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "06f58f27-6662-4e31-8a57-5d30852980b0")
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c5d16943-3974-4c22-8dd3-7f72929136e6")
+		(property "Sheetname" "HS20_CH0"
+			(at 101.6 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HS20_CHANNEL.kicad_sch"
+			(at 101.6 43.7646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 101.6 33.02 180)
+			(uuid "6ee7ced6-d414-4bc1-a6af-b0ea53d9ac8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 101.6 35.56 180)
+			(uuid "23b7afd6-106c-4826-80cb-c788eebf0d74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN" input
+			(at 101.6 38.1 180)
+			(uuid "ba8407ee-c231-44eb-a044-77de61590512")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEN" input
+			(at 101.6 40.64 180)
+			(uuid "78be7629-b8bb-49aa-8d0e-58666efb040c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IS" output
+			(at 134.62 33.02 0)
+			(uuid "054ab163-9217-41f0-8721-aac9848fe9a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" output
+			(at 134.62 35.56 0)
+			(uuid "c2afa1f3-806e-49b1-8f36-d81af04c8840")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MUX"
+				(path "/f05f665d-c7d5-4295-b013-209ab7ff58fb/8630adb0-f1b1-4bbb-85d6-f38af2c93394/14b4b732-37d8-4eb2-84ce-c33c950a863b"
+					(page "19")
+				)
+			)
+		)
 	)
 )

@@ -144,19 +144,28 @@ Seçim ölçütleri:
 - Tüm parçalar 24 V araç sistemine uygun olmalı (en az 36 V çalışma, 24 V load dump dayanımı). Bu nedenle PROFET+2 12V (BTS700x) ailesi kullanılmaz (en fazla 28 V çalışma).
 - Prototip aşamasında AEC-Q100 sertifikası zorunlu değildir.
 
-| Blok | Parça | Durum | Not |
-|---|---|---|---|
-| MCU | STM32G474QE | Seçildi | Alternatif: STM32H533 (bkz. 4.1) |
-| High-side 10 A | Infineon BTT6010-1ERB | Seçildi | PROFET+ 24V, 5–36 V, 9 A nominal |
-| High-side düşük akım | Infineon BTT6100-2ERA | Seçildi | PROFET+ 24V, çift kanal, ~2,2 A/kanal |
-| High-side orta akım | Infineon BTT6030-2ERA | Aday | Çift kanal, ~4 A/kanal |
-| High-side 20 A | TI TPS12S24F-Q1 + harici MOSFET veya Classic PROFET 24V | Açık | |
-| Half-bridge | TI DRV8323SRTAR + 6× 60 V N-MOSFET | Seçildi | 6–60 V, bağımsız PWM modu, 3 dahili akım yükselticisi. Yedek: DRV8323RS (pin uyumlu değil) |
-| Akım kontrollü PWM | Infineon TLE7242-2G veya MOSFET + INA181 + MCU kontrol döngüsü | Açık | |
-| 5 V sensör beslemesi | Infineon TLE4250-2G | Aday | Kısa devre ve ters kutup korumalı tracker |
-| 12 V sensör beslemesi | Akım sınırlı buck-boost | Açık | |
-| CAN | TI TCAN1043A-Q1 veya NXP TJA1043 | Aday | INH/WAKE ile uyandırma |
-| Pull-up/down seçimi | 74HC595 zinciri + sinyal MOSFET'leri | Aday | |
+- Tedarik: Parçalar Türkiye'den kolayca sipariş edilebilmeli (DigiKey, Mouser, RS Components TR, LCSC/JLCPCB stoğu olan parçalar tercih edilir).
+
+| Blok | Parça | Adet | Durum | Not |
+|---|---|---|---|---|
+| MCU | STM32G474QE | 1 | Seçildi | Alternatif: STM32H533 (bkz. 4.1) |
+| High-side 10 A | Infineon BTT6010-1ERB | 6 | Seçildi | PROFET+ 24V, 5–36 V, 9 A nominal. 6 kanal |
+| High-side orta akım | Infineon BTT6030-2ERA | 4 | Seçildi | PROFET+ 24V, çift kanal, ~4 A/kanal. 8 kanal |
+| High-side düşük akım | Infineon BTT6100-2ERA | – | Yedek | Çift kanal, ~2,2 A/kanal. BTT6030-2ERA ile pin uyumlu, düşük akımlı varyantta kullanılabilir |
+| High-side 20 A sürücü | Infineon 2ED2410-EM | 4 | Seçildi | 12/24 V akıllı high-side MOSFET sürücü, 3–58 V, 2 gate çıkışı, 2 akım ölçme arayüzü, sıcaklık girişi. DigiKey/RS/LCSC stoklu |
+| High-side 20 A MOSFET | Infineon IAUC120N06S5N015 | 4 | Seçildi | 60 V, 1,5 mΩ, SSO8 5×6, AEC-Q101. 20 A'de ~0,6 W iletim kaybı |
+| Half-bridge sürücü | TI DRV8323SRTAR | 1 | Seçildi | 6–60 V, bağımsız PWM modu, 3 dahili akım yükselticisi. Yedek: DRV8323RS (pin uyumlu değil) |
+| Half-bridge MOSFET | Infineon IAUC120N06S5N022 | 6 | Seçildi | 60 V, 2,2 mΩ, normal seviye, SSO8 5×6 |
+| Akım kontrollü PWM | Infineon TLE82453-3SA | 1 | Seçildi | 3 kanal (2 kullanılır, 1 yedek), MOSFET ve shunt dahili, 1,5 A'e kadar, dither, SPI. 24 V dayanımı datasheet'ten doğrulanacak |
+| Ters kutup / OV kesme | TI LM74800-Q1 + 2× 60 V N-MOSFET | 1 | Seçildi | 3–65 V ideal diyot kontrolcüsü. Mantık ve sensör besleme dalını korur; OV kesme ~37 V'a ayarlanır |
+| Giriş TVS | 24 V load dump'a uygun TVS (ör. SM8S36A) | 1 | Aday | Kelepçe gerilimi 2ED2410 (58 V) ve DRV8323 (60 V) sınırının altında kalmalı |
+| Mantık beslemesi 5 V | TI LM5164-Q1 | 1 | Seçildi | 6–100 V, 1 A senkron buck, uykuda ultra düşük Iq |
+| Mantık beslemesi 3,3 V | 5 V'tan LDO (ör. TPS7B81-Q1) | 1 | Aday | |
+| 5 V sensör beslemesi | TI TPS7B4254-Q1 | 1 | Seçildi | 40 V tracker LDO, 150 mA, kablo kısa devresi (GND/akü) korumalı, 45 V load dump. +5V'u takip eder. TLE4250-2G (50 mA) yerine |
+| 12 V sensör beslemesi | TI TPS7B4260-Q1 | 1 | Seçildi | 40 V tracker LDO, 300 mA. 12 V çıkış yalnızca 24 V araçta garanti; 12 V araçta çıkış ≈ akü − düşüm |
+| CAN | TI TCAN1043A-Q1 | 2 | Seçildi | CAN FD, ±58 V bus arıza toleransı, INH/WAKE ile uyandırma |
+| CAN ESD / CMC | 24 V uyumlu CAN ESD diyodu + common-mode choke | 2 | Aday | 24 V sistem için en az 24 V stand-off |
+| Pull-up/down seçimi | 74HC595-Q100 zinciri + sinyal MOSFET'leri | 6 | Aday | 44 bit |
 
 ### 4.8 Mekanik
 
@@ -302,9 +311,12 @@ Planlanan araç özellikleri:
 
 - [ ] Çıkış akım sınıflarının kesinleşmesi
 - [ ] Frekans ölçümüne bağlanacak giriş sayısı
-- [ ] Half-bridge MOSFET seçimi (60 V)
-- [ ] 20 A kanal çözümü
-- [ ] Akım kontrollü PWM çözümü
+- [x] Half-bridge MOSFET seçimi (60 V): IAUC120N06S5N022
+- [x] 20 A kanal çözümü: 2ED2410-EM + IAUC120N06S5N015
+- [x] Akım kontrollü PWM çözümü: TLE82453-3SA
+- [ ] TLE82453-3SA'nın 24 V dayanımının ve 2ED2410-EM mutlak maksimum değerlerinin datasheet'ten doğrulanması
+- [ ] Giriş TVS'inin ISO 16750-2 (24 V, bastırılmış load dump) için boyutlandırılması
+- [ ] Standart high-side kanallarının yük listesine göre 10 A / 4 A dağılımının kesinleşmesi (şu an 6 + 8)
 - [ ] Uyku modu tüketim hedefi
 - [ ] MCU kesinleşmesi ve pin bütçesi
 - [ ] Toplam sürekli akım ve konnektör seçimi

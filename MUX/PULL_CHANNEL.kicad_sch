@@ -5,10 +5,42 @@
 	(uuid "5e6ea7ca-4aa7-4486-91ee-c5a8a0aef14d")
 	(paper "A4")
 	(lib_symbols)
+	(text "PULL-UP / PULL-DOWN KANAL SABLONU\nINPUT_PULL_SELECT icinde 22 kez kullanilir (PULL_CH0..21).\nPU_EN / PD_EN: 74HC595 cikislarindan, sinyal MOSFET'leri ile pull direncini NODE'a baglar."
+		(exclude_from_sim no)
+		(at 20.32 160.02 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "02e25561-d330-4c60-8a68-ee96e7a6cd73")
+	)
+	(hierarchical_label "NODE"
+		(shape bidirectional)
+		(at 203.2 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "163d636a-dafb-457c-bf5c-979d4f9f6319")
+	)
+	(hierarchical_label "PD_EN"
+		(shape input)
+		(at 76.2 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1ceed123-d15d-4338-a48b-959b3ba7a485")
+	)
 	(hierarchical_label "+5V"
 		(shape input)
 		(at 76.2 30.48 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20,7 +52,6 @@
 	(hierarchical_label "PU_EN"
 		(shape input)
 		(at 76.2 35.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28,40 +59,5 @@
 			(justify right)
 		)
 		(uuid "95fcf430-e5a8-4844-bea6-ab1956338bd8")
-	)
-	(hierarchical_label "PD_EN"
-		(shape input)
-		(at 76.2 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ceed123-d15d-4338-a48b-959b3ba7a485")
-	)
-	(hierarchical_label "NODE"
-		(shape bidirectional)
-		(at 203.2 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "163d636a-dafb-457c-bf5c-979d4f9f6319")
-	)
-	(text "PULL-UP / PULL-DOWN KANAL SABLONU\nINPUT_PULL_SELECT icinde 22 kez kullanilir (PULL_CH0..21).\nPU_EN / PD_EN: 74HC595 cikislarindan, sinyal MOSFET'leri ile pull direncini NODE'a baglar."
-		(exclude_from_sim no)
-		(at 20.32 160.02 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
-		)
-		(uuid "02e25561-d330-4c60-8a68-ee96e7a6cd73")
 	)
 )

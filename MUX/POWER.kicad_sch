@@ -5,6 +5,353 @@
 	(uuid "0653b59f-0b8b-4b4c-95a1-d70076f9eddd")
 	(paper "A4")
 	(lib_symbols)
+	(text "GUC BLOGU\nPOWER_INPUT -> LOGIC_SUPPLY / SENSOR_SUPPLY"
+		(exclude_from_sim no)
+		(at 20.32 170.18 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "8bc5475b-dc61-4c0a-bd81-7fb77363a6eb")
+	)
+	(wire
+		(pts
+			(xy 160.02 33.02) (xy 154.94 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08c2c118-8cbe-4efd-bc09-43c66e93b185")
+	)
+	(wire
+		(pts
+			(xy 160.02 111.76) (xy 154.94 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b9a2d9-1f3c-4ac0-af31-851f923ae09b")
+	)
+	(wire
+		(pts
+			(xy 96.52 35.56) (xy 101.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b92c95-0e7d-4a94-9e94-a94c7e594b1a")
+	)
+	(wire
+		(pts
+			(xy 205.74 104.14) (xy 210.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67bc5dc3-3cc7-4534-969a-e69935513c74")
+	)
+	(wire
+		(pts
+			(xy 205.74 35.56) (xy 210.82 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7782b6f0-2169-42ff-a02f-1f3f95169a16")
+	)
+	(wire
+		(pts
+			(xy 160.02 106.68) (xy 154.94 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87beb762-939d-43f0-9b42-f0c929244fff")
+	)
+	(wire
+		(pts
+			(xy 160.02 38.1) (xy 154.94 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0423b69-806a-4722-8767-94a31c522046")
+	)
+	(wire
+		(pts
+			(xy 160.02 109.22) (xy 154.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08c2673-72b6-490b-80d5-da1d043c4477")
+	)
+	(wire
+		(pts
+			(xy 96.52 33.02) (xy 101.6 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0a911bf-8104-4d91-87f9-d869e9418fcc")
+	)
+	(wire
+		(pts
+			(xy 160.02 35.56) (xy 154.94 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf77feb-0a34-4bc5-a57a-c18367940f67")
+	)
+	(wire
+		(pts
+			(xy 205.74 109.22) (xy 210.82 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df1ec490-3345-42f5-bff8-7d0da98bfab3")
+	)
+	(wire
+		(pts
+			(xy 205.74 106.68) (xy 210.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3b4a85f-e391-4dbb-88f4-debace2a0a1c")
+	)
+	(wire
+		(pts
+			(xy 205.74 33.02) (xy 210.82 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e707ec70-4e94-444b-8b07-469ed3787237")
+	)
+	(wire
+		(pts
+			(xy 160.02 104.14) (xy 154.94 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9366707-fee1-4892-aba5-1599bdc6dd77")
+	)
+	(wire
+		(pts
+			(xy 50.8 33.02) (xy 45.72 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7c60870-9aa7-41e7-ac05-522aa4ba68a3")
+	)
+	(wire
+		(pts
+			(xy 205.74 111.76) (xy 210.82 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb4ef883-5832-4752-b05c-c1114456acba")
+	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 154.94 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2302e9e5-d0de-4f01-a4f6-bd57ae3de5bf")
+	)
+	(hierarchical_label "SENS_12V_FAULT"
+		(shape output)
+		(at 210.82 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30c60c9c-aaaa-487b-a84d-32e9b2b621da")
+	)
+	(hierarchical_label "SENS_5V_FAULT"
+		(shape output)
+		(at 210.82 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3597b4b6-63cf-4527-840a-d3ffb301b40e")
+	)
+	(hierarchical_label "SENS_12V_EN"
+		(shape input)
+		(at 154.94 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e9df304-f792-4e0c-9311-2c7b154d4d3a")
+	)
+	(hierarchical_label "VBAT_SENSE"
+		(shape output)
+		(at 101.6 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b7d86b5-2412-473c-bab6-6c07922fc47f")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 154.94 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e246dd9-8a87-47a6-b85c-1d807c72b3b1")
+	)
+	(hierarchical_label "VBAT"
+		(shape output)
+		(at 101.6 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e6cfcc8-33db-4506-814d-a92b3ad8f06d")
+	)
+	(hierarchical_label "SENS_5V_EN"
+		(shape input)
+		(at 154.94 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50b0c104-d88e-4851-9f58-a08e5430f4f2")
+	)
+	(hierarchical_label "SENS_5V"
+		(shape output)
+		(at 210.82 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d7228ec-a00d-482b-a96f-471c67c492f3")
+	)
+	(hierarchical_label "INH2"
+		(shape input)
+		(at 154.94 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b878ed9-91d8-4a8a-9446-e899fde83b85")
+	)
+	(hierarchical_label "SENS_12V"
+		(shape output)
+		(at 210.82 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ddcf4fb-ba74-4a19-8b32-e44d7cd96ee1")
+	)
+	(hierarchical_label "+3V3"
+		(shape output)
+		(at 210.82 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a39ee944-3317-4223-9ee4-10b4adcd33ab")
+	)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 210.82 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd665853-9aaa-4e89-85f8-0d088227ae79")
+	)
+	(hierarchical_label "INH1"
+		(shape input)
+		(at 154.94 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc2656fd-9a8a-43ee-8b37-b3c9248d46f2")
+	)
+	(hierarchical_label "VBAT_RAW"
+		(shape input)
+		(at 45.72 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d06d8960-246a-4a70-925e-9617d66250df")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 154.94 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f4b2120c-92d0-4640-b3cf-92868b906497")
+	)
 	(sheet
 		(at 50.8 30.48)
 		(size 45.72 7.62)
@@ -80,72 +427,6 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 50.8 33.02) (xy 45.72 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7c60870-9aa7-41e7-ac05-522aa4ba68a3")
-	)
-	(hierarchical_label "VBAT_RAW"
-		(shape input)
-		(at 45.72 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d06d8960-246a-4a70-925e-9617d66250df")
-	)
-	(wire
-		(pts
-			(xy 96.52 33.02) (xy 101.6 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0a911bf-8104-4d91-87f9-d869e9418fcc")
-	)
-	(hierarchical_label "VBAT"
-		(shape output)
-		(at 101.6 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4e6cfcc8-33db-4506-814d-a92b3ad8f06d")
-	)
-	(wire
-		(pts
-			(xy 96.52 35.56) (xy 101.6 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60b92c95-0e7d-4a94-9e94-a94c7e594b1a")
-	)
-	(hierarchical_label "VBAT_SENSE"
-		(shape output)
-		(at 101.6 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b7d86b5-2412-473c-bab6-6c07922fc47f")
 	)
 	(sheet
 		(at 160.02 30.48)
@@ -242,116 +523,6 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 160.02 33.02) (xy 154.94 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08c2c118-8cbe-4efd-bc09-43c66e93b185")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 154.94 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e246dd9-8a87-47a6-b85c-1d807c72b3b1")
-	)
-	(wire
-		(pts
-			(xy 160.02 35.56) (xy 154.94 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adf77feb-0a34-4bc5-a57a-c18367940f67")
-	)
-	(hierarchical_label "INH1"
-		(shape input)
-		(at 154.94 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cc2656fd-9a8a-43ee-8b37-b3c9248d46f2")
-	)
-	(wire
-		(pts
-			(xy 160.02 38.1) (xy 154.94 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0423b69-806a-4722-8767-94a31c522046")
-	)
-	(hierarchical_label "INH2"
-		(shape input)
-		(at 154.94 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9b878ed9-91d8-4a8a-9446-e899fde83b85")
-	)
-	(wire
-		(pts
-			(xy 205.74 33.02) (xy 210.82 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e707ec70-4e94-444b-8b07-469ed3787237")
-	)
-	(hierarchical_label "+5V"
-		(shape output)
-		(at 210.82 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bd665853-9aaa-4e89-85f8-0d088227ae79")
-	)
-	(wire
-		(pts
-			(xy 205.74 35.56) (xy 210.82 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7782b6f0-2169-42ff-a02f-1f3f95169a16")
-	)
-	(hierarchical_label "+3V3"
-		(shape output)
-		(at 210.82 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a39ee944-3317-4223-9ee4-10b4adcd33ab")
 	)
 	(sheet
 		(at 160.02 101.6)
@@ -478,192 +649,5 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 160.02 104.14) (xy 154.94 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9366707-fee1-4892-aba5-1599bdc6dd77")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 154.94 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f4b2120c-92d0-4640-b3cf-92868b906497")
-	)
-	(wire
-		(pts
-			(xy 160.02 106.68) (xy 154.94 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87beb762-939d-43f0-9b42-f0c929244fff")
-	)
-	(hierarchical_label "+5V"
-		(shape input)
-		(at 154.94 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2302e9e5-d0de-4f01-a4f6-bd57ae3de5bf")
-	)
-	(wire
-		(pts
-			(xy 160.02 109.22) (xy 154.94 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a08c2673-72b6-490b-80d5-da1d043c4477")
-	)
-	(hierarchical_label "SENS_5V_EN"
-		(shape input)
-		(at 154.94 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "50b0c104-d88e-4851-9f58-a08e5430f4f2")
-	)
-	(wire
-		(pts
-			(xy 160.02 111.76) (xy 154.94 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b9a2d9-1f3c-4ac0-af31-851f923ae09b")
-	)
-	(hierarchical_label "SENS_12V_EN"
-		(shape input)
-		(at 154.94 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3e9df304-f792-4e0c-9311-2c7b154d4d3a")
-	)
-	(wire
-		(pts
-			(xy 205.74 104.14) (xy 210.82 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67bc5dc3-3cc7-4534-969a-e69935513c74")
-	)
-	(hierarchical_label "SENS_5V"
-		(shape output)
-		(at 210.82 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d7228ec-a00d-482b-a96f-471c67c492f3")
-	)
-	(wire
-		(pts
-			(xy 205.74 106.68) (xy 210.82 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3b4a85f-e391-4dbb-88f4-debace2a0a1c")
-	)
-	(hierarchical_label "SENS_12V"
-		(shape output)
-		(at 210.82 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9ddcf4fb-ba74-4a19-8b32-e44d7cd96ee1")
-	)
-	(wire
-		(pts
-			(xy 205.74 109.22) (xy 210.82 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df1ec490-3345-42f5-bff8-7d0da98bfab3")
-	)
-	(hierarchical_label "SENS_5V_FAULT"
-		(shape output)
-		(at 210.82 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3597b4b6-63cf-4527-840a-d3ffb301b40e")
-	)
-	(wire
-		(pts
-			(xy 205.74 111.76) (xy 210.82 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb4ef883-5832-4752-b05c-c1114456acba")
-	)
-	(hierarchical_label "SENS_12V_FAULT"
-		(shape output)
-		(at 210.82 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "30c60c9c-aaaa-487b-a84d-32e9b2b621da")
-	)
-	(text "GUC BLOGU\nPOWER_INPUT -> LOGIC_SUPPLY / SENSOR_SUPPLY"
-		(exclude_from_sim no)
-		(at 20.32 170.18 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
-		)
-		(uuid "8bc5475b-dc61-4c0a-bd81-7fb77363a6eb")
 	)
 )
