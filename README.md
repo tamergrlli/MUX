@@ -144,6 +144,7 @@ Seçim ölçütleri:
 - Tüm parçalar 24 V araç sistemine uygun olmalı (en az 36 V çalışma, 24 V load dump dayanımı). Bu nedenle PROFET+2 12V (BTS700x) ailesi kullanılmaz (en fazla 28 V çalışma).
 - Prototip aşamasında AEC-Q100 sertifikası zorunlu değildir.
 
+- Datasheet'ler `datasheets/` klasöründe, KiCad sembolleri `MUX/mux_lib.kicad_sym` içindedir.
 - Tedarik: Parçalar Türkiye'den kolayca sipariş edilebilmeli (DigiKey, Mouser, RS Components TR, LCSC/JLCPCB stoğu olan parçalar tercih edilir).
 
 | Blok | Parça | Adet | Durum | Not |
@@ -152,11 +153,11 @@ Seçim ölçütleri:
 | High-side 10 A | Infineon BTT6010-1ERB | 6 | Seçildi | PROFET+ 24V, 5–36 V, 9 A nominal. 6 kanal |
 | High-side orta akım | Infineon BTT6030-2ERA | 4 | Seçildi | PROFET+ 24V, çift kanal, ~4 A/kanal. 8 kanal |
 | High-side düşük akım | Infineon BTT6100-2ERA | – | Yedek | Çift kanal, ~2,2 A/kanal. BTT6030-2ERA ile pin uyumlu, düşük akımlı varyantta kullanılabilir |
-| High-side 20 A sürücü | Infineon 2ED2410-EM | 4 | Seçildi | 12/24 V akıllı high-side MOSFET sürücü, 3–58 V, 2 gate çıkışı, 2 akım ölçme arayüzü, sıcaklık girişi. DigiKey/RS/LCSC stoklu |
+| High-side 20 A sürücü | Infineon 2ED2410-EM | 2 | Seçildi | 12/24 V akıllı high-side MOSFET sürücü, 3–58 V, entegre başına 2 kanal (INA/INB, GA/GB), 2 akım ölçme arayüzü, sıcaklık girişi. DigiKey/RS/LCSC stoklu |
 | High-side 20 A MOSFET | Infineon IAUC120N06S5N015 | 4 | Seçildi | 60 V, 1,5 mΩ, SSO8 5×6, AEC-Q101. 20 A'de ~0,6 W iletim kaybı |
 | Half-bridge sürücü | TI DRV8323SRTAR | 1 | Seçildi | 6–60 V, bağımsız PWM modu, 3 dahili akım yükselticisi. Yedek: DRV8323RS (pin uyumlu değil) |
 | Half-bridge MOSFET | Infineon IAUC120N06S5N022 | 6 | Seçildi | 60 V, 2,2 mΩ, normal seviye, SSO8 5×6 |
-| Akım kontrollü PWM | Infineon TLE82453-3SA | 1 | Seçildi | 3 kanal (2 kullanılır, 1 yedek), MOSFET ve shunt dahili, 1,5 A'e kadar, dither, SPI. 24 V dayanımı datasheet'ten doğrulanacak |
+| Akım kontrollü PWM | Infineon TLE82453-3SA | 1 | Seçildi | 3 kanal (2 kullanılır, 1 yedek), MOSFET ve shunt dahili, 1,5 A'e kadar, dither, SPI. **Dikkat:** VBAT nominal 8–17 V, genişletilmiş 17–40 V (parametre sapması olabilir), mutlak maks. 45 V; VBAT ve LSUPx, LM74800-Q1'in OV kesmeli dalından beslenir. MCU'dan CLK girişi gerekir |
 | Ters kutup / OV kesme | TI LM74800-Q1 + 2× 60 V N-MOSFET | 1 | Seçildi | 3–65 V ideal diyot kontrolcüsü. Mantık ve sensör besleme dalını korur; OV kesme ~37 V'a ayarlanır |
 | Giriş TVS | 24 V load dump'a uygun TVS (ör. SM8S36A) | 1 | Aday | Kelepçe gerilimi 2ED2410 (58 V) ve DRV8323 (60 V) sınırının altında kalmalı |
 | Mantık beslemesi 5 V | TI LM5164-Q1 | 1 | Seçildi | 6–100 V, 1 A senkron buck, uykuda ultra düşük Iq |
@@ -314,7 +315,8 @@ Planlanan araç özellikleri:
 - [x] Half-bridge MOSFET seçimi (60 V): IAUC120N06S5N022
 - [x] 20 A kanal çözümü: 2ED2410-EM + IAUC120N06S5N015
 - [x] Akım kontrollü PWM çözümü: TLE82453-3SA
-- [ ] TLE82453-3SA'nın 24 V dayanımının ve 2ED2410-EM mutlak maksimum değerlerinin datasheet'ten doğrulanması
+- [x] TLE82453-3SA korunuyor: VBAT ve LSUP0..2, LM74800-Q1'in OV kesmeli (~37 V) dalından beslenir. Bu dal valf akımını da (2 × ≤1,5 A) taşıyacak şekilde boyutlandırılmalı
+- [ ] 2ED2410-EM mutlak maksimum değerlerinin datasheet'ten doğrulanması
 - [ ] Giriş TVS'inin ISO 16750-2 (24 V, bastırılmış load dump) için boyutlandırılması
 - [ ] Standart high-side kanallarının yük listesine göre 10 A / 4 A dağılımının kesinleşmesi (şu an 6 + 8)
 - [ ] Uyku modu tüketim hedefi

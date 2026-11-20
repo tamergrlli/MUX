@@ -5,7 +5,7 @@
 	(uuid "774f8a8b-c130-4ebd-8186-a73ba3a1e389")
 	(paper "A4")
 	(lib_symbols)
-	(text "AKIM KONTROLLU PWM KANAL SABLONU\nCURRENT_CONTROLLED_PWM icinde 2 kez kullanilir.\nSecildi: TLE82453-3SA (3 kanal tek entegre, 2 kanal kullanilir). Entegre CURRENT_CONTROLLED_PWM\nsayfasina cizilmeli; bu sablon yalnizca kanal basina cikis/koruma elemanlari icin kalir.\nIN: PWM (timer), ISENSE: akim olcumu -> ADC, OUT: oransal valf"
+	(text "AKIM KONTROLLU PWM KANAL SABLONU\nCURRENT_CONTROLLED_PWM icinde 2 kez kullanilir.\nSecildi: TLE82453-3SA (3 kanal tek entegre, 2 kanal kullanilir). VBAT/LSUPx: LM74800 OV kesmeli dal (maks 45 V). Entegre CURRENT_CONTROLLED_PWM\nsayfasina cizilmeli; bu sablon yalnizca kanal basina cikis/koruma elemanlari icin kalir.\nIN: PWM (timer), ISENSE: akim olcumu -> ADC, OUT: oransal valf"
 		(exclude_from_sim no)
 		(at 20.32 160.02 0)
 		(effects
